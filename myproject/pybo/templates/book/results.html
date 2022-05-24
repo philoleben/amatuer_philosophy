@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+    <h5 class="text-white">RESULTS:</h5>
+    {%for book in books%}
+    <div>
+        <div>{{book['title']}}</div>
+        <div>
+            <img src="{{book[  'formats'][  'image/jpeg']}}" />
+            <br>
+            <a href="{{book[  'formats'][  'text/plain; charset=utf-8']}}"> GET Text</a>
+        </div>
+        <div>Authors : {{book['authors']}}</div>
+        <hr>
+    </div>
+    {%endfor%}
+
+{% endblock %}

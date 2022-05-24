@@ -1,0 +1,76 @@
+<!-- 공통 템플릿. 모든 템플릿에서 상속받아 사용 -->
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <!--자식 템플릿 코드가 들어갈 자리-->
+        {% block head %}
+        <meta charset="utf-8">
+        <title>Boogle - All the books in the world</title>
+        <!-- 동적 리소스 파일 로드 -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css')}}">
+        {% endblock %}
+    </head>
+    <body>
+      <div class="wrapper">
+        <div class="page-header">
+          <div class="header-container">
+            <a class="logo-container" href ="{{ url_for('main.index') }}">
+              <div class="logo_text">
+                  <h1>Boogle</h1>
+              </div>
+            </a>
+            <div class="Nav-bar">
+              <nav class="nav">
+                <a href ="{{ url_for('main.about') }}">About</a>
+                <!-- g.user == True일 경우 사용자가 로그인한 상태-->
+                {% if g.user %}
+                  <a class="nav-link" href="{{ url_for('auth.logout') }}">{{ g.user.username }} (Logout)</a>
+                  <a href ="{{ url_for('auth.bookshelves') }}">Bookshelves</a>
+                <!-- 로그아웃 상태-->
+                {% else %}
+                  <a class="nav-link" href="{{ url_for('auth.signup') }}">Sign up</a>
+                  <a class="nav-link" href="{{ url_for('auth.login') }}">Login</a>
+                {% endif %}                
+              <nav>
+            </div>
+            <div class="search_box">
+              <form method="get" action="{{ url_for('book.search') }}">
+                  <div>
+                      <label for = "book" class = "form-label"><strong> BOOK SEARCH : </strong></label>
+                      <input type="text" name = 'book' class = "form-control" id="book" rows="3" />
+                  </div>
+                  <button type = "submit" class = "btn btn-sm btn-primary"> <strong>SUBMIT</strong></button>
+              </form>
+            </div>
+            <!-- <hr align="left" style="border: solid 3px black; width: 1080px;"> -->
+          </div>         
+
+        </div>
+        <div class="content-container">
+          <div class="row">
+            <div class="col-md-8">
+              {% with messages = get_flashed_messages(with_categories=true) %}
+                  {% if messages %}
+                      {% for category, message in messages %}
+                          <div class="alert alert-{{ category }}">
+                              {{ message }}
+                          </div>
+                      {% endfor %}
+                  {% endif %}
+              {% endwith %}
+
+              {% block content %}
+              <!--자식 템플릿 코드가 들어갈 자리-->
+              {% endblock %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-bottom">
+        <div class="copyright">
+          Project Boogle - All the books in the world
+        </div>
+      </div>
+    </body>
+
+</html>
