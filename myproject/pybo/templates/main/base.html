@@ -8,6 +8,7 @@
         <title>Boogle - All the books in the world</title>
         <!-- 동적 리소스 파일 로드 -->
         <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
         {% endblock %}
     </head>
     <body>
@@ -39,7 +40,7 @@
                       <label for = "book" class = "form-label"><strong> BOOK SEARCH : </strong></label>
                       <input type="text" name = 'book' class = "form-control" id="book" rows="3" />
                   </div>
-                  <button type = "submit" class = "btn btn-sm btn-primary"> <strong>SUBMIT</strong></button>
+                  <button type = "submit" class = "btn btn-light"> <strong>SUBMIT</strong></button>
               </form>
             </div>
             <!-- <hr align="left" style="border: solid 3px black; width: 1080px;"> -->
@@ -47,7 +48,7 @@
 
         </div>
         <div class="content-container">
-          <div class="row">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-8">
               {% with messages = get_flashed_messages(with_categories=true) %}
                   {% if messages %}
@@ -71,6 +72,11 @@
           Project Boogle - All the books in the world
         </div>
       </div>
+      <!-- Bootstrap JS-->
+      <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+      <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+      <script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.min.js')}}"></script>
+      <script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
     </body>
 
 </html>

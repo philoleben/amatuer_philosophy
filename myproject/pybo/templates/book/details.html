@@ -4,14 +4,8 @@
 {{ super() }}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Boogle - Details page</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/carousel.css')}}">
-<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
-<script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.min.js')}}"></script>
-<script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
 
 {% endblock %}
 
@@ -20,24 +14,22 @@
 <section class="mb-5">
     <div class="container px-4 px-lg-5 my-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            {%for book in books%}
             <header class="mb-4">
                 <!-- Book title-->
-                <h1 class="fw-bolder mb-1">{{book.title}}</h1>
+                <h1 class="fw-bolder mb-1">Book Title{{ title }}</h1>
                 <!-- Book categories-->
-                <a class="badge bg-secondary text-decoration-none link-light" href="{{book.topic}}"></a>
-                <a class="badge bg-secondary text-decoration-none link-light" href="{{book.topic}}"></a>
+                <a class="badge bg-secondary text-decoration-none link-light" href="{{ topic }}"></a>
             </header>
-            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{book['image/jpeg']}}" alt="" /></div>
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/300x400/9c9c9c/ffffff" alt="" /></div>
             <div class="col-md-6">
                 <div class="fs-5 mt-5 mb-4">
-                    <span>Author: {{book.authors}}</span>
+                    <span>Author: {{ authors }}</span>
                 </div>
                 <div class="fs-5 mb-4">
-                    <span>Language: {{book.languages}}</span>
+                    <span>Language: {{ languages }}</span>
                 </div>
                 <div class="fs-5 mb-4">
-                    <span>Ids: {{book.ids}}</span>
+                    <span>Ids: {{ ids }}</span>
                 </div>
                 <div class="fs-5 mb-4">
                     <button class="btn btn-outline-light flex-shrink-0" type="button">
@@ -46,7 +38,6 @@
                     </button>
                 </div>
             </div>
-            {%endfor%}
         </div>
     </div>
 </section>
@@ -81,29 +72,8 @@
     <div class="container-fluid">
         <div id="carousel-example" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                {%for book in books%}
+                {%for book in books2%}
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                     <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
                 </div>
                 {%endfor%}
@@ -138,27 +108,6 @@
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
                 {%for book in books2%}
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                     <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
                 </div>
                 {%endfor%}

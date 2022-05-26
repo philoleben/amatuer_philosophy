@@ -10,8 +10,8 @@ bp = Blueprint('book', __name__, url_prefix='/')
 @bp.route('/details/')
 def details():
     
-    topic = 'buddhism'
-    response = requests.get("http://gutendex.com/books/?topic="+topic)
+    title = 'dickens%20great'
+    response = requests.get("http://gutendex.com/books/?search="+title)
     data = json.loads(response.content)
     books = []
     books = data['results']
