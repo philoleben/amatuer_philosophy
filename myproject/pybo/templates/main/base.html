@@ -23,14 +23,15 @@
             <div class="Nav-bar">
               <nav class="nav">
                 <a href ="{{ url_for('main.about') }}">About</a>
-                <!-- g.user == True일 경우 사용자가 로그인한 상태-->
+                <a href ="{{ url_for('auth.bookshelves') }}">Bookshelves</a>
+                <a href ="{{ url_for('question.board') }}">Board</a>
+                <!-- 사용자 로그인 상태-->
                 {% if g.user %}
                   <a class="nav-link" href="{{ url_for('auth.logout') }}">{{ g.user.username }} (Logout)</a>
-                  <a href ="{{ url_for('auth.bookshelves') }}">Bookshelves</a>
                 <!-- 로그아웃 상태-->
                 {% else %}
-                  <a class="nav-link" href="{{ url_for('auth.signup') }}">Sign up</a>
                   <a class="nav-link" href="{{ url_for('auth.login') }}">Login</a>
+                  <a class="nav-link" href="{{ url_for('auth.signup') }}">Sign up</a>
                 {% endif %}                
               <nav>
             </div>

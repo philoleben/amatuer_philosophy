@@ -2,29 +2,19 @@ from flask import *
 import requests
 import json
 from werkzeug.utils import redirect
+from pybo.models import Question
 
 bp = Blueprint('main', __name__, url_prefix='/')
 
 @bp.route('/')
 def index():
-    topic = 'buddhism'
-    response = requests.get("http://gutendex.com/books/?topic="+topic)
-    data = json.loads(response.content)
-    books = data['results']
-    
-    author = 'nietzsche'
-    response = requests.get("http://gutendex.com/books/?search="+author)
-    data = json.loads(response.content)
-    books2 = []
-    books2 = data['results']
-    
-    sort = 'popular'
-    response = requests.get("https://gutendex.com/books/?sort="+sort)
-    data = json.loads(response.content)
-    books3 = []
-    books3 = data['results']    
+
+    books = []
+    f = open('C:\\book.json', 'r', encoding='UTF-8')
+    json_data = json.load(f, strict=False)
+    print(json.dumps(json_data, indent="\t"))
         
-    return render_template('/main/index.html', books=books, books2=books2, books3=books3)
+    return render_template('/main/index.html', books=books)
 
 @bp.route('/about')
 def about():

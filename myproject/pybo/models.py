@@ -12,21 +12,36 @@ class User(db.Model):
     
 class Categories(db.Model): 
     __tablename__ = 'categories'   #테이블 이름 : bookshelf
-    categoryid = db.Column(db.Integer, primary_key = True)   #id를 프라이머리키로 설정
+    id = db.Column(db.Integer, primary_key = True)   #id를 프라이머리키로 설정
     name = db.Column(db.Text())
-        
+
+# 삭제예정. json 데이터 자체 사용        
 class Book(db.Model):
     __tablename__ = 'book'   #테이블 이름 : user
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(200), nullable=False)
-    author = db.Column(db.String(200), nullable=False)
-    description = db.Column(db.Text())
+    authors = db.Column(db.String(200), nullable=False)
     image = db.Column(db.Text())
-    categoryid = db.Column(db.Integer, db.ForeignKey('categories.categoryid', ondelete='CASCADE'))
+    downloadcount = db.Column(db.Integer)
+    grade = db.Column(db.Integer)
+    categoryid = db.Column(db.Integer, db.ForeignKey('categories.id', ondelete='CASCADE'))
             
 
 class Bookshelf(db.Model): 
     __tablename__ = 'bookshelf'   #테이블 이름 : bookshelf
-    bookshlefid = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     userid = db.Column(db.Integer, db.ForeignKey('user.id', ondelete='CASCADE'))
     bookid = db.Column(db.Integer, db.ForeignKey('book.id', ondelete='CASCADE'))
+    
+class Question(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    subject = db.Column(db.String(200), nullable=False)
+    content = db.Column(db.Text(), nullable=False)
+    create_date = db.Column(db.DateTime(), nullable=False)
+
+class Answer(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    question_id = db.Column(db.Integer, db.ForeignKey('question.id', ondelete='CASCADE'))
+    question = db.relationship('Question', backref=db.backref('answer_set', cascade='all, delete-orphan'))
+    content = db.Column(db.Text(), nullable=False)
+    create_date = db.Column(db.DateTime(), nullable=False)

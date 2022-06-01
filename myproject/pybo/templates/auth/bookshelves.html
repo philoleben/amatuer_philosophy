@@ -1,6 +1,14 @@
-{% extends "main/base.html" %}
+{% extends 'main/base.html' %}
+
 {% block content %}
-<div class="container">
-    <h5 class="my-3 border-bottom pb-2">책장</h5>
-</div>
+    <!-- 책장 목록 -->
+    {% if question_list %}
+        <ul>
+        {% for question in question_list %}
+            <li><a href="{{ url_for('question.detail', question_id=question.id) }}">{{ question.subject }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>책장에 담긴 책이 없습니다.</p>
+    {% endif %}
 {% endblock %}

@@ -11,9 +11,8 @@
 			"Philosophy, Hindu",
 			"Reincarnation",
 			"Vedanta"
-		  ],
-		  "bookshelves": []
-
+		],
+		"bookshelves": []
 	},
 	"The Law of Civilization and Decay: An Essay on History": {
 		"id": 44908,
@@ -27,8 +26,8 @@
 			"Civilization -- History",
 			"Degeneration",
 			"History -- Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"An ethical philosophy of life presented in its main outlines": {
 		"id": 60068,
@@ -41,8 +40,8 @@
 		"subjects": [
 			"Ethics",
 			"Philosophy, Modern"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"Cobwebs of Thought": {
@@ -55,8 +54,8 @@
 		"full-text": "https://www.gutenberg.org/files/13766/13766.txt",
 		"subjects": [
 			"Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Aristotle on the art of poetry": {
 		"id": 6763,
@@ -70,11 +69,11 @@
 			"Aesthetics -- Early works to 1800",
 			"Music -- Philosophy and aesthetics",
 			"Poetry -- Early works to 1800"
-		  ],
-		  "bookshelves": [
-			"Classical Antiquity",
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Classical Antiquity",
+		"Philosophy"
+		]
 	},
 	"The Philosophy of the Plays of Shakspere Unfolded": {
 		"id": 8207,
@@ -87,8 +86,8 @@
 		"subjects": [
 			"Shakespeare, William, 1564-1616 -- Authorship -- Baconian theory",
 			"Shakespeare, William, 1564-1616 -- Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"Fundamental Philosophy, Vol. 2 (of 2)": {
@@ -101,8 +100,8 @@
 		"full-text": "https://www.gutenberg.org/files/48149/48149-0.txt",
 		"subjects": [
 			"Philosophy, Spanish"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Law": {
 		"id": 1397,
@@ -117,8 +116,8 @@
 			"History -- Philosophy",
 			"Religions",
 			"Revolutions"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"An Appeal to the People in Behalf of Their Rights as Authorized Interpreters of the Bible": {
@@ -134,8 +133,8 @@
 			"Grace (Theology)",
 			"Predestination",
 			"Religion -- Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"The Greek Philosophers, Vol. 2 (of 2)": {
@@ -148,8 +147,8 @@
 		"full-text": "https://www.gutenberg.org/files/57126/57126-0.txt",
 		"subjects": [
 			"Philosophy, Ancient"
-		  ],
-		  "bookshelves": []		
+		],
+		"bookshelves": []		
 	},
 	"History of Modern Philosophy": {
 		"id": 34283,
@@ -161,9 +160,9 @@
 		"full-text": "https://www.gutenberg.org/files/11100/11100-0.txt",
 		"subjects": [
 			"Philosophy, Modern -- History"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
+		],
+		"bookshelves": [
+		"Philosophy"
 		]	
 	},
 	"Laughter: An Essay on the Meaning of the Comic": {
@@ -178,10 +177,10 @@
 			"Comedy",
 			"Laughter",
 			"Philosophy, French"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
-		]		
+		],
+		"bookshelves": [
+		"Philosophy"
+	]		
 	},
 	"Chaucer's Translation of Boethius's \"De Consolatione Philosophiae\"": {
 		"id": 42083,
@@ -194,9 +193,9 @@
 		"subjects": [
 			"Happiness",
 			"Philosophy and religion"
-		  ],
-		  "bookshelves": [
-			"Early English Text Society"
+		],
+		"bookshelves": [
+		"Early English Text Society"
 		]
 
 	},
@@ -213,8 +212,8 @@
 			"Philosophy and religion",
 			"Theology -- Early works to 1800",
 			"Theology -- History -- Early Church, ca. 30-600"
-		  ],
-		  "bookshelves": [
+		],
+		"bookshelves": [
 			"Classical Antiquity",
 			"Philosophy"
 		]
@@ -230,8 +229,8 @@
 		"subjects": [
 			"Political science -- Philosophy",
 			"State, The -- Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Beyond Good and Evil": {
 		"id": 4363,
@@ -263,8 +262,8 @@
 			"Reconstruction (U.S. history, 1865-1877)",
 			"Secession -- United States",
 			"United States -- Politics and government -- 1815-1861 -- Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Early Greek philosophy": {
 		"id": 51548,
@@ -276,8 +275,8 @@
 		"full-text": "https://www.gutenberg.org/files/51548/51548-0.txt",
 		"subjects": [
 			"Philosophy, Ancient"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Idea of Progress: An Inquiry into Its Origin and Growth": {
 		"id": 4557,
@@ -290,8 +289,8 @@
 		"subjects": [
 			"History -- Philosophy",
 			"Progress"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Idylls of the King": {
 		"id": 610,
@@ -305,10 +304,10 @@
 			"Arthur, King -- Poetry",
 			"Arthurian romances -- Adaptations",
 			"Knights and knighthood -- Poetry"
-		  ],
-		  "bookshelves": [
-			"Arthurian Legends"
-		  ]
+		],
+		"bookshelves": [
+		"Arthurian Legends"
+		]
 	},
 	"The Sayings of Confucius": {
 		"id": 24055,
@@ -321,8 +320,8 @@
 		"subjects": [
 			"Confucianism",
 			"Philosophy, Chinese"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"Cowley's Essays": {
@@ -337,8 +336,8 @@
 			"Essays",
 			"Philosophy",
 			"Poetry"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"Aesthetic as Science of Expression and General Linguistic": {
@@ -353,8 +352,8 @@
 			"Aesthetics",
 			"Language and languages -- Philosophy",
 			"Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"A Beginner's History of Philosophy, Vol. 2: Modern Philosophy": {
@@ -367,8 +366,8 @@
 		"full-text": "https://www.gutenberg.org/files/62663/62663-0.txt",
 		"subjects": [
 			"Philosophy -- History"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"The Banquet (Il Convito)": {
@@ -381,8 +380,8 @@
 		"full-text": "https://www.gutenberg.org/files/12867/12867.txt",
 		"subjects": [
 			"Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"The Mathematicall Praeface to Elements of Geometrie of Euclid of Megara": {
@@ -397,8 +396,8 @@
 			"Geometry -- Early works to 1800",
 			"Mathematics -- Early works to 1800",
 			"Philosophy -- Early works to 1800"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Infinity's Child": {
 		"id": 58682,
@@ -414,8 +413,8 @@
 			"Psychological fiction",
 			"Science fiction",
 			"War stories"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Democracy and Education: An Introduction to the Philosophy of Education": {
 		"id": 852,
@@ -428,10 +427,10 @@
 		"subjects": [
 			"Education -- Philosophy",
 			"Education -- Social aspects"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Philosophy"
+		]
 	},
 	"Reconstruction in Philosophy": {
 		"id": 40089,
@@ -443,8 +442,8 @@
 		"full-text": "https://www.gutenberg.org/files/40089/40089.txt",
 		"subjects": [
 			"Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"The Lives and Opinions of Eminent Philosophers": {
@@ -458,8 +457,8 @@
 		"subjects": [
 			"Philosophers, Ancient -- Biography",
 			"Philosophy, Ancient"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Mandalay to Momien": {
 		"id": 67758,
@@ -476,8 +475,8 @@
 			"Sladen, E. B. (Edward Bosc), 1827-1890 -- Travel -- Burma",
 			"Sladen, E. B. (Edward Bosc), 1827-1890 -- Travel -- China -- Yunnan Sheng",
 			"Yunnan Sheng (China) -- Description and travel"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Elementary Forms of the Religious Life": {
 		"id": 41360,
@@ -493,8 +492,8 @@
 			"Religion -- Philosophy",
 			"Rites and ceremonies",
 			"Totemism"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Dance of Life": {
 		"id": 65714,
@@ -509,8 +508,8 @@
 			"English essays -- 20th century",
 			"Ethics",
 			"Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Nature": {
 		"id": 29433,
@@ -523,8 +522,8 @@
 		"subjects": [
 			"Nature",
 			"Philosophy, American"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"A Selection from the Discourses of Epictetus with the Encheiridion": {
 		"id": 10661,
@@ -536,10 +535,10 @@
 		"full-text": "https://www.gutenberg.org/files/10661/10661.txt",
 		"subjects": [
 			"Philosophy -- Early works to 1800"
-		  ],
-		  "bookshelves": [
-			"Classical Antiquity"
-		  ]
+		],
+		"bookshelves": [
+		"Classical Antiquity"
+		]
 	},
 	"The Golden Sayings of Epictetus, with the Hymn of Cleanthes": {
 		"id": 871,
@@ -552,11 +551,11 @@
 		"subjects": [
 			"Philosophy",
 			"Stoics"
-		  ],
-		  "bookshelves": [
-			"Classical Antiquity",
-			"Harvard Classics"
-		  ]
+		],
+		"bookshelves": [
+		"Classical Antiquity",
+		"Harvard Classics"
+		]
 	},
 	"The Mathematical-Historical Principles and the Evolution of Liberty": {
 		"id": 30174,
@@ -568,8 +567,8 @@
 		"full-text": "https://www.gutenberg.org/files/30174/30174-readme.txt",
 		"subjects": [
 			"History -- Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"American Political Ideas Viewed from the Standpoint of Universal History": {
 		"id": 10112,
@@ -582,8 +581,8 @@
 		"subjects": [
 			"United States -- History -- Philosophy",
 			"United States -- Politics and government"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"An Introduction to Philosophy": {
 		"id": 16406,
@@ -595,10 +594,10 @@
 		"full-text": "https://gutenberg.org/cache/epub/16406/pg16406.txt",
 		"subjects": [
 			"Philosophy"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Philosophy"
+		]
 
 	},
 	"The Tattva-Muktavali": {
@@ -612,8 +611,8 @@
 		"subjects": [
 			"Dvaita (Vedanta) -- Early works to 1800",
 			"Hindu philosophy -- Early works to 1800"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Confessions of Al Ghazzali": {
 		"id": 58977,
@@ -627,8 +626,8 @@
 			"Ghazzali, 1058-1111",
 			"Islamic philosophy -- Early works to 1800",
 			"Sufism -- Early works to 1800"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"Plato and the Other Companions of Sokrates, 3rd ed. Volume 4": {
@@ -643,8 +642,8 @@
 			"Philosophy, Ancient",
 			"Plato",
 			"Socrates, 470 BC-399 BC"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The History of Freedom, and Other Essays": {
 		"id": 31278,
@@ -658,8 +657,8 @@
 			"History",
 			"History -- Philosophy",
 			"Liberty -- History"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Categories": {
 		"id": 2412,
@@ -673,11 +672,11 @@
 			"Categories (Philosophy)",
 			"Logic -- Early works to 1800",
 			"Philosophy, Ancient"
-		  ],
-		  "bookshelves": [
-			"Classical Antiquity",
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Classical Antiquity",
+		"Philosophy"
+		]
 	},
 	"The Philosophy and Theology of Averroes": {
 		"id": 65708,
@@ -690,8 +689,8 @@
 		"subjects": [
 			"Islam and philosophy",
 			"Philosophy, Arab"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"The Advancement of Learning": {
@@ -707,10 +706,10 @@
 			"Learning -- Philosophy -- Early works to 1800",
 			"Logic -- Early works to 1800",
 			"Science -- Methodology -- Early works to 1800"
-		  ],
-		  "bookshelves": [
-			"Banned Books from Anne Haight's list"
-		  ]
+		],
+		"bookshelves": [
+		"Banned Books from Anne Haight's list"
+		]
 	},
 	"Fundamental Philosophy, Vol. 1 (of 2)": {
 		"id": 48149,
@@ -722,8 +721,8 @@
 		"full-text": "https://www.gutenberg.org/files/48149/48149-0.txt",
 		"subjects": [
 			"Philosophy, Spanish"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Common Sense Applied to Religion; Or, The Bible and the People": {
 		"id": 55531,
@@ -735,8 +734,8 @@
 		"full-text": "https://www.gutenberg.org/cache/epub/55531/pg55531.txt",
 		"subjects": [
 			"Religion -- Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Four Americans: Roosevelt, Hawthorne, Emerson, Whitman": {
 		"id": 24435,
@@ -751,8 +750,8 @@
 			"Hawthorne, Nathaniel, 1804-1864",
 			"Roosevelt, Theodore, 1858-1919",
 			"Whitman, Walt, 1819-1892"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Greek Philosophers, Vol. 1 (of 2)": {
 		"id": 57126,
@@ -764,8 +763,8 @@
 		"full-text": "https://www.gutenberg.org/files/57126/57126-0.txt",
 		"subjects": [
 			"Philosophy, Ancient"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Father Payne": {
 		"id": 12264,
@@ -779,8 +778,8 @@
 			"Ethics",
 			"Life",
 			"Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Works of George Berkeley. Vol. 1 of 4: Philosophical Works, 1705-21": {
 		"id": 39746,
@@ -792,8 +791,8 @@
 		"full-text": "https://www.gutenberg.org/files/39746/39746.txt",
 		"subjects": [
 			"Philosophy -- Early works to 1800"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The History of Philosophy in Islam": {
 		"id": 66566,
@@ -805,8 +804,8 @@
 		"full-text": "https://www.gutenberg.org/files/66566/66566-0.txt",
 		"subjects": [
 			"Islamic philosophy -- History"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Consolation of Philosophy": {
 		"id": 14328,
@@ -819,10 +818,10 @@
 		"subjects": [
 			"Happiness",
 			"Philosophy and religion"
-		  ],
-		  "bookshelves": [
-			"Classical Antiquity"
-		  ]
+		],
+		"bookshelves": [
+		"Classical Antiquity"
+		]
 	},
 	"Nursing as Caring: A Model for Transforming Practice": {
 		"id": 42988,
@@ -837,8 +836,8 @@
 			"Empathy",
 			"Nursing -- Philosophy",
 			"Nursing models"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Lectures on the Philosophy of the Human Mind (Vol. 1 of 3)": {
 		"id": 43116,
@@ -851,8 +850,8 @@
 		"subjects": [
 			"Philosophy",
 			"Psychology"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"An Historical Sketch of the Conceptions of Memory among the Ancients": {
 		"id": 59995,
@@ -865,8 +864,8 @@
 		"subjects": [
 			"Memory (Philosophy) -- History",
 			"Thesis (Ph. D.)"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Sketch of a New Esthetic of Music": {
 		"id": 31799,
@@ -878,10 +877,10 @@
 		"full-text": "https://www.gutenberg.org/files/31799/31799-0.txt",
 		"subjects": [
 			"Music -- Philosophy and aesthetics"
-		  ],
-		  "bookshelves": [
-			"Music"
-		  ]
+		],
+		"bookshelves": [
+		"Music"
+		]
 	},
 	"Academica": {
 		"id": 14970,
@@ -894,10 +893,10 @@
 		"subjects": [
 			"Knowledge, Theory of -- Early works to 1800",
 			"Philosophy -- Early works to 1800"
-		  ],
-		  "bookshelves": [
-			"Classical Antiquity"
-		  ]
+		],
+		"bookshelves": [
+		"Classical Antiquity"
+		]
 	},
 	"The Scientific Spirit of the Age, and Other Pleas and Discussions": {
 		"id": 64021,
@@ -911,8 +910,8 @@
 			"Knowledge, Sociology of",
 			"Philosophy and religion",
 			"Science -- Moral and ethical aspects"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The philosophy of mathematics": {
 		"id": 57355,
@@ -924,10 +923,10 @@
 		"full-text": "https://gutenberg.org/files/39702/39702-0.txt",
 		"subjects": [
 			"Mathematics -- Philosophy"
-		  ],
-		  "bookshelves": [
-			"Mathematics"
-		  ]
+		],
+		"bookshelves": [
+		"Mathematics"
+		]
 	},
 	"The Analects of Confucius (from the Chinese Classics)": {
 		"id": 3330,
@@ -940,11 +939,11 @@
 		"subjects": [
 			"Ethics -- China",
 			"Philosophy, Chinese"
-		  ],
-		  "bookshelves": [
+		],
+		"bookshelves": [
 			"Banned Books from Anne Haight's list",
 			"Harvard Classics"
-		  ]
+		]
 	},
 	"Æsthetic as science of expression and general linguistic": {
 		"id": 54618,
@@ -958,8 +957,8 @@
 			"Aesthetics",
 			"Language and languages -- Philosophy",
 			"Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Baron d'Holbach : a Study of Eighteenth Century Radicalism in France": {
 		"id": 5621,
@@ -974,8 +973,8 @@
 			"Philosophers -- France -- Biography",
 			"Philosophy, Modern -- 18th century",
 			"Radicalism -- France -- History -- 18th century"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"A Beginner's History of Philosophy, Vol. 1: Ancient and Mediæval Philosophy": {
 		"id": 61651,
@@ -987,8 +986,8 @@
 		"full-text": "https://www.gutenberg.org/files/61651/61651-0.txt",
 		"subjects": [
 			"Philosophy -- History"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"A History of Indian Philosophy, Volume 1": {
 		"id": 12956,
@@ -1001,13 +1000,13 @@
 		"subjects": [
 			"Hindu philosophy",
 			"India -- Religion"
-		  ],
-		  "bookshelves": [
-			"Buddhism",
-			"Hinduism",
-			"India",
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Buddhism",
+		"Hinduism",
+		"India",
+		"Philosophy"
+		]
 	},
 	"Selections from the Principles of Philosophy": {
 		"id": 4391,
@@ -1019,10 +1018,10 @@
 		"full-text": "https://www.gutenberg.org/files/4391/4391.txt",
 		"subjects": [
 			"Philosophy"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Philosophy"
+		]
 	},
 	"The Influence of Darwin on Philosophy, and other essays in contemporary thought": {
 		"id": 51525,
@@ -1036,8 +1035,8 @@
 			"Evolution",
 			"Philosophy",
 			"Pragmatism"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Creative Intelligence: Essays in the Pragmatic Attitude": {
 		"id": 33727,
@@ -1050,8 +1049,8 @@
 		"subjects": [
 			"Philosophy",
 			"Pragmatism"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 
 	},
 	"German philosophy and politics": {
@@ -1064,8 +1063,8 @@
 		"full-text": "https://www.gutenberg.org/files/42208/42208.txt",
 		"subjects": [
 			"Philosophy, German"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Science and Philosophy of the Organism": {
 		"id": 44388,
@@ -1079,8 +1078,8 @@
 			"Biology -- Philosophy",
 			"Organism (Philosophy)",
 			"Science -- Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Philosophy and the Social Problem": {
 		"id": 42880,
@@ -1093,8 +1092,8 @@
 		"subjects": [
 			"Philosophy",
 			"Social problems"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Soul of the Indian: An Interpretation": {
 		"id": 340,
@@ -1108,10 +1107,10 @@
 			"Indian mythology -- North America",
 			"Indian philosophy -- North America",
 			"Indians of North America -- Religion"
-		  ],
-		  "bookshelves": [
-			"Native America"
-		  ]
+		],
+		"bookshelves": [
+		"Native America"
+		]
 	},
 	"A Theological-Political Treatise [Part III]": {
 		"id": 991,
@@ -1125,10 +1124,10 @@
 			"Free thought -- Early works to 1800",
 			"Philosophy and religion -- Early works to 1800",
 			"Political science -- Early works to 1800"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Philosophy"
+		]
 	},
 	"Landmarks of Scientific Socialism: \"Anti-Duehring\"": {
 		"id": 31933,
@@ -1144,8 +1143,8 @@
 			"Economics",
 			"Philosophy",
 			"Socialism"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Initiation into Philosophy": {
 		"id": 9304,
@@ -1157,10 +1156,10 @@
 		"full-text": "https://www.gutenberg.org/files/9304/9304.txt",
 		"subjects": [
 			"Philosophy -- Introductions"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Philosophy"
+		]
 	},
 	"Reflections on War and Death": {
 		"id": 35875,
@@ -1176,8 +1175,8 @@
 			"Psychoanalysis",
 			"Psychoanalysis and culture",
 			"War -- Psychological aspects"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Studies and Essays: Censorship and Art": {
 		"id": 2901,
@@ -1191,8 +1190,8 @@
 			"Art",
 			"Art -- Censorship",
 			"Art -- Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Reform of Education": {
 		"id": 36762,
@@ -1206,8 +1205,8 @@
 			"Education",
 			"Education -- Philosophy",
 			"Gentile, Giovanni, 1875-1944"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Decadence, and Other Essays on the Culture of Ideas": {
 		"id": 46728,
@@ -1220,8 +1219,8 @@
 		"subjects": [
 			"French essays -- Translations into English",
 			"Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Review of the Work of Mr John Stuart Mill Entitled, 'Examination of Sir William Hamilton's Philosophy.'": {
 		"id": 12002,
@@ -1233,10 +1232,10 @@
 		"full-text": "https://www.gutenberg.org/files/12002/12002.txt",
 		"subjects": [
 			"Mill, John Stuart, 1806-1873. Examination of Sir William Hamilton's philosophy"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Philosophy"
+		]
 	},
 	"Plato and the Other Companions of Sokrates, 3rd ed. Volume 3": {
 		"id": 40437,
@@ -3717,7 +3716,7 @@
 			"Aesthetics -- Early works to 1800",
 			"Art -- Philosophy",
 			"Art, Greek"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"The Concept of Nature The Tarner Lectures Delivered in Trinity College, November 1919": {
@@ -3730,7 +3729,7 @@
 			"Knowledge, Theory of",
 			"Nature",
 			"Science -- Philosophy"
-		  ],
+		],
 		"bookshelves": []		
 	},
 	"The Mediaeval Mind (Volume 2 of 2)": {
@@ -3743,7 +3742,7 @@
 			"Civilization, Medieval",
 			"Middle Ages",
 			"Philosophy, Medieval"
-		  ],
+		],
 		"bookshelves": []		
 
 
@@ -3760,7 +3759,7 @@
 			"Philosophy, American -- 19th century",
 			"Royce, Josiah, 1855-1916",
 			"United States -- Civilization -- 1865-1918"
-		  ],
+		],
 		"bookshelves": []	
 
 	},
@@ -3773,7 +3772,7 @@
 		"subjects": [
 			"Christianity -- Philosophy",
 			"Faith and reason -- Christianity"
-		  ],
+		],
 		"bookshelves": []		
 
 	},
@@ -3786,9 +3785,9 @@
 		"subjects": [
 			"Christianity",
 			"Philosophy and religion"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
+		],
+		"bookshelves": [
+		"Philosophy"
 		]		
 	},
 	"Character and Opinion in the United States With Reminiscences of William James and Josiah Royce and Academic Life in America": {
@@ -3803,7 +3802,7 @@
 			"Philosophy, American -- 19th century",
 			"Royce, Josiah, 1855-1916",
 			"United States -- Civilization -- 1865-1918"
-		  ],
+		],
 		"bookshelves": []		
 	},
 	"An Inquiry into the Permanent Causes of the Decline and Fall of Powerful and Wealthy Nations. Designed To Shew How The Prosperity Of The British Empire May Be Prolonged": {
@@ -3816,7 +3815,7 @@
 			"Economics",
 			"Great Britain -- Economic conditions",
 			"History -- Philosophy"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"On the Future of our Educational Institutions; Homer and Classical Philology Complete Works, Volume Three": {
@@ -3831,7 +3830,7 @@
 			"Educational change -- Germany",
 			"Homer",
 			"Nietzsche, Friedrich Wilhelm, 1844-1900 -- Views on education"
-		  ],
+		],
 		"bookshelves": []		
 
 	},
@@ -3843,7 +3842,7 @@
 		"full-text": "https://www.gutenberg.org/files/52263/52263-0.txt",
 		"subjects": [
 			"Philosophy"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"Thoughts on Life and Religion An Aftermath from the Writings of The Right Honourable Professor Max Müller": {
@@ -3857,8 +3856,8 @@
 			"Philosophy",
 			"Religion",
 			"Theology"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"Spencer's Philosophy of Science The Herbert Spencer Lecture Delivered at the Museum 7 November, 1913": {
 		"id": 37513,
@@ -3869,7 +3868,7 @@
 		"subjects": [
 			"Science -- Philosophy",
 			"Spencer, Herbert, 1820-1903"
-		  ],
+		],
 		"bookshelves": []	
 	},
 	"The Sarva-Darsana-Samgraha Or, Review of the Different Systems of Hindu Philosophy": {
@@ -3881,7 +3880,7 @@
 		"subjects": [
 			"Philosophy, Hindu",
 			"Philosophy, Indic"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"On the Popular Judgment That may be Right in Theory, but does not Hold Good in the Praxis": {
@@ -3892,7 +3891,7 @@
 		"full-text": "http://www.gutenberg.org/files/28800/28800_readme.txt",
 		"subjects": [
 			"Philosophy, German"
-		  ],
+		],
 		"bookshelves": []		
 	},
 	"A Pluralistic Universe Hibbert Lectures at Manchester College on the Present Situation in Philosophy": {
@@ -3903,7 +3902,7 @@
 		"full-text": "https://www.gutenberg.org/files/11984/11984.txt",
 		"subjects": [
 			"Philosophy, Modern"
-		  ],
+		],
 		"bookshelves": [
 			"Philosophy"
 		]
@@ -3918,7 +3917,7 @@
 			"Natural theology",
 			"Religion -- Philosophy",
 			"Religion and science"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"The Improvement of Human Reason Exhibited in the Life of Hai Ebn Yokdhan": {
@@ -3929,8 +3928,8 @@
 		"full-text": "https://www.gutenberg.org/cache/epub/16831/pg16831.txt",
 		"subjects": [
 			"Islamic philosophy -- Early works to 1800"
-		  ],
-		  "bookshelves": [
+		],
+		"bookshelves": [
 			"Islam"
 		]		
 	},
@@ -3946,7 +3945,7 @@
 			"Philosophy, Ancient",
 			"Pythagoras",
 			"Pythagoras and Pythagorean school"
-		  ],
+		],
 		"bookshelves": []		
 	},
 	"Philosophical Works, v. 2 (of 4)": {
@@ -3958,7 +3957,7 @@
 		"subjects": [
 			"Knowledge, Theory of",
 			"Philosophy, English -- 18th century"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"Philosophical Works, v. 1 (of 4)": {
@@ -3970,7 +3969,7 @@
 		"subjects": [
 			"Knowledge, Theory of",
 			"Philosophy, English -- 18th century"
-		  ],
+		],
 		"bookshelves": []	
 	},
 	"The Introduction to Hegel's Philosophy of Fine Arts": {
@@ -3982,7 +3981,7 @@
 		"subjects": [
 			"Aesthetics",
 			"Art -- Philosophy"
-		  ],
+		],
 		"bookshelves": []		
 	},
 	"Myth and Science An Essay": {
@@ -3995,7 +3994,7 @@
 			"Myth",
 			"Psychology, Religious",
 			"Religion -- Philosophy"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"The Mediaeval Mind (Volume 1 of 2)": {
@@ -4008,7 +4007,7 @@
 			"Civilization, Medieval",
 			"Middle Ages",
 			"Philosophy, Medieval"
-		  ],
+		],
 		"bookshelves": []
 
 	},
@@ -4024,7 +4023,7 @@
 			"Philosophy, English -- 18th century",
 			"Philosophy, English -- 19th century",
 			"Utilitarianism -- Great Britain -- History"
-		  ],
+		],
 		"bookshelves": []		
 	},
 	"The Joyful Wisdom (La Gaya Scienza)": {
@@ -4035,7 +4034,7 @@
 		"full-text": "https://www.gutenberg.org/files/52881/52881-0.txt",
 		"subjects": [
 			"Philosophy"
-		  ],
+		],
 		"bookshelves": []		
 	},
 	"Reflections on the Rise and Fall of the Ancient Republicks": {
@@ -4047,7 +4046,7 @@
 		"subjects": [
 			"History, Ancient -- Philosophy",
 			"Republics"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"The Development of Metaphysics in Persi": {
@@ -4060,7 +4059,7 @@
 			"Islamic philosophy",
 			"Islamic philosophy -- Iran",
 			"Philosophy, Iranian"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"A Treatise of Human Nature": {
@@ -4071,10 +4070,10 @@
 		"full-text": "https://www.gutenberg.org/files/4705/4705-0.txt",
 		"subjects": [
 			"Knowledge, Theory of"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Philosophy"
+		]
 	},
 	"Ludicrous Aspects Of Christianity": {
 		"id": 36800,
@@ -4085,7 +4084,7 @@
 		"subjects": [
 			"Free thought",
 			"Philosophy and religion"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"Reason and Faith": {
@@ -4097,7 +4096,7 @@
 		"subjects": [
 			"Christianity -- Philosophy",
 			"Faith and reason -- Christianity"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"Philosophy and Religion": {
@@ -4109,10 +4108,10 @@
 		"subjects": [
 			"Christianity",
 			"Philosophy and religion"
-		  ],
-		  "bookshelves": [
-			"Philosophy"
-		  ]
+		],
+		"bookshelves": [
+		"Philosophy"
+		]
 	},
 	"An Inquiry into the Permanent Causes of the Decline and Fall of Powerful and Wealthy Nations": {
 		"id": 16575,
@@ -4124,8 +4123,8 @@
 			"Economics",
 			"Great Britain -- Economic conditions",
 			"History -- Philosophy"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Twilight of the Idols": {
 		"id": 52263,
@@ -4135,7 +4134,7 @@
 		"full-text": "https://www.gutenberg.org/files/52263/52263-0.txt",
 		"subjects": [
 			"Philosophy"
-		  ],
+		],
 		"bookshelves": []
 
 	},
@@ -4150,7 +4149,7 @@
 			"Philosophy",
 			"Religion",
 			"Theology"
-		  ],
+		],
 		"bookshelves": []
 
 	},
@@ -4163,7 +4162,7 @@
 		"subjects": [
 			"Science -- Philosophy",
 			"Spencer, Herbert, 1820-1903"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"The Sarva-Darsana-Samgraha": {
@@ -4175,7 +4174,7 @@
 		"subjects": [
 			"Philosophy, Hindu",
 			"Philosophy, Indic"
-		  ],
+		],
 		"bookshelves": []
 	},
 	"A Pluralistic Universe": {
@@ -4186,8 +4185,8 @@
 		"full-text": "https://www.gutenberg.org/files/11984/11984.txt",
 		"subjects": [
 			"Philosophy, Modern"
-		  ],
-		  "bookshelves": [
+		],
+		"bookshelves": [
 			"Philosophy"
 		]
 	},
@@ -4201,8 +4200,8 @@
 			"Natural theology",
 			"Religion -- Philosophy",
 			"Religion and science"
-		  ],
-		  "bookshelves": []
+		],
+		"bookshelves": []
 	},
 	"The Improvement of Human Reason": {
 		"id": 16831,
@@ -4212,10 +4211,10 @@
 		"full-text": "https://gutenberg.org/cache/epub/16831/pg16831.txt",
 		"subjects": [
 			"Islamic philosophy -- Early works to 1800"
-		  ],
-		  "bookshelves": [
-			"Islam"
-		  ]
+		],
+		"bookshelves": [
+		"Islam"
+		]
 	},
 	"The Psychology of Nations": {
 		"id": 20814,
@@ -4227,8 +4226,8 @@
 			"Education",
 			"History -- Philosophy",
 			"War"
-		  ],
-		  "bookshelves": [
+		],
+		"bookshelves": [
 			"Philosophy"
 		]
 	},
@@ -4242,7 +4241,7 @@
 			"Islamic philosophy",
 			"Islamic philosophy -- Iran",
 			"Philosophy, Iranian"
-		  ],
+		],
 		"bookshelves": []
 	}
 }
