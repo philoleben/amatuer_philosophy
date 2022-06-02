@@ -3,6 +3,8 @@ import requests
 import json
 from pybo.form import UserCreateForm, UserLoginForm
 from pybo.models import User
+from pybo.models import Bookshelf
+
 from .. import db
 
 bp = Blueprint('book', __name__, url_prefix='/')
@@ -33,3 +35,11 @@ def search():
         data = json.loads(response.content)
         books = data['results']
     return render_template('book/results.html', books=books)
+
+@bp.route('/bookshelves/', methods=('GET', 'POST'))
+def bookshelves():
+    user_id = session.get('user_id')
+    if user_id is None:
+        return redirect(url_for('auth.login'))
+    
+    return render_template('book/bookshelves.html')

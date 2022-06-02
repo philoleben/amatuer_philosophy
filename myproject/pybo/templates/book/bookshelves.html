@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+    <!-- 책장 목록 -->
+    {% if book_list %}
+        {% for book in book_list %}
+            <li><a href="{{ url_for('book.detail', book_id=book.id) }}">{{ book.subject }}</a></li>
+        {% endfor %}
+    {% else %}
+        <p>책장에 담긴 책이 없습니다.</p>
+    {% endif %}
+{% endblock %}

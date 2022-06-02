@@ -62,10 +62,5 @@ def logout():
     session.clear()
     return redirect(url_for('main.index'))
 
-@bp.route('/bookshelves/', methods=('GET', 'POST'))
-def bookshelves():
-    user_id = session.get('user_id')
-    if user_id is None:
-        return redirect(url_for('auth.login'))
-    return render_template('auth/bookshelves.html')
+
 

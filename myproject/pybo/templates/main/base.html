@@ -23,7 +23,7 @@
             <div class="Nav-bar">
               <nav class="nav">
                 <a href ="{{ url_for('main.about') }}">About</a>
-                <a href ="{{ url_for('auth.bookshelves') }}">Bookshelves</a>
+                <a href ="{{ url_for('book.bookshelves') }}">Bookshelves</a>
                 <a href ="{{ url_for('question.board') }}">Board</a>
                 <!-- 사용자 로그인 상태-->
                 {% if g.user %}
