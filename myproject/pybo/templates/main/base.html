@@ -7,12 +7,12 @@
         <meta charset="utf-8">
         <title>Boogle - All the books in the world</title>
         <!-- 동적 리소스 파일 로드 -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css')}}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/base_6.css')}}">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&display=swap" rel="stylesheet">
         {% endblock %}
     </head>
     <body>
-      <div class="wrapper">
         <div class="page-header">
           <div class="header-container">
             <a class="logo-container" href ="{{ url_for('main.index') }}">
@@ -36,18 +36,16 @@
               <nav>
             </div>
             <div class="search_box">
-              <form method="get" action="{{ url_for('book.search') }}">
-                  <div>
-                      <label for = "book" class = "form-label"><strong> BOOK SEARCH : </strong></label>
-                      <input type="text" name = 'book' class = "form-control" id="book" rows="3" />
-                  </div>
-                  <button type = "submit" class = "btn btn-light"> <strong>SUBMIT</strong></button>
+              <form class="d-flex" method="get" action="{{ url_for('book.search') }}">
+                  <label for = "book" class = "form-label"></label>
+                  <input type="search" aria-label="Search" name = 'book' class = "form-control me-2 border-dark rounded-0" id="book" rows="3" />
+                  <button type = "submit" class = "btn btn-light border-dark rounded-0"> <strong>Search!</strong></button>
               </form>
             </div>
             <!-- <hr align="left" style="border: solid 3px black; width: 1080px;"> -->
           </div>         
-
         </div>
+      <section class="m-5">   
         <div class="content-container">
           <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-8">
@@ -67,12 +65,15 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="page-bottom">
-        <div class="copyright">
-          Project Boogle - All the books in the world
+      </section> 
+      <!--Footer-->
+      <footer class="py-5 mt-auto">
+        <div class="page-bottom">
+          <div class="copyright">
+            Project Boogle - All the books in the world
+          </div>
         </div>
-      </div>
+      </footer>
       <!-- Bootstrap JS-->
       <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
       <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>

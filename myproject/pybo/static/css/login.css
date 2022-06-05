@@ -1,0 +1,13 @@
+.card-container.card {
+    max-width: 400px;
+    padding: 40px 40px;
+}
+
+.mybtn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
