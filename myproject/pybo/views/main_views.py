@@ -13,7 +13,7 @@ def index():
     f = open('C:\\book.json', 'r', encoding='UTF-8')
     json_data = json.load(f, strict=False)
     print(json.dumps(json_data, indent="\t"))
-        
+                
     return render_template('/main/index.html', books=books)
 
 @bp.route('/about')

@@ -43,3 +43,23 @@ def bookshelves():
         return redirect(url_for('auth.login'))
     
     return render_template('book/bookshelves.html')
+
+@bp.route("/addToCart")
+def addToCart():
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+    else:
+        productId = int(request.args.get('productId'))
+        with sqlite3.connect('database.db') as conn:
+            cur = conn.cursor()
+            cur.execute("SELECT userId FROM users WHERE email = '" + session['email'] + "'")
+            userId = cur.fetchone()[0]
+            try:
+                cur.execute("INSERT INTO kart (userId, productId) VALUES (?, ?)", (userId, productId))
+                conn.commit()
+                msg = "Added successfully"
+            except:
+                conn.rollback()
+                msg = "Error occured"
+        conn.close()
+        return redirect(url_for('root'))
