@@ -10,7 +10,7 @@
 {% block content %}
 <div class="contain num1">
   <div class="slider">
-      <h1>Topic : Buddhism</h1>
+      <h1>Author : Plato</h1>
       <span onmouseover="scrollEsquerda(1)" onmouseout="clearScroll(1)" class="handle handlePrev active">
         <i class="fa fa-caret-left" aria-hidden="true"></i>
       </span>
@@ -20,7 +20,7 @@
           {%for book in books%}
           <div class="gui-card">
             <div class="gui-card__media">
-              <img class="gui-card__img" src="{{book[  'formats'][  'image/jpeg']}}" alt=""/>
+              <img class="gui-card__img" src="{{book['image']}}" alt=""/>
               <div class="gui-card__details">
                 <div class='gui-card__title'>
                   {{book['title']}}
@@ -41,7 +41,7 @@
 </div>
 <div class="contain num2">
   <div class="slider">
-      <h1>Author : Nietzsche</h1>
+      <h1>Download_Count</h1>
       <span onmouseover="scrollEsquerda(2)" onmouseout="clearScroll(2)" class="handle handlePrev active">
         <i class="fa fa-caret-left" aria-hidden="true"></i>
       </span>
@@ -51,7 +51,7 @@
           {%for book in books2%}
           <div class="gui-card">
             <div class="gui-card__media">
-              <img class="gui-card__img" src="{{book[  'formats'][  'image/jpeg']}}" alt=""/>
+              <img class="gui-card__img" src="{{book['image']}}" alt=""/>
               <div class="gui-card__details">
                 <div class='gui-card__title'>
                   {{book['title']}}
@@ -70,7 +70,7 @@
 </div>
 <div class="contain num3">
   <div class="slider">
-      <h1>Popular</h1>
+      <h1>The Philosophy of Spinoza</h1>
       <span onmouseover="scrollEsquerda(3)" onmouseout="clearScroll(3)" class="handle handlePrev active">
         <i class="fa fa-caret-left" aria-hidden="true"></i>
       </span>
@@ -80,7 +80,7 @@
           {%for book in books3%}
           <div class="gui-card">
             <div class="gui-card__media">
-              <img class="gui-card__img" src="{{book[  'formats'][  'image/jpeg']}}" alt=""/>
+              <img class="gui-card__img" src="{{book['image']}}" alt=""/>
               <div class="gui-card__details">
                 <div class='gui-card__title'>
                   {{book['title']}}
