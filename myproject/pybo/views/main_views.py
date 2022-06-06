@@ -16,8 +16,10 @@ def index():
     f = open('C:\\키없는거.json', 'r', encoding='UTF-8')
     json_data = json.load(f, strict=False)
     
+    # f2 = open('C:\\키 있는거.json', 'r', encoding="UTF-8")
+    # json_data2 = json.load(f2, strict=False)
+    
     def recommend_title(text):
-        # a = requests.get(json_data[text]['full-text']).text
         new_vector = model.infer_vector(word_tokenize(text))
         sims = model.dv.most_similar([new_vector])
         return sims
@@ -44,13 +46,22 @@ def index():
     
     books3 = []
     
-    lists = recommend_full_text('The Philosophy of Spinoza')
+    lists = recommend_full_text('Aristotle on the art of poetry')
     lists.pop(0)
+
+    # 키 없는거 사용 
     for book in json_data:
         for t in lists:
             if book['title'] == t[0]:
                 books3.append(book)
-        
+    
+    """
+    키 있는거 
+    for book in lists:
+        books3.append(json_data2[book])
+    
+    """
+
     return render_template('/main/index.html', books=books, books2=books2, books3=books3)
 
 @bp.route('/about')
