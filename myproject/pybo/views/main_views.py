@@ -11,7 +11,10 @@ bp = Blueprint('main', __name__, url_prefix='/')
 @bp.route('/')
 def index():
 
-    books = []
+    
+    temp = []
+    n = 3 # 캐러셀 기준
+    
     model = Doc2Vec.load("C:\\gu.model")
     f = open('C:\\키없는거.json', 'r', encoding='UTF-8')
     json_data = json.load(f, strict=False)
@@ -34,11 +37,15 @@ def index():
         sims = model.dv.most_similar([new_vector])
         return sims
     
+    
     for book in json_data:
         if book['authors'] == 'Plato':
-            books.append(book)
-        books2 = []
+            temp.append(book)
     
+    books = [temp[i * n:(i + 1) * n] for i in range((len(temp) + n - 1) // n)]
+              
+                
+    books2 = []
     a = sorted(json_data, key = lambda x: x['download_count'], reverse=True)
     
     for i in range(10):
