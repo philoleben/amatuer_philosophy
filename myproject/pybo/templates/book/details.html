@@ -4,8 +4,12 @@
 {{ super() }}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/carousel.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/details2.css')}}">
+<script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
 {% endblock %}
 
 {% block content %}
@@ -14,26 +18,31 @@
     <div class="container px-4 px-lg-5 my-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <header class="mb-4">
-                <!-- Book title-->
-                <h1 class="fw-bolder mb-1">Book Title{{ title }}</h1>
-                <!-- Book categories-->
-                <a class="badge bg-secondary text-decoration-none link-light" href="{{ topic }}"></a>
+                <!--Book title-->
+                <h1 class="fw-bolder mb-1 ml-5">Book Title</h1>
             </header>
-            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/300x400/9c9c9c/ffffff" alt="" /></div>
+            <!--Book cover-->
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0 ml-3" src="https://dummyimage.com/300x400/9c9c9c/ffffff" alt="" /></div>
+            <!--Book info-->
             <div class="col-md-6">
-                <div class="fs-5 mt-5 mb-4">
-                    <span>Author: {{ authors }}</span>
+                <div class="fs-5 mt-5 mb-4 ml-5">
+                    <span>Author: </span>
+                </div>
+                <div class="fs-5 mb-4 ml-5">
+                    <span>Id: </span>
+                </div>
+                <div class="fs-5 mb-4 ml-5">
+                    <span>Rating: </span>
+                </div>
+                <div class="fs-5 mb-4 ml-5">
+                    <span>Download count: </span>
                 </div>
                 <div class="fs-5 mb-4">
-                    <span>Language: {{ languages }}</span>
-                </div>
-                <div class="fs-5 mb-4">
-                    <span>Ids: {{ ids }}</span>
-                </div>
-                <div class="fs-5 mb-4">
-                    <button class="btn btn-outline-light flex-shrink-0" type="button">
-                        <i class="bi-cart-fill me-1"></i>
+                    <button class="btn btn-outline-dark flex-shrink-0 ml-5" style="width:194px;" type="button">
                         Read to E-book
+                    </button>
+                    <button class="btn btn-outline-dark flex-shrink-0 ml-5 mt-2" type="button">
+                        Add to my bookshelves
                     </button>
                 </div>
             </div>
@@ -42,116 +51,222 @@
 </section>
 <hr class="featurette-divider">
 
-<!-- Book summary content-->
+<!--Book summary content-->
 <section class="mb-5">
-    <div class="container-fluid">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <h1 class="fw-bolder mb-4 mt-5">Full Summary</h1>
-                    <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
-                    <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                    <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<hr class="featurette-divider">
-
-<!--Maybe you'll like it content-->
-<section class="mb-5">
-    <div class="container-fluid">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <h1 class="fw-bolder mb-4 mt-5">Maybe you'll like it...</h1>
-        </div>
-    </div>
-</section>
-<div class="top-content">
-    <div class="container-fluid">
-        <div id="carousel-example" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                {%for book in books2%}
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+                <h1 class="fw-bolder mb-4 mt-5 text-center">Full Summary</h1>
+                <div class="card card-container shadow bg-body border border-dark rounded-0">
+                    <p class="fs-5 m-4 text-left" style="font-size=5px;">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
+                    <p class="fs-5 m-4 text-left" style="font-size=5px;">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                    <p class="fs-5 m-4 text-left" style="font-size=5px;">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
                 </div>
-                {%endfor%}
-            </div>
-            <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-</div>
-
-
-<hr class="featurette-divider">
-
-<!--This author's other books-->
-<section class="mb-5">
-    <div class="container-fluid">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <h1 class="fw-bolder mb-4 mt-5">This author's other books</h1>
         </div>
     </div>
 </section>
-<div class="top-content">
-    <div class="container-fluid">
-        <div id="carousel-example2" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                {%for book in books2%}
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                    <img src="{{book[  'formats'][  'image/jpeg']}}" class="img-fluid mx-auto d-block" alt="">
+
+<hr class="featurette-divider">
+
+<!--Book content-->
+<section class="mb-5">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+                <h1 class="fw-bolder mb-4 mt-5 text-center">Contents</h1>
+                <div class="card card-container float-center shadow bg-body border border-dark rounded-0">
+                    <pre class="text-left" style="font-size=5px;">
+                Chapter 1. Prejudices of Philosophers
+                Chapter 2. The Free Spirit
+                Chapter 3. The Religious Mood
+                Chapter 4. We Scholars
+                    </pre>
                 </div>
-                {%endfor%}
-            </div>
-            <a class="carousel-control-prev" href="#carousel-example2" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-example2" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-
-    </div>
-</div>
-
-<hr class="featurette-divider">
-
-<!--Who is this author-->
-<section class="mb-5">
-    <div class="container-fluid">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <h1 class="fw-bolder mb-4 mt-5">Who is this author?</h1>
-            </div>
         </div>
     </div>
 </section>
-<section class="mb-5">
-    <div class="row featurette">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                        <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
-                        <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+
+
+<hr class="featurette-divider">
+
+<!--Related books carousel-->
+<section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <h1 class="fw-bolder mb-2 text-center">Related Books</h1>
+            <!--carousel button-->
+            <div class="col-12 text-right">
+                <div class="col-6 carousel-controller" style="float:right;">
+                <a class="btn btn-outline-dark rounded-0 mb-3" style="float:right;" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+                <a class="btn btn-outline-dark rounded-0 mb-3" style="float:right; margin-right:4px;" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <i class="bi bi-chevron-left"></i>
+                </a>
+                </div>
+            </div>
+            <!--carousel content cards-->
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <!--first slide-->
+                        <div class="carousel-item active">
+                            <div class="row"> 
+                              {%for book in range(1, 4)%}
+                              <div class="col-md-4 mb-3">
+                                    <div class="card shadow bg-body">
+                                        <div class="card-body bg-secondary text-center">
+                                            <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                        </div>
+                                        <div class="card-body border border-dark">
+                                            <h4 class="card-title text-center">{{book}}, <br> {{book}}</h4>
+                                            <div class="icon-block">
+                                                <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="#"><i class="bi bi-heart-fill"></i></a>
+                                                <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="#"><i class="bi bi-plus-lg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                              </div>
+                              {%endfor%}
+                            </div>
+                          </div>
+                        <!--seconde slide-->
+                        <div class="carousel-item">
+                          <div class="row">
+                            {%for book in range(4, 7)%} 
+                            <div class="col-md-4 mb-3">
+                                  <div class="card shadow bg-body">
+                                      <div class="card-body bg-secondary text-center">
+                                          <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                      </div>
+                                      <div class="card-body border border-dark">
+                                          <h4 class="card-title text-center">{{book}}, <br> {{book}}</h4>
+                                          <div class="icon-block">
+                                              <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="#"><i class="bi bi-heart-fill"></i></a>
+                                              <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="#"><i class="bi bi-plus-lg"></i></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                            </div>
+                            {%endfor%}
+                          </div>
+                        </div>
+                        <!--third slide-->
+                        <div class="carousel-item">
+                            <div class="row"> 
+                              {%for book in range(7, 10)%}
+                              <div class="col-md-4 mb-3">
+                                  <div class="card shadow bg-body">
+                                      <div class="card-body bg-secondary text-center">
+                                          <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                      </div>
+                                      <div class="card-body border border-dark">
+                                          <h4 class="card-title text-center">{{book}}, <br> {{book}}</h4>
+                                          <div class="icon-block">
+                                              <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="#"><i class="bi bi-heart-fill"></i></a>
+                                              <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="#"><i class="bi bi-plus-lg"></i></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              {%endfor%}
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-5 order-md-1">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="featurette-divider">
+
+<!--This author's other books carousel-->
+<section class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <h1 class="fw-bolder mb-2 text-center">This Author's Other Books</h1>
+            <!--carousel button-->
+            <div class="col-12 text-right">
+                <div class="col-6 carousel-controller" style="float:right;">
+                <a class="btn btn-outline-dark rounded-0 mb-3" style="float:right;" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+                <a class="btn btn-outline-dark rounded-0 mb-3" style="float:right; margin-right:4px;" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                    <i class="bi bi-chevron-left"></i>
+                </a>
+                </div>
+            </div>
+            <!--carousel content cards-->
+            <div class="col-12">
+                <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <!--first slide-->
+                        <div class="carousel-item active">
+                            <div class="row"> 
+                              {%for book in range(1, 4)%}
+                              <div class="col-md-4 mb-3">
+                                    <div class="card shadow bg-body">
+                                        <div class="card-body bg-secondary text-center">
+                                            <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                        </div>
+                                        <div class="card-body border border-dark">
+                                            <h4 class="card-title text-center">{{book}}, <br> {{book}}</h4>
+                                            <div class="icon-block">
+                                                <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="#"><i class="bi bi-heart-fill"></i></a>
+                                                <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="#"><i class="bi bi-plus-lg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                              </div>
+                              {%endfor%}
+                            </div>
+                          </div>
+                        <!--seconde slide-->
+                        <div class="carousel-item">
+                          <div class="row">
+                            {%for book in range(4, 7)%} 
+                            <div class="col-md-4 mb-3">
+                                  <div class="card shadow bg-body">
+                                      <div class="card-body bg-secondary text-center">
+                                          <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                      </div>
+                                      <div class="card-body border border-dark">
+                                          <h4 class="card-title text-center">{{book}}, <br> {{book}}</h4>
+                                          <div class="icon-block">
+                                              <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="#"><i class="bi bi-heart-fill"></i></a>
+                                              <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="#"><i class="bi bi-plus-lg"></i></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                            </div>
+                            {%endfor%}
+                          </div>
+                        </div>
+                        <!--third slide-->
+                        <div class="carousel-item">
+                            <div class="row"> 
+                              {%for book in range(7, 10)%}
+                              <div class="col-md-4 mb-3">
+                                  <div class="card shadow bg-body">
+                                      <div class="card-body bg-secondary text-center">
+                                          <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                      </div>
+                                      <div class="card-body border border-dark">
+                                          <h4 class="card-title text-center">{{book}}, <br> {{book}}</h4>
+                                          <div class="icon-block">
+                                              <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="#"><i class="bi bi-heart-fill"></i></a>
+                                              <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="#"><i class="bi bi-plus-lg"></i></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              {%endfor%}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 {% endblock %}
