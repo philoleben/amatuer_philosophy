@@ -43,7 +43,6 @@ def index():
             temp.append(book)
     
     books = [temp[i * n:(i + 1) * n] for i in range((len(temp) + n - 1) // n)]
-              
                 
     books2 = []
     a = sorted(json_data, key = lambda x: x['download_count'], reverse=True)
@@ -68,7 +67,8 @@ def index():
         books3.append(json_data2[book])
     
     """
-
+    print(json.dumps(books2, indent="\t") )
+    
     return render_template('/main/index.html', books=books, books2=books2, books3=books3)
 
 @bp.route('/about')
