@@ -39,7 +39,7 @@ def index():
     
     
     for book in json_data:
-        if book['authors'] == 'Various':
+        if book['authors'] == 'Plato':
             books.append(book)
     
               

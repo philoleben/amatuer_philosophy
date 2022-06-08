@@ -19,23 +19,25 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <header class="mb-4">
                 <!--Book title-->
-                <h1 class="fw-bolder mb-1 ml-5">Book Title</h1>
+                <h1 class="fw-bolder mb-1 ml-5">{{book['title']}}</h1>
             </header>
             <!--Book cover-->
-            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0 ml-3" src="https://dummyimage.com/300x400/9c9c9c/ffffff" alt="" /></div>
+            <div class="col-md-6">
+                <img class="card-img-top mb-5 mb-md-0 ml-3" src={{book['image']}} alt="" />
+            </div>
             <!--Book info-->
             <div class="col-md-6">
                 <div class="fs-5 mt-5 mb-4 ml-5">
-                    <span>Author: </span>
+                    <span>Author: {{book['authors']}}</span>
                 </div>
                 <div class="fs-5 mb-4 ml-5">
-                    <span>Id: </span>
+                    <span>Id: {{book['id']}}</span>
                 </div>
                 <div class="fs-5 mb-4 ml-5">
-                    <span>Rating: </span>
+                    <span>Rating: {{book['rating']}}</span>
                 </div>
                 <div class="fs-5 mb-4 ml-5">
-                    <span>Download count: </span>
+                    <span>Download count: {{book['download_count']}}</span>
                 </div>
                 <div class="fs-5 mb-4">
                     <button class="btn btn-outline-dark flex-shrink-0 ml-5" style="width:194px;" type="button">
@@ -55,11 +57,9 @@
 <section class="mb-5">
     <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
-                <h1 class="fw-bolder mb-4 mt-5 text-center">Full Summary</h1>
+                <h1 class="fw-bolder mb-4 mt-5 text-center">Description</h1>
                 <div class="card card-container shadow bg-body border border-dark rounded-0">
-                    <p class="fs-5 m-4 text-left" style="font-size=5px;">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
-                    <p class="fs-5 m-4 text-left" style="font-size=5px;">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                    <p class="fs-5 m-4 text-left" style="font-size=5px;">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                    <p class="fs-5 m-4 text-left" style="font-size=5px;">{{book['description']}}</p>
                 </div>
         </div>
     </div>

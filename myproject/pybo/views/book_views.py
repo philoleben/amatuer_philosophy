@@ -9,22 +9,14 @@ from .. import db
 
 bp = Blueprint('book', __name__, url_prefix='/')
 
-@bp.route('/details/')
-def details():
+@bp.route('/details/<int:book_id>')
+def details(book_id):
     
-    title = 'dickens%20great'
-    response = requests.get("http://gutendex.com/books/?search="+title)
-    data = json.loads(response.content)
-    books = []
-    books = data['results']
-    
-    author = 'nietzsche'
-    response = requests.get("http://gutendex.com/books/?search="+author)
-    data = json.loads(response.content)
-    books2 = []
-    books2 = data['results']   
+    f = open('C:\\키없는거.json', 'r', encoding='UTF-8')
+    json_data = json.load(f, strict=False)
+    book = json_data[book_id]
         
-    return render_template('book/details.html', books=books, books2=books2)
+    return render_template('book/details.html',  book=book)
 
 @bp.route('/search/')
 def search():
@@ -42,14 +34,15 @@ def bookshelves():
     if user_id is None:
         return redirect(url_for('auth.login'))
     
+
     return render_template('book/bookshelves.html')
 
-@bp.route("/addToCart")
-def addToCart():
+@bp.route("/addToBookshelves")
+def addToBookshelves():
     if 'user_id' not in session:
         return redirect(url_for('login'))
     else:
-        productId = int(request.args.get('productId'))
+        bookId = int(request.args.get('productId'))
         with sqlite3.connect('database.db') as conn:
             cur = conn.cursor()
             cur.execute("SELECT userId FROM users WHERE email = '" + session['email'] + "'")
