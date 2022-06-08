@@ -42,7 +42,6 @@ def index():
         if book['authors'] == 'Plato':
             books.append(book)
     
-              
                 
     books2 = []
     a = sorted(json_data, key = lambda x: x['download_count'], reverse=True)
@@ -67,7 +66,7 @@ def index():
         books3.append(json_data2[book])
     
     """
-    print(json.dumps(books2, indent="\t") )
+    print(json.dumps(books, indent="\t") )
     
     return render_template('/main/index.html', books=books, books2=books2, books3=books3)
 

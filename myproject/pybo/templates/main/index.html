@@ -41,9 +41,9 @@
                                 {%for book in books[0:3]%}
                                 <div class="col-md-4 mb-3">
                                       <div class="card shadow bg-body">
-                                          <div class="card-body bg-secondary text-center">
+                                          <a class="card-body bg-secondary text-center" href="{{ url_for('book.details', book_id=book['id'] )}}">
                                               <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
-                                          </div>
+                                          </a>
                                           <div class="card-body border border-dark">
                                               <h4 class="card-title text-center">{{book['title']}} <br> {{book['authors']}}</h4>
                                               <div class="icon-block">
@@ -63,9 +63,9 @@
                               {%for book in books[idx:idx+3]%} 
                               <div class="col-md-4 mb-3">
                                     <div class="card shadow bg-body">
-                                        <div class="card-body bg-secondary text-center">
+                                        <a class="card-body bg-secondary text-center" href="{{ url_for('book.details', book_id=book['id'] )}}">
                                             <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
-                                        </div>
+                                        </a>
                                         <div class="card-body border border-dark">
                                             <h4 class="card-title text-center">{{book['title']}} <br> {{book['authors']}}</h4>
                                             <div class="icon-block">
