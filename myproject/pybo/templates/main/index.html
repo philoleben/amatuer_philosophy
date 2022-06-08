@@ -53,8 +53,6 @@
                                           </div>
                                       </div>
                                 </div>
-                                {%endfor%}
-                              </div>
                             </div>
                           <!--seconde slide-->
                           {%for idx in range(3, books|length, 3)%}
@@ -64,7 +62,7 @@
                               <div class="col-md-4 mb-3">
                                     <div class="card shadow bg-body">
                                         <div class="card-body bg-secondary text-center">
-                                            <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                            <img class="img-fluid" src="static/images/harrypotter.jpg" style="height:200px;" alt="book_cover">
                                         </div>
                                         <div class="card-body border border-dark">
                                             <h4 class="card-title text-center">{{book['title']}} <br> {{book['authors']}}</h4>

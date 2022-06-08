@@ -14,7 +14,6 @@ def index():
     
     temp = []
     books = []
-    n = 3 # 캐러셀 기준
     
     model = Doc2Vec.load("C:\\gu.model")
     f = open('C:\\키없는거.json', 'r', encoding='UTF-8')
@@ -68,7 +67,8 @@ def index():
         books3.append(json_data2[book])
     
     """
-
+    print(json.dumps(books2, indent="\t") )
+    
     return render_template('/main/index.html', books=books, books2=books2, books3=books3)
 
 @bp.route('/about')
