@@ -38,14 +38,14 @@
                           <!--first slide-->
                           <div class="carousel-item active">
                               <div class="row"> 
-                                {%for book in range(1, 4)%}
+                                {%for book in books[0:3]%}
                                 <div class="col-md-4 mb-3">
                                       <div class="card shadow bg-body">
                                           <div class="card-body bg-secondary text-center">
                                               <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
                                           </div>
                                           <div class="card-body border border-dark">
-                                              <h4 class="card-title text-center">{{book}}, <br> {{book}}</h4>
+                                              <h4 class="card-title text-center">{{book['title']}} <br> {{book['authors']}}</h4>
                                               <div class="icon-block">
                                                   <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="#"><i class="bi bi-heart-fill"></i></a>
                                                   <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="#"><i class="bi bi-plus-lg"></i></a>
@@ -57,16 +57,18 @@
                               </div>
                             </div>
                           <!--seconde slide-->
+                          {%for idx in range(3, books|length, 3)%}
                           <div class="carousel-item">
                             <div class="row">
-                              {%for book in range(4, 7)%} 
+                              {%for book in books[idx:idx + 3]%} 
                               <div class="col-md-4 mb-3">
                                     <div class="card shadow bg-body">
                                         <div class="card-body bg-secondary text-center">
                                             <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
                                         </div>
                                         <div class="card-body border border-dark">
-                                            <h4 class="card-title text-center">{{book}}, <br> {{book}}</h4>
+                                            <h4 class="card-title text-center">{{book['title']}} <br> {{book['authors']}}</h4>
+                                            
                                             <div class="icon-block">
                                                 <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="#"><i class="bi bi-heart-fill"></i></a>
                                                 <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="#"><i class="bi bi-plus-lg"></i></a>
@@ -77,27 +79,7 @@
                               {%endfor%}
                             </div>
                           </div>
-                          <!--third slide-->
-                          <div class="carousel-item">
-                              <div class="row"> 
-                                {%for book in range(7, 10)%}
-                                <div class="col-md-4 mb-3">
-                                    <div class="card shadow bg-body">
-                                        <div class="card-body bg-secondary text-center">
-                                            <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
-                                        </div>
-                                        <div class="card-body border border-dark">
-                                            <h4 class="card-title text-center">{{book}}, <br> {{book}}</h4>
-                                            <div class="icon-block">
-                                                <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="#"><i class="bi bi-heart-fill"></i></a>
-                                                <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="#"><i class="bi bi-plus-lg"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                {%endfor%}
-                              </div>
-                          </div>
+                          {%endfor%}
                       </div>
                   </div>
               </div>

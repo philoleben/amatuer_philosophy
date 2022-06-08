@@ -13,6 +13,7 @@ def index():
 
     
     temp = []
+    books = []
     n = 3 # 캐러셀 기준
     
     model = Doc2Vec.load("C:\\gu.model")
@@ -39,10 +40,9 @@ def index():
     
     
     for book in json_data:
-        if book['authors'] == 'Plato':
-            temp.append(book)
+        if book['authors'] == 'Various':
+            books.append(book)
     
-    books = [temp[i * n:(i + 1) * n] for i in range((len(temp) + n - 1) // n)]
               
                 
     books2 = []
