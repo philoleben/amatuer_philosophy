@@ -2,57 +2,17 @@
 {% block head %}
 {{ super() }}
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
 {% endblock %}
 {% block content %}
 <div class="container my-3">
     <table class="table">
-        <!-- 페이징처리 시작 -->
-        <ul class="pagination justify-content-center">
-            <!-- 이전페이지 -->
-            {% if question_list.has_prev %}
-            <li class="page-item">
-                <a class="page-link" href="?page={{ question_list.prev_num }}">이전</a>
-            </li>
-            {% else %}
-            <li class="page-item disabled">
-                <a class="page-link" tabindex="-1" aria-disabled="true" href="javascript:void(0)">이전</a>
-            </li>
-            {% endif %}
-            {% for page_num in question_list.iter_pages() %}
-            {% if page_num %}
-            {% if page_num != question_list.page %}
-            <li class="page-item">
-                <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
-            </li>
-            {% else %}
-            <li class="page-item active" aria-current="page">
-                <a class="page-link" href="javascript:void(0)">{{ page_num }}</a>
-            </li>
-            {% endif %}
-            {% else %}
-            <li class="disabled">
-                <a class="page-link" href="javascript:void(0)">...</a>
-            </li>
-            {% endif %}
-            {% endfor %}
-            <!-- 다음페이지 -->
-            {% if question_list.has_next %}
-            <li class="page-item">
-                <a class="page-link" href="?page={{ question_list.next_num }}">다음</a>
-            </li>
-            {% else %}
-            <li class="page-item disabled">
-                <a class="page-link" tabindex="-1" aria-disabled="true" href="javascript:void(0)">다음</a>
-            </li>
-            {% endif %}
-        </ul>
-        <!-- 페이징처리 끝 -->
         <thead>
-        <tr class="text-center table-dark">
-            <th>번호</th>
-            <th style="width:50%">제목</th>
-            <th>글쓴이</th>
-            <th>작성일시</th>
+        <tr class="text-center table-light border border-dark border-2 shadow bg-body">
+            <th>No.</th>
+            <th style="width:50%">Title</th>
+            <th>User</th>
+            <th>Date</th>
         </tr>
         </thead>
         <tbody>
@@ -61,7 +21,7 @@
         <tr class="text-center">
             <td>{{ question_list.total - ((question_list.page-1) * question_list.per_page) - loop.index0 }}</td>
             <td class="text-start">
-                <a href="46.
+                <a href="46."</a> <!--What is this?-->
                 {% if question.answer_set|length > 0 %}
                 <span class="text-danger small mx-2">{{ question.answer_set|length }}</span>
                 {% endif %}
@@ -77,6 +37,47 @@
         {% endif %}
         </tbody>
     </table>
-    <a href="{{ url_for('question.create') }}" class="btn btn-primary">글쓰기</a>
+    <!--페이징처리 시작 -->
+    <ul class="pagination my justify-content-center">
+        <!-- 이전페이지 -->
+        {% if question_list.has_prev %}
+        <li class="page-item">
+            <a class="page-link text-dark border border-dark border-2 rounded-0" href="?page={{ question_list.prev_num }}" aria-hidden="true">Previous</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link text-dark border border-dark border-2 rounded-0" tabindex="-1" aria-disabled="true" href="javascript:void(0)">Previous</a>
+        </li>
+        {% endif %}
+        {% for page_num in question_list.iter_pages() %}
+        {% if page_num %}
+        {% if page_num != question_list.page %}
+        <li class="page-item">
+            <a class="page-link text-dark bg-transparent border border-0" href="?page={{ page_num }}">{{ page_num }}</a>
+        </li>
+        {% else %}
+        <li class="page-item active" aria-current="page">
+            <a class="page-link text-white bg-transparent border border-0" href="javascript:void(0)">{{ page_num }}</a>
+        </li>
+        {% endif %}
+        {% else %}
+        <li class="disabled">
+            <a class="page-link text-dark bg-transparent border border-0" href="javascript:void(0)">...</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        <!-- 다음페이지 -->
+        {% if question_list.has_next %}
+        <li class="page-item">
+            <a class="page-link text-dark border border-dark border-2 rounded-0" href="?page={{ question_list.next_num }}">Next</a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+            <a class="page-link text-dark border border-dark border-2 rounded-0" tabindex="-1" aria-disabled="true" href="javascript:void(0)">Next</a>
+        </li>
+        {% endif %}
+    </ul>
+    <!-- 페이징처리 끝 -->
+    <a href="{{ url_for('question.create') }}" class="btn btn-light border border-dark border-2 rounded-0 font-weight-bold" style="float:right;">글쓰기</a>
 </div>
 {% endblock %}
