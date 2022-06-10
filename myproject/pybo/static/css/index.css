@@ -2,3 +2,6 @@
     height: 60px;
     object-fit: cover;
 }
+.card-title a{
+    text-decoration: none;
+}

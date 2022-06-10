@@ -29,7 +29,7 @@ class Book(db.Model):
 
 class Bookshelf(db.Model): 
     __tablename__ = 'bookshelf'   #테이블 이름 : bookshelf
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     userid = db.Column(db.Integer, db.ForeignKey('user.id', ondelete='CASCADE'))
     bookid = db.Column(db.Integer, db.ForeignKey('book.id', ondelete='CASCADE'))
     

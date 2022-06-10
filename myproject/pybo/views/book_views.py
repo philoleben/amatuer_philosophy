@@ -4,6 +4,7 @@ import json
 from pybo.form import UserCreateForm, UserLoginForm
 from pybo.models import User
 from pybo.models import Bookshelf
+from pybo.views.auth_views import login_required
 
 from .. import db
 
@@ -34,25 +35,23 @@ def bookshelves():
     if user_id is None:
         return redirect(url_for('auth.login'))
     
+    books = []
+    books = Bookshelf.query.filter_by(userid=user_id)
+    books.all()
+    print(books)
+    return render_template('book/bookshelves.html', books=books)
 
-    return render_template('book/bookshelves.html')
+@bp.route("/addToBookshelves/<int:book_id>")
+@login_required
+def addToBookshelves(book_id):
 
-@bp.route("/addToBookshelves")
-def addToBookshelves():
-    if 'user_id' not in session:
-        return redirect(url_for('login'))
+    print(book_id)
+    user_id = session.get('user_id')
+    book = Bookshelf.query.filter_by(userid=user_id,bookid=book_id).first()
+    if not book:
+        bookshelf = Bookshelf(userid=user_id,bookid=book_id)
+        db.session.add(bookshelf)
+        db.session.commit()
     else:
-        bookId = int(request.args.get('productId'))
-        with sqlite3.connect('database.db') as conn:
-            cur = conn.cursor()
-            cur.execute("SELECT userId FROM users WHERE email = '" + session['email'] + "'")
-            userId = cur.fetchone()[0]
-            try:
-                cur.execute("INSERT INTO kart (userId, productId) VALUES (?, ?)", (userId, productId))
-                conn.commit()
-                msg = "Added successfully"
-            except:
-                conn.rollback()
-                msg = "Error occured"
-        conn.close()
-        return redirect(url_for('root'))
+        flash('Already Added.')    
+    return redirect(url_for('main.index'))

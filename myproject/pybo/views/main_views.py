@@ -37,12 +37,10 @@ def index():
         sims = model.dv.most_similar([new_vector])
         return sims
     
-    
     for book in json_data:
         if book['authors'] == 'Plato':
             books.append(book)
     
-                
     books2 = []
     a = sorted(json_data, key = lambda x: x['download_count'], reverse=True)
     
