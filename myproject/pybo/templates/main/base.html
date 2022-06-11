@@ -74,11 +74,16 @@
           </div>
         </div>
       </footer>
+
+      <!-- 자바스크립트 Start -->
+      {% block script %}
       <!-- Bootstrap JS-->
       <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
       <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
       <script src="{{ url_for('static', filename='js/jquery-migrate-3.0.0.min.js')}}"></script>
       <script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
+      {% endblock %}
+      <!-- 자바스크립트 End -->
     </body>
 
 </html>

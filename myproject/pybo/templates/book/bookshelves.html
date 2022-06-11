@@ -4,9 +4,23 @@
     <!-- 책장 목록 -->
     {% if books %}
         {% for book in books %}
-            <li><a href="{{ url_for('book.details', book_id=book.id) }}">{{ book_id }}</a></li>
+            <li><a href="{{ url_for('book.details', book_id=book['bookid']) }}">{{ book.bookid }}</a></li>
+            <a href="javascript:void(0)" class="delete btn btn-sm btn-outline-secondary"
+            data-uri="{{ url_for('book.delete', bookshelf_id=book['id']) }}">Remove</a>
         {% endfor %}
     {% else %}
-        <p>책장에 담긴 책이 없습니다.</p>
+        <p>Add a book, and get another book recommendation!</p>
     {% endif %}
+    {% block script %}
+    <script type='text/javascript'>
+    const delete_elements = document.getElementsByClassName("delete");
+    Array.from(delete_elements).forEach(function(element) {
+        element.addEventListener('click', function() {
+            if(confirm("Are you sure you want to remove?")) {
+                location.href = this.dataset.uri;
+            };
+        });
+    });
+    </script>
+    {% endblock %}
 {% endblock %}
