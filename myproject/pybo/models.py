@@ -19,13 +19,8 @@ class Categories(db.Model):
 class Book(db.Model):
     __tablename__ = 'book'   #테이블 이름 : user
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(200), nullable=False)
-    authors = db.Column(db.String(200), nullable=False)
-    image = db.Column(db.Text())
-    downloadcount = db.Column(db.Integer)
-    grade = db.Column(db.Integer)
-    categoryid = db.Column(db.Integer, db.ForeignKey('categories.id', ondelete='CASCADE'))
-            
+    voter = db.relationship('User', secondary='book_voter', backref=db.backref('book_voter_set'))
+
 
 class Bookshelf(db.Model): 
     __tablename__ = 'bookshelf'   #테이블 이름 : bookshelf
@@ -49,3 +44,9 @@ class Answer(db.Model):
     create_date = db.Column(db.DateTime(), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id', ondelete='CASCADE'), nullable=False)
     user = db.relationship('User', backref=db.backref('answer_set'))
+    
+book_voter = db.Table(
+    'book_voter',
+    db.Column('user_id', db.Integer, db.ForeignKey('user.id', ondelete='CASCADE'), primary_key=True),
+    db.Column('book_id', db.Integer, db.ForeignKey('book.id', ondelete='CASCADE'), primary_key=True)
+)

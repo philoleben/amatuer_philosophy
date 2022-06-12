@@ -3,7 +3,7 @@ import requests
 import json
 from pybo.form import UserCreateForm, UserLoginForm
 from pybo.models import User
-from pybo.models import Bookshelf
+from pybo.models import Bookshelf, Book
 from pybo.views.auth_views import login_required
 
 from .. import db
@@ -47,7 +47,7 @@ def addToBookshelves(book_id):
 
     print(book_id)
     user_id = session.get('user_id')
-    book = Bookshelf.query.filter_by(userid=user_id,bookid=book_id).first()
+    book = Bookshelf.query.filter_by(userid=user_id,bookid=book_id).first() # 이미 저장된 데이터인지 확인
     if not book:
         bookshelf = Bookshelf(userid=user_id,bookid=book_id)
         db.session.add(bookshelf)
@@ -55,7 +55,6 @@ def addToBookshelves(book_id):
         flash('Added Successfully.')   
     else:
         flash('Already Added.')    
-        
         
     return redirect(url_for('main.index'))
 
@@ -67,3 +66,11 @@ def delete(bookshelf_id):
     db.session.delete(book)
     db.session.commit()
     return redirect(url_for('book.bookshelves'))
+
+@bp.route('/vote/<int:book_id>/')
+@login_required
+def vote(book_id):
+    _book = Book.query.get_or_404(book_id)
+    _book.voter.append(g.user)
+    db.session.commit()
+    return redirect(url_for('main.index'))

@@ -47,7 +47,8 @@
                                     <div class="card-body border border-dark">
                                         <h4 class="card-title text-center"><a href="{{ url_for('book.details', book_id=book['id'] )}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h4>
                                         <div class="icon-block">
-                                            <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="{{ url_for('book.addToBookshelves', book_id=book['id'] )}}"><i class="bi bi-heart-fill"></i></a>
+                                            <a class="recommend btn btn-outline-dark rounded-circle" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill"></i>
+                                                <span class="badge rounded-pill bg-success">{{ book.voter|length }}</span></a>                                            
                                             <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="{{ url_for('book.addToBookshelves', book_id=book['id'] )}}"><i class="bi bi-plus-lg"></i></a>
                                         </div>
                                     </div>
@@ -67,10 +68,11 @@
                                         <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
                                     </a>
                                     <div class="card-body border border-dark">
-                                        <h4 class="card-title text-center">{{book['title']}} <br> {{book['authors']}}</h4>
+                                        <h4 class="card-title text-center"><a href="{{ url_for('book.details', book_id=book['id'] )}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h4>
                                         <div class="icon-block">
-                                            <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="#"><i class="bi bi-heart-fill"></i></a>
-                                            <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="#"><i class="bi bi-plus-lg"></i></a>
+                                            <a class="recommend btn btn-outline-dark rounded-circle" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill"></i>
+                                                <span class="badge rounded-pill bg-success">{{ book.voter|length }}</span></a>
+                                            <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="{{ url_for('book.addToBookshelves', book_id=book['id'] )}}"><i class="bi bi-plus-lg"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -162,7 +164,18 @@
         </div>
     </div>
 </section>
-
+{% block script %}
+<script type='text/javascript'>
+const recommend_elements = document.getElementsByClassName("recommend");
+Array.from(recommend_elements).forEach(function(element) {
+    element.addEventListener('click', function() {
+        if(confirm("정말로 추천하시겠습니까?")) {
+            location.href = this.dataset.uri;
+        };
+    });
+});
+</script>
+{% endblock %}
 </body>
 {% endblock %}
 
