@@ -2,6 +2,8 @@
 
 {% block head %}
 {{ super() }}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
@@ -11,6 +13,49 @@
 {% endblock %}
 
 {% block content %}
+<!-- Header Quotation Carousel-->
+<header class="py-5">
+    <div class="container py-5">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!--First page-->
+                <div class="carousel-item active">
+                    <div class="row gx-5 align-items-center mx-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <p class="lead fw-bolder mb-4 text-center">All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. There is nothing higher than reason.</p>
+                                <p class="lead fw-bolder mt-2 mb-4 text-center">philosopher name1</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="https://dummyimage.com/350x300/000/fff" alt="..." /></div>
+                    </div>
+                </div>
+                <!--Seconde page-->
+                <div class="carousel-item">
+                    <div class="row gx-5 align-items-center mx-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <p class="lead fw-bolder mb-4 text-center">All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. There is nothing higher than reason.</p>
+                                <p class="lead fw-bolder mt-2 mb-4 text-center">philosopher name2</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="https://dummyimage.com/350x300/000/fff" alt="..." /></div>
+                    </div>
+                </div>
+            </div>
+            <!--Carousel button-->
+            <button class="carousel-control-prev mr-3" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+    </div>
+</header>
+
 <body oncontextmenu='return false' class='snippet-body'>
 <!--carousel 1-->
 <section class="pt-5 pb-5">
