@@ -61,7 +61,27 @@
         <div class="row d-flex justify-content-center align-items-center h-100">
                 <h1 class="fw-bolder mb-4 mt-5 text-center">Description</h1>
                 <div class="card card-container overflow-auto shadow bg-body border border-dark rounded-0">
-                    <p class="fs-5 m-4 text-left" style="font-size=5px;">{{book['description']}}</p>
+                    <!--read more button-->
+                    <script>
+                        function fnMore1()
+                        {
+                          document.getElementById("divMore").style.display="";
+                          document.getElementById("bMore").style.display="none";
+                        }
+                        
+                        function fnMore2()
+                        {
+                          document.getElementById("divMore").style.display="none";
+                          document.getElementById("bMore").style.display="";
+                        }
+                        
+                    </script>
+                    <b id="bMore" onclick="fnMore1()" style="color: skyblue; cursor: pointer; font-size: 15pt; font-weight: bold; text-align:center;"> read more...</b>
+                    <!--contents-->
+                    <div id="divMore" class="fs-5 m-4" style="font-size=5px; display:none;">{{book['description']}}
+                        <!--fold button-->
+                        <b onclick="fnMore2()" style="color: skyblue; cursor: pointer; font-size: 15pt; font-weight: bold; text-align:center;">fold...</b>
+                    </div>
                 </div>
         </div>
     </div>
