@@ -6,6 +6,12 @@
 {% endblock %}
 {% block content %}
 <div class="container my-3">
+    <!-- flash 오류 -->
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-danger" role="alert">
+        {{ message }}
+    </div>
+    {% endfor %}
     <table class="table">
         <thead>
         <tr class="text-center table-light border border-dark border-2 shadow bg-body">
@@ -21,7 +27,7 @@
         <tr class="text-center">
             <td>{{ question_list.total - ((question_list.page-1) * question_list.per_page) - loop.index0 }}</td>
             <td class="text-start">
-                <a href="46."</a> <!--What is this?-->
+                <a href="{{ url_for('question.detail', question_id=question.id) }}">{{ question.subject }}</a>
                 {% if question.answer_set|length > 0 %}
                 <span class="text-danger small mx-2">{{ question.answer_set|length }}</span>
                 {% endif %}

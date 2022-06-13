@@ -14,10 +14,24 @@
             <div class="card-body border border-dark border-2 rounded-0">
                 <div class="card-text" style="white-space: pre-line;">{{ question.content }}</div>
                 <div class="d-flex justify-content-end">
+                    {% if question.modify_date %}
+                    <div class="badge bg-light text-dark p-2 text-start mx-3">
+                        <div class="mb-2">modified at</div>
+                        <div>{{ question.modify_date|datetime }}</div>
+                    </div>
+                    {% endif %}
                     <div class="badge bg-dark text-light p-2 rounded-0 text-start">
                         <div class="mb-2">{{ question.user.username }}</div>
                         <div>{{ question.create_date|datetime }}</div>
                     </div>
+                </div>
+                <div class="my-3">
+                    {% if g.user == question.user %}
+                    <a href="{{ url_for('question.modify', question_id=question.id) }}"
+                        class="btn btn-sm btn-outline-secondary">Modify</a>
+                        <a href="javascript:void(0)" class="delete btn btn-sm btn-outline-secondary"
+                        data-uri="{{ url_for('question.delete', question_id=question.id) }}">Delete</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -28,10 +42,24 @@
             <div class="card-body border border-dark border-2 rounded-0">
                 <div class="card-text" style="white-space: pre-line;">{{ answer.content }}</div>
                 <div class="d-flex justify-content-end">
+                    {% if answer.modify_date %}
+                    <div class="badge bg-light text-dark p-2 text-start mx-3">
+                        <div class="mb-2">modified at</div>
+                        <div>{{ answer.modify_date|datetime }}</div>
+                    </div>
+                    {% endif %}
                     <div class="badge bg-dark p-2 text-light rounded-0 text-start">
                         <div class="mb-2">{{ answer.user.username }}</div>
                         <div>{{ answer.create_date|datetime }}</div>
                     </div>
+                </div>
+                <div class="my-3">
+                    {% if g.user == answer.user %}
+                    <a href="{{ url_for('answer.modify', answer_id=answer.id) }}"
+                        class="btn btn-sm btn-outline-secondary">Modify</a>
+                    <a href="#" class="delete btn btn-sm btn-outline-secondary "
+                    data-uri="{{ url_for('answer.delete', answer_id=answer.id) }}">Delete</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -59,4 +87,16 @@
             <input type="submit" value="Comment submit!" class="btn btn-dark rounded-0 font-weight-bold" style="float:right;">
         </form>
     </div>
+{% block script %}
+<script type='text/javascript'>
+const recommend_elements = document.getElementsByClassName("delete");
+Array.from(recommend_elements).forEach(function(element) {
+    element.addEventListener('click', function() {
+        if(confirm("정말로 삭제하시겠습니까?")) {
+            location.href = this.dataset.uri;
+        };
+    });
+});
+</script>
+{% endblock %}
 {% endblock %}
