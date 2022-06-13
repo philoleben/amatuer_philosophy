@@ -11,11 +11,11 @@
         <!-- 질문 -->
         <h2 class="border-bottom py-2">{{ question.subject }}</h2>
         <div class="card my-3">
-            <div class="card-body border border-dark border-2 rounded-0">
+            <div class="card-body border border-dark border-2 rounded-0" style="box-shadow: 5px 5px grey;">
                 <div class="card-text" style="white-space: pre-line;">{{ question.content }}</div>
                 <div class="d-flex justify-content-end">
                     {% if question.modify_date %}
-                    <div class="badge bg-light text-dark p-2 text-start mx-3">
+                    <div class="badge bg-secondary text-light p-2 text-start mx-3 rounded-0">
                         <div class="mb-2">modified at</div>
                         <div>{{ question.modify_date|datetime }}</div>
                     </div>
@@ -28,8 +28,8 @@
                 <div class="my-3">
                     {% if g.user == question.user %}
                     <a href="{{ url_for('question.modify', question_id=question.id) }}"
-                        class="btn btn-sm btn-outline-secondary">Modify</a>
-                        <a href="javascript:void(0)" class="delete btn btn-sm btn-outline-secondary"
+                        class="btn btn-sm btn-light border border-dark border-2 rounded-0" style="float:right; margin-left:3px;">Modify</a>
+                        <a href="javascript:void(0)" class="delete btn btn-sm btn-light border border-dark border-2 rounded-0" style="float:right;"
                         data-uri="{{ url_for('question.delete', question_id=question.id) }}">Delete</a>
                     {% endif %}
                 </div>
@@ -39,11 +39,11 @@
         <h5 class="border-bottom my-3 py-2">{{ question.answer_set|length }} Comments</h5>
         {% for answer in question.answer_set %}
         <div class="card my-3">
-            <div class="card-body border border-dark border-2 rounded-0">
+            <div class="card-body border border-dark border-2 rounded-0" style="box-shadow: 5px 5px grey;">
                 <div class="card-text" style="white-space: pre-line;">{{ answer.content }}</div>
                 <div class="d-flex justify-content-end">
                     {% if answer.modify_date %}
-                    <div class="badge bg-light text-dark p-2 text-start mx-3">
+                    <div class="badge bg-dark text-dark p-2 text-start mx-3">
                         <div class="mb-2">modified at</div>
                         <div>{{ answer.modify_date|datetime }}</div>
                     </div>
@@ -56,8 +56,8 @@
                 <div class="my-3">
                     {% if g.user == answer.user %}
                     <a href="{{ url_for('answer.modify', answer_id=answer.id) }}"
-                        class="btn btn-sm btn-outline-secondary">Modify</a>
-                    <a href="#" class="delete btn btn-sm btn-outline-secondary "
+                        class="btn btn-sm btn-light border border-dark border-2 rounded-0" style="float:right; margin-left:3px;">Modify</a>
+                    <a href="#" class="delete btn btn-sm btn-light border border-dark border-2 rounded-0" style="float:right;"
                     data-uri="{{ url_for('answer.delete', answer_id=answer.id) }}">Delete</a>
                     {% endif %}
                 </div>
@@ -65,7 +65,7 @@
         </div>
         {% endfor %}
         <!-- 답변 등록 -->
-        <form action="{{ url_for('answer.create', question_id=question.id) }}" method="post" class="my-3">
+        <form action="{{ url_for('answer.create', question_id=question.id) }}" method="post" class="my-3" style="box-shadow: 5px 5px grey;">
             {{ form.csrf_token }}
             <!-- 오류표시 Start -->
             {% if form.errors %}
@@ -84,7 +84,8 @@
             <div class="mb-3">
                 <textarea {% if not g.user %}disabled{% endif %} name="content" id="content" class="form-control border border-dark border-2 rounded-0" rows="10"></textarea>
             </div>
-            <input type="submit" value="Comment submit!" class="btn btn-dark rounded-0 font-weight-bold" style="float:right;">
+            <input type="submit" value="Comment submit!" class="btn btn-dark rounded-0 font-weight-bold" style="float:right; margin-left:3px;">
+            <a href="{{ url_for('question.board') }}" class="btn btn-dark rounded-0 font-weight-bold" style="float:right;">Back to list</a>
         </form>
     </div>
 {% block script %}
@@ -92,7 +93,7 @@
 const recommend_elements = document.getElementsByClassName("delete");
 Array.from(recommend_elements).forEach(function(element) {
     element.addEventListener('click', function() {
-        if(confirm("정말로 삭제하시겠습니까?")) {
+        if(confirm("Are you sure you want to remove?")) {
             location.href = this.dataset.uri;
         };
     });

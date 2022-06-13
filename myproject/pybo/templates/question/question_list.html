@@ -12,9 +12,9 @@
         {{ message }}
     </div>
     {% endfor %}
-    <table class="table">
+    <table class="table mb-4">
         <thead>
-        <tr class="text-center table-light border border-dark border-2 shadow bg-body">
+        <tr class="text-center table-light border border-dark border-2" style="box-shadow: 5px 5px grey;">
             <th>No.</th>
             <th style="width:50%">Title</th>
             <th>User</th>
@@ -38,7 +38,7 @@
         {% endfor %}
         {% else %}
         <tr>
-            <td colspan="3">게시글이 없습니다.</td>
+            <td colspan="3">There are no posts.</td>
         </tr>
         {% endif %}
         </tbody>
@@ -48,11 +48,11 @@
         <!-- 이전페이지 -->
         {% if question_list.has_prev %}
         <li class="page-item">
-            <a class="page-link text-dark border border-dark border-2 rounded-0" href="?page={{ question_list.prev_num }}" aria-hidden="true">Previous</a>
+            <a class="page-link text-dark border border-dark border-2 rounded-0" href="?page={{ question_list.prev_num }}" aria-hidden="true">Prev</a>
         </li>
         {% else %}
         <li class="page-item disabled">
-            <a class="page-link text-dark border border-dark border-2 rounded-0" tabindex="-1" aria-disabled="true" href="javascript:void(0)">Previous</a>
+            <a class="page-link text-dark border border-dark border-2 rounded-0" tabindex="-1" aria-disabled="true" href="javascript:void(0)">Prev</a>
         </li>
         {% endif %}
         {% for page_num in question_list.iter_pages() %}
