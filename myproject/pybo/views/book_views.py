@@ -36,9 +36,7 @@ def bookshelves():
         return redirect(url_for('auth.login'))
     
     books = []
-    books = Bookshelf.query.filter_by(userid=user_id).all() #현재 로그인한 user가 저장한 책 리스트
-    print(books)
-    
+    books = Bookshelf.query.filter_by(userid=user_id).all() #현재 로그인한 user가 저장한 책 리스트    
     return render_template('book/bookshelves.html', books=books)
 
 @bp.route("/addToBookshelves/<int:book_id>")
@@ -74,3 +72,11 @@ def vote(book_id):
     _book.voter.append(g.user)
     db.session.commit()
     return redirect(url_for('main.index'))
+
+@bp.route('/ebook/<int:book_id>')
+def ebook(book_id):
+    
+    f = open('C:\\키없는거.json', 'r', encoding='UTF-8')
+    json_data = json.load(f, strict=False)
+    book_url = json_data[book_id]['full-text']
+    print(book_url)

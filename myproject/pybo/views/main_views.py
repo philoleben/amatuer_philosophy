@@ -2,9 +2,10 @@ from flask import *
 import requests
 import json
 from werkzeug.utils import redirect
-from pybo.models import Question
+from pybo.models import Question, Book
 from gensim.models.doc2vec import Doc2Vec
 from nltk.tokenize import word_tokenize
+from .. import db
 
 bp = Blueprint('main', __name__, url_prefix='/')
 
@@ -21,6 +22,13 @@ def index():
     
     # f2 = open('C:\\키 있는거.json', 'r', encoding="UTF-8")
     # json_data2 = json.load(f2, strict=False)
+    for book in json_data:   
+        data = Book(bookid=book['id']+1)
+        db.session.add(data)
+        db.session.commit()
+
+    # db.session.query(Book).delete()
+    # db.session.commit()
     
     def recommend_title(text):
         new_vector = model.infer_vector(word_tokenize(text))

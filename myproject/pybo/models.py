@@ -15,10 +15,11 @@ class Categories(db.Model):
     id = db.Column(db.Integer, primary_key = True)   #id를 프라이머리키로 설정
     name = db.Column(db.Text())
 
-# 삭제예정. json 데이터 자체 사용        
+# 좋아요 기능을 위한 table     
 class Book(db.Model):
     __tablename__ = 'book'   #테이블 이름 : user
     id = db.Column(db.Integer, primary_key=True)
+    bookid = db.Column(db.Integer, nullable=False)
     voter = db.relationship('User', secondary='book_voter', backref=db.backref('book_voter_set'))
 
 
