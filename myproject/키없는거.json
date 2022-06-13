@@ -100,21 +100,6 @@
 	},
 	{
 		"id": 6,
-		"title": "Fundamental Philosophy, Vol. 2 (of 2)",
-		"authors": "Balmes, Jaime Luciano",
-		"image": "https://www.gutenberg.org/cache/epub/48149/pg48149.cover.medium.jpg",
-		"download_count": 32,
-		"full-text": "https://www.gutenberg.org/files/48149/48149-0.txt",
-		"subjects": [
-			"Spanish"
-		],
-		"bookshelves": [],
-		"description": "The author's proofs of the fact of creation are strong and well put, but fail to be absolutely conclusive in consequence of his not recognizing intuition of the creative act. They all presuppose this intuition, and are conclusive, because we in reality have it; but by denying that we have it, the author renders them formally inconclusive. We have intuition of God, real and necessary being, we have also intuition of things or existences, and therefore must have intuition of the creative act, for things or existences are only the external terminus of the creative act itself. Hence it is that Gioberti very properly makes the ideal formula, or primum philosophicum, the synthetic judgment, Ens creat existentias. Real and necessary Being creates existences. This formula or judgment in all its terms is given intuitively, and simultaneously, and it is because it is so given we are able at one blow to confound the skeptic, the atheist, and the pantheist. The illustrious Spaniard, uses in all his argument this formula, but he does so unconsciously, in contradiction, in fact, to his express statements, because he could not reason a moment, form a single conclusion without it. His argument in itself is good, but his explication of it is sometimes in fault.If the learned and excellent author had recognized the fact that we have intuition of the creative act of the first cause, and the further fact that all second causes, in their several spheres and degree, imitate or copy the first, he would have succeeded better in explaining their operation. He does not seem to perceive clearly that the nexuswhich binds together cause and effect is the act of the cause, which is in its own nature causative of the effect, and by denying all intuition of this nexus, he seems to leave us in the position where Hume left us, because it is impossible to attain by discursion to any objective reality of which we have no intuition.  ",
-		"rating": null,
-		"review-count": null
-	},
-	{
-		"id": 7,
 		"title": "The Ruins, or, Meditation on the Revolutions of Empires and the Law of Nature",
 		"authors": "Volney, C.-F. (Constantin-François)",
 		"image": "https://www.gutenberg.org/cache/epub/1397/pg1397.cover.medium.jpg",
@@ -132,7 +117,7 @@
 		"review-count": "15"
 	},
 	{
-		"id": 8,
+		"id": 7,
 		"title": "An Appeal to the People in Behalf of Their Rights as Authorized Interpreters of the Bible",
 		"authors": "Beecher, Catharine Esther",
 		"image": "https://www.gutenberg.org/cache/epub/56354/pg56354.cover.medium.jpg",
@@ -149,22 +134,7 @@
 		"review-count": null
 	},
 	{
-		"id": 9,
-		"title": "The Greek Philosophers, Vol. 2 (of 2)",
-		"authors": "Benn, Alfred William",
-		"image": "https://www.gutenberg.org/cache/epub/57126/pg57126.cover.medium.jpg",
-		"download_count": 43,
-		"full-text": "https://www.gutenberg.org/files/57126/57126-0.txt",
-		"subjects": [
-			"Ancient"
-		],
-		"bookshelves": [],
-		"description": "The Greek Philosophers in two volumes is a work by British agnostic A. W. Benn. It represents a history of Greek philosophy in ancient times, along with the reference to the influence that ancient thought had on the development of modern philosophy. Stretching from early Greek thought to Neo-Platonism, the survey covers the works of Greek Humanist, Socrates, Plato, Aristotle, The Stoics, Epicurus, The Sceptics and Eclectics, Plotinus and more.",
-		"rating": 4.2,
-		"review-count": 4
-	},
-	{
-		"id": 10,
+		"id": 8,
 		"title": "History of Modern Philosophy",
 		"authors": "Benn, Alfred William",
 		"image": "https://www.gutenberg.org/cache/epub/34283/pg34283.cover.medium.jpg",
@@ -181,7 +151,7 @@
 		"review-count": 68
 	},
 	{
-		"id": 11,
+		"id": 9,
 		"title": "Laughter: An Essay on the Meaning of the Comic",
 		"authors": "Bergson, Henri",
 		"image": "https://www.gutenberg.org/cache/epub/4352/pg4352.cover.medium.jpg",
@@ -200,7 +170,7 @@
 		"review-count": 25
 	},
 	{
-		"id": 12,
+		"id": 10,
 		"title": "Chaucer's Translation of Boethius's \"De Consolatione Philosophiae\"",
 		"authors": "Boethius",
 		"image": "https://www.gutenberg.org/cache/epub/42083/pg42083.cover.medium.jpg",
@@ -218,7 +188,7 @@
 		"review-count": 12927
 	},
 	{
-		"id": 13,
+		"id": 11,
 		"title": "The Theological Tractates and The Consolation of Philosophy",
 		"authors": "Boethius",
 		"image": "https://www.gutenberg.org/cache/epub/13316/pg13316.cover.medium.jpg",
@@ -238,7 +208,7 @@
 		"review-count": 307
 	},
 	{
-		"id": 14,
+		"id": 12,
 		"title": "The Philosophical Theory of the State",
 		"authors": "Bosanquet, Bernard",
 		"image": "https://www.gutenberg.org/cache/epub/63249/pg63249.cover.medium.jpg",
@@ -254,7 +224,7 @@
 		"review-count": null
 	},
 	{
-		"id": 15,
+		"id": 13,
 		"title": "Beyond Good and Evil",
 		"authors": "Nietzsche, Friedrich Wilhelm",
 		"image": "https://www.gutenberg.org/cache/epub/4363/pg4363.cover.medium.jpg",
@@ -273,7 +243,7 @@
 		"review-count": 3400
 	},
 	{
-		"id": 16,
+		"id": 14,
 		"title": "The American Republic: Its Constitution, Tendencies, and Destiny",
 		"authors": "Brownson, Orestes Augustus",
 		"image": "https://www.gutenberg.org/cache/epub/2053/pg2053.cover.medium.jpg",
@@ -291,7 +261,7 @@
 		"review-count": 68
 	},
 	{
-		"id": 17,
+		"id": 15,
 		"title": "Early Greek Philosophy & Other Essays Collected Works, Volume Two",
 		"authors": "Nietzsche, Friedrich",
 		"image": "https://www.gutenberg.org/cache/epub/51548/pg51548.cover.medium.jpg",
@@ -306,7 +276,7 @@
 		"review-count": 23
 	},
 	{
-		"id": 18,
+		"id": 16,
 		"title": "The Idea of Progress: An Inquiry into Its Origin and Growth",
 		"authors": "Bury, J. B. (John Bagnell)",
 		"image": "https://www.gutenberg.org/cache/epub/4557/pg4557.cover.medium.jpg",
@@ -322,7 +292,7 @@
 		"review-count": 76
 	},
 	{
-		"id": 19,
+		"id": 17,
 		"title": "Idylls of the King",
 		"authors": "Tennyson, Alfred Tennyson, Baron",
 		"image": "https://www.gutenberg.org/cache/epub/610/pg610.cover.medium.jpg",
@@ -339,7 +309,7 @@
 		"review-count": 155
 	},
 	{
-		"id": 20,
+		"id": 18,
 		"title": "The Sayings of Confucius",
 		"authors": "Confucius",
 		"image": "https://www.gutenberg.org/cache/epub/24055/pg24055.cover.medium.jpg",
@@ -355,7 +325,7 @@
 		"review-count": 20137
 	},
 	{
-		"id": 21,
+		"id": 19,
 		"title": "Cowley's Essays",
 		"authors": "Cowley, Abraham",
 		"image": "https://www.gutenberg.org/cache/epub/3549/pg3549.cover.medium.jpg",
@@ -371,7 +341,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 22,
+		"id": 20,
 		"title": "Aesthetic as Science of Expression and General Linguistic",
 		"authors": "Croce, Benedetto",
 		"image": "https://www.gutenberg.org/cache/epub/9306/pg9306.cover.medium.jpg",
@@ -387,7 +357,7 @@
 		"review-count": 75
 	},
 	{
-		"id": 23,
+		"id": 21,
 		"title": "A Beginner's History of Philosophy, Vol. 2",
 		"authors": "Cushman, Herbert Ernest",
 		"image": "https://www.gutenberg.org/cache/epub/62663/pg62663.cover.medium.jpg",
@@ -402,7 +372,7 @@
 		"review-count": null
 	},
 	{
-		"id": 24,
+		"id": 22,
 		"title": "The Banquet (Il Convito)",
 		"authors": "Dante Alighieri",
 		"image": "https://www.gutenberg.org/cache/epub/12867/pg12867.cover.medium.jpg",
@@ -417,7 +387,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 25,
+		"id": 23,
 		"title": "The Mathematicall Praeface to Elements of Geometrie of Euclid of Megara",
 		"authors": "Dee, John",
 		"image": "https://www.gutenberg.org/cache/epub/22062/pg22062.cover.medium.jpg",
@@ -433,7 +403,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 26,
+		"id": 24,
 		"title": "Infinity's Child",
 		"authors": "De Vet, Charles V.",
 		"image": "https://www.gutenberg.org/cache/epub/58682/pg58682.cover.medium.jpg",
@@ -452,7 +422,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 27,
+		"id": 25,
 		"title": "Democracy and Education: An Introduction to the Philosophy of Education",
 		"authors": "Dewey, John",
 		"image": "https://www.gutenberg.org/cache/epub/852/pg852.cover.medium.jpg",
@@ -469,7 +439,7 @@
 		"review-count": 161
 	},
 	{
-		"id": 28,
+		"id": 26,
 		"title": "Reconstruction in Philosophy",
 		"authors": "Dewey, John",
 		"image": "https://www.gutenberg.org/cache/epub/40089/pg40089.cover.medium.jpg",
@@ -484,7 +454,7 @@
 		"review-count": 265
 	},
 	{
-		"id": 29,
+		"id": 27,
 		"title": "The Lives and Opinions of Eminent Philosophers",
 		"authors": "Diogenes Laertius",
 		"image": "https://www.gutenberg.org/cache/epub/57342/pg57342.cover.medium.jpg",
@@ -500,7 +470,7 @@
 		"review-count": 37
 	},
 	{
-		"id": 30,
+		"id": 28,
 		"title": "Mandalay to Momien",
 		"authors": "Anderson, John",
 		"image": "https://www.gutenberg.org/cache/epub/67758/pg67758.cover.medium.jpg",
@@ -520,7 +490,7 @@
 		"review-count": null
 	},
 	{
-		"id": 31,
+		"id": 29,
 		"title": "The Elementary Forms of the Religious Life",
 		"authors": "Durkheim, Émile",
 		"image": "https://www.gutenberg.org/cache/epub/41360/pg41360.cover.medium.jpg",
@@ -538,7 +508,7 @@
 		"review-count": 109
 	},
 	{
-		"id": 32,
+		"id": 30,
 		"title": "The Dance of Life",
 		"authors": "Ellis, Havelock",
 		"image": "https://www.gutenberg.org/cache/epub/65714/pg65714.cover.medium.jpg",
@@ -555,7 +525,7 @@
 		"review-count": 20
 	},
 	{
-		"id": 33,
+		"id": 31,
 		"title": "Nature",
 		"authors": "Emerson, Ralph Waldo",
 		"image": "https://www.gutenberg.org/cache/epub/29433/pg29433.cover.medium.jpg",
@@ -571,7 +541,7 @@
 		"review-count": 568
 	},
 	{
-		"id": 34,
+		"id": 32,
 		"title": "A Selection from the Discourses of Epictetus with the Encheiridion",
 		"authors": "Epictetus",
 		"image": "https://www.gutenberg.org/cache/epub/10661/pg10661.cover.medium.jpg",
@@ -588,7 +558,7 @@
 		"review-count": 8.2
 	},
 	{
-		"id": 35,
+		"id": 33,
 		"title": "The Golden Sayings of Epictetus",
 		"authors": "Epictetus",
 		"image": "https://www.gutenberg.org/cache/epub/871/pg871.cover.medium.jpg",
@@ -606,7 +576,7 @@
 		"review-count": 275
 	},
 	{
-		"id": 36,
+		"id": 34,
 		"title": "The Mathematical-Historical Principles and the Evolution of Liberty",
 		"authors": "Fernández Bolívar, Víctor José",
 		"image": "https://www.gutenberg.org/cache/epub/30174/pg30174.cover.medium.jpg",
@@ -621,7 +591,7 @@
 		"review-count": null
 	},
 	{
-		"id": 37,
+		"id": 35,
 		"title": "American Political Ideas Viewed from the Standpoint of Universal History",
 		"authors": "Victor Jose Fernandez Bolivar",
 		"image": "https://www.gutenberg.org/cache/epub/10112/pg10112.cover.medium.jpg",
@@ -637,7 +607,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 38,
+		"id": 36,
 		"title": "An Introduction to Philosophy",
 		"authors": "George Stuart Fullerton",
 		"image": "https://www.gutenberg.org/cache/epub/16406/pg16406.cover.medium.jpg",
@@ -654,7 +624,7 @@
 		"review-count": 59
 	},
 	{
-		"id": 39,
+		"id": 37,
 		"title": "The Tattva-Muktavali",
 		"authors": "Purnananda Chakravartin",
 		"image": "https://www.gutenberg.org/cache/epub/7175/pg7175.cover.medium.jpg",
@@ -670,7 +640,7 @@
 		"review-count": null
 	},
 	{
-		"id": 40,
+		"id": 38,
 		"title": "The Confessions of Al Ghazzali",
 		"authors": "Ghazzali",
 		"image": "https://www.gutenberg.org/cache/epub/58977/pg58977.cover.medium.jpg",
@@ -686,7 +656,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 41,
+		"id": 39,
 		"title": "Plato and the Other Companions of Sokrates, 3rd ed. Volume 4",
 		"authors": "Grote, George",
 		"image": "https://www.gutenberg.org/cache/epub/40438/pg40438.cover.medium.jpg",
@@ -703,7 +673,7 @@
 		"review-count": null
 	},
 	{
-		"id": 42,
+		"id": 40,
 		"title": "The History of Freedom, and Other Essays",
 		"authors": "Acton, John Emerich Edward Dalberg Acton, Baron",
 		"image": "https://www.gutenberg.org/cache/epub/31278/pg31278.cover.medium.jpg",
@@ -719,7 +689,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 43,
+		"id": 41,
 		"title": "The Categories",
 		"authors": "Aristotle",
 		"image": "https://www.gutenberg.org/cache/epub/2412/pg2412.cover.medium.jpg",
@@ -739,7 +709,7 @@
 		"review-count": 6
 	},
 	{
-		"id": 44,
+		"id": 42,
 		"title": "The Philosophy and Theology of Averroes",
 		"authors": "Averroës",
 		"image": "https://www.gutenberg.org/cache/epub/65708/pg65708.cover.medium.jpg",
@@ -754,7 +724,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 45,
+		"id": 43,
 		"title": "The Advancement of Learning",
 		"authors": "Bacon, Francis",
 		"image": "https://www.gutenberg.org/cache/epub/5500/pg5500.cover.medium.jpg",
@@ -775,7 +745,7 @@
 		"review-count": 5
 	},
 	{
-		"id": 46,
+		"id": 44,
 		"title": "Fundamental Philosophy, Vol. 1 (of 2)",
 		"authors": "Balmes, Jaime Luciano",
 		"image": "https://www.gutenberg.org/cache/epub/48149/pg48149.cover.medium.jpg",
@@ -790,7 +760,7 @@
 		"review-count": null
 	},
 	{
-		"id": 47,
+		"id": 45,
 		"title": "Common Sense Applied to Religion; Or, The Bible and the People",
 		"authors": "Beecher, Catharine Esther",
 		"image": "https://www.gutenberg.org/cache/epub/55531/pg55531.cover.medium.jpg",
@@ -805,7 +775,7 @@
 		"review-count": null
 	},
 	{
-		"id": 48,
+		"id": 46,
 		"title": "Four Americans: Roosevelt, Hawthorne, Emerson, Whitman",
 		"authors": "Beers, Henry A. (Henry Augustin)",
 		"image": "https://www.gutenberg.org/cache/epub/24435/pg24435.cover.medium.jpg",
@@ -823,7 +793,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 49,
+		"id": 47,
 		"title": "The Greek Philosophers, Vol. 1 (of 2)",
 		"authors": "Benn, Alfred William",
 		"image": "https://www.gutenberg.org/cache/epub/57126/pg57126.cover.medium.jpg",
@@ -838,7 +808,7 @@
 		"review-count": null
 	},
 	{
-		"id": 50,
+		"id": 48,
 		"title": "Father Payne",
 		"authors": "Benson, Arthur Christopher",
 		"image": "https://www.gutenberg.org/cache/epub/12264/pg12264.cover.medium.jpg",
@@ -854,7 +824,7 @@
 		"review-count": 1221
 	},
 	{
-		"id": 51,
+		"id": 49,
 		"title": "The Works of George Berkeley. Vol. 1 of 4",
 		"authors": "Berkeley, George",
 		"image": "https://www.gutenberg.org/cache/epub/39746/pg39746.cover.medium.jpg",
@@ -869,7 +839,7 @@
 		"review-count": 5
 	},
 	{
-		"id": 52,
+		"id": 50,
 		"title": "The History of Philosophy in Islam",
 		"authors": "Boer, T. J. de (Tjitze J.)",
 		"image": "https://www.gutenberg.org/cache/epub/66566/pg66566.cover.medium.jpg",
@@ -884,7 +854,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 53,
+		"id": 51,
 		"title": "The Consolation of Philosophy",
 		"authors": "Boethius",
 		"image": "https://www.gutenberg.org/cache/epub/14328/pg14328.cover.medium.jpg",
@@ -902,7 +872,7 @@
 		"review-count": 331
 	},
 	{
-		"id": 54,
+		"id": 52,
 		"title": "Nursing as Caring: A Model for Transforming Practice",
 		"authors": "Boykin, Anne",
 		"image": "https://www.gutenberg.org/cache/epub/42988/pg42988.cover.medium.jpg",
@@ -919,7 +889,7 @@
 		"review-count": 20
 	},
 	{
-		"id": 55,
+		"id": 53,
 		"title": "Lectures on the Philosophy of the Human Mind (Vol. 1 of 3)",
 		"authors": "Brown, Thomas",
 		"image": "https://www.gutenberg.org/cache/epub/43116/pg43116.cover.medium.jpg",
@@ -934,7 +904,7 @@
 		"review-count": null
 	},
 	{
-		"id": 56,
+		"id": 54,
 		"title": "An Historical Sketch of the Conceptions of Memory among the Ancients",
 		"authors": "Burnham, William Henry",
 		"image": "https://www.gutenberg.org/cache/epub/59995/pg59995.cover.medium.jpg",
@@ -950,7 +920,7 @@
 		"review-count": null
 	},
 	{
-		"id": 57,
+		"id": 55,
 		"title": "Sketch of a New Esthetic of Music",
 		"authors": "Busoni, Ferruccio",
 		"image": "https://www.gutenberg.org/cache/epub/31799/pg31799.cover.medium.jpg",
@@ -968,7 +938,7 @@
 		"review-count": 13
 	},
 	{
-		"id": 58,
+		"id": 56,
 		"title": "Academica",
 		"authors": "Cicero, Marcus Tullius",
 		"image": "https://www.gutenberg.org/cache/epub/14970/pg14970.cover.medium.jpg",
@@ -985,7 +955,7 @@
 		"review-count": 16
 	},
 	{
-		"id": 59,
+		"id": 57,
 		"title": "The Scientific Spirit of the Age, and Other Pleas and Discussions",
 		"authors": "Cobbe, Frances Power",
 		"image": "https://www.gutenberg.org/cache/epub/64021/pg64021.cover.medium.jpg",
@@ -1005,7 +975,7 @@
 		"review-count": null
 	},
 	{
-		"id": 60,
+		"id": 58,
 		"title": "The philosophy of mathematics",
 		"authors": "Carus, Paul",
 		"image": "https://www.gutenberg.org/cache/epub/57355/pg57355.cover.medium.jpg",
@@ -1022,7 +992,7 @@
 		"review-count": 307
 	},
 	{
-		"id": 61,
+		"id": 59,
 		"title": "The Analects of Confucius (from the Chinese Classics)",
 		"authors": "Confucius",
 		"image": "https://www.gutenberg.org/cache/epub/3330/pg3330.cover.medium.jpg",
@@ -1041,7 +1011,7 @@
 		"review-count": 16
 	},
 	{
-		"id": 62,
+		"id": 60,
 		"title": "Æsthetic as science of expression and general linguistic",
 		"authors": "Croce, Benedetto",
 		"image": "https://www.gutenberg.org/cache/epub/54618/pg54618.cover.medium.jpg",
@@ -1057,7 +1027,7 @@
 		"review-count": 10
 	},
 	{
-		"id": 63,
+		"id": 61,
 		"title": "Baron d'Holbach : a Study of Eighteenth Century Radicalism in France",
 		"authors": "Cushing, Max Pearson",
 		"image": "https://www.gutenberg.org/cache/epub/5621/pg5621.cover.medium.jpg",
@@ -1076,7 +1046,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 64,
+		"id": 62,
 		"title": "A Beginner's History of Philosophy, Vol. 1: Ancient and Mediæval Philosophy",
 		"authors": "Cushman, Herbert Ernest",
 		"image": "https://www.gutenberg.org/cache/epub/61651/pg61651.cover.medium.jpg",
@@ -1091,7 +1061,7 @@
 		"review-count": null
 	},
 	{
-		"id": 65,
+		"id": 63,
 		"title": "A History of Indian Philosophy, Volume 1",
 		"authors": "Dasgupta, Surendranath",
 		"image": "https://www.gutenberg.org/cache/epub/12956/pg12956.cover.medium.jpg",
@@ -1112,7 +1082,7 @@
 		"review-count": 185
 	},
 	{
-		"id": 66,
+		"id": 64,
 		"title": "Selections from the Principles of Philosophy",
 		"authors": "Descartes, René",
 		"image": "https://www.gutenberg.org/cache/epub/4391/pg4391.cover.medium.jpg",
@@ -1129,7 +1099,7 @@
 		"review-count": 101
 	},
 	{
-		"id": 67,
+		"id": 65,
 		"title": "The Influence of Darwin on Philosophy, and other essays in contemporary thought",
 		"authors": "Dewey, John",
 		"image": "https://www.gutenberg.org/cache/epub/51525/pg51525.cover.medium.jpg",
@@ -1145,7 +1115,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 68,
+		"id": 66,
 		"title": "Creative Intelligence: Essays in the Pragmatic Attitude",
 		"authors": "Stuart, Henry Waldgrave",
 		"image": "https://www.gutenberg.org/cache/epub/33727/pg33727.cover.medium.jpg",
@@ -1160,7 +1130,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 69,
+		"id": 67,
 		"title": "German philosophy and politics",
 		"authors": "Dewey, John",
 		"image": "https://www.gutenberg.org/cache/epub/42208/pg42208.cover.medium.jpg",
@@ -1175,7 +1145,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 70,
+		"id": 68,
 		"title": "The Science and Philosophy of the Organism",
 		"authors": "Driesch, Hans",
 		"image": "https://www.gutenberg.org/cache/epub/44388/pg44388.cover.medium.jpg",
@@ -1192,7 +1162,7 @@
 		"review-count": null
 	},
 	{
-		"id": 71,
+		"id": 69,
 		"title": "Philosophy and the Social Problem",
 		"authors": "Durant, Will",
 		"image": "https://www.gutenberg.org/cache/epub/42880/pg42880.cover.medium.jpg",
@@ -1207,7 +1177,7 @@
 		"review-count": 20
 	},
 	{
-		"id": 72,
+		"id": 70,
 		"title": "The Soul of the Indian: An Interpretation",
 		"authors": "Eastman, Charles A.",
 		"image": "https://www.gutenberg.org/cache/epub/340/pg340.cover.medium.jpg",
@@ -1226,7 +1196,7 @@
 		"review-count": 23
 	},
 	{
-		"id": 73,
+		"id": 71,
 		"title": "A Theological-Political Treatise [Part III]",
 		"authors": "Spinoza, Benedictus de",
 		"image": "https://www.gutenberg.org/cache/epub/991/pg991.cover.medium.jpg",
@@ -1245,7 +1215,7 @@
 		"review-count": null
 	},
 	{
-		"id": 74,
+		"id": 72,
 		"title": "Landmarks of Scientific Socialism: \"Anti-Duehring\"",
 		"authors": "Engels, Friedrich",
 		"image": "https://www.gutenberg.org/cache/epub/31933/pg31933.cover.medium.jpg",
@@ -1263,7 +1233,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 75,
+		"id": 73,
 		"title": "Initiation into Philosophy",
 		"authors": "Faguet, Émile",
 		"image": "https://www.gutenberg.org/cache/epub/9304/pg9304.cover.medium.jpg",
@@ -1280,7 +1250,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 76,
+		"id": 74,
 		"title": "Reflections on War and Death",
 		"authors": "Freud, Sigmund",
 		"image": "https://www.gutenberg.org/cache/epub/35875/pg35875.cover.medium.jpg",
@@ -1299,7 +1269,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 77,
+		"id": 75,
 		"title": "Studies and Essays: Censorship and Art",
 		"authors": "Galsworthy, John",
 		"image": "https://www.gutenberg.org/cache/epub/2901/pg2901.cover.medium.jpg",
@@ -1314,7 +1284,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 78,
+		"id": 76,
 		"title": "The Reform of Education",
 		"authors": "Gentile, Giovanni",
 		"image": "https://www.gutenberg.org/cache/epub/36762/pg36762.cover.medium.jpg",
@@ -1330,7 +1300,7 @@
 		"review-count": 114
 	},
 	{
-		"id": 79,
+		"id": 77,
 		"title": "Decadence, and Other Essays on the Culture of Ideas",
 		"authors": "Gourmont, Remy de",
 		"image": "https://www.gutenberg.org/cache/epub/46728/pg46728.cover.medium.jpg",
@@ -1346,7 +1316,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 80,
+		"id": 78,
 		"title": "Review of the Work of Mr John Stuart Mill Entitled, 'Examination of Sir William Hamilton's Philosophy.'",
 		"authors": "Grote, George",
 		"image": "https://www.gutenberg.org/cache/epub/12002/pg12002.cover.medium.jpg",
@@ -1364,7 +1334,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 81,
+		"id": 79,
 		"title": "Plato and the Other Companions of Sokrates, 3rd ed. Volume 3",
 		"authors": "Grote, George",
 		"image": "https://www.gutenberg.org/cache/epub/40437/pg40437.cover.medium.jpg",
@@ -1381,7 +1351,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 82,
+		"id": 80,
 		"title": "Plato and the Other Companions of Sokrates, 3rd ed. Volume 1",
 		"authors": "Grote, George",
 		"image": "https://www.gutenberg.org/cache/epub/40435/pg40435.cover.medium.jpg",
@@ -1398,7 +1368,7 @@
 		"review-count": null
 	},
 	{
-		"id": 83,
+		"id": 81,
 		"title": "Meditations on the Actual State of Christianity, and on the Attacks Which Are Now Being Made Upon It.",
 		"authors": "Guizot, François",
 		"image": "https://www.gutenberg.org/cache/epub/60602/pg60602.cover.medium.jpg",
@@ -1414,7 +1384,7 @@
 		"review-count": null
 	},
 	{
-		"id": 84,
+		"id": 82,
 		"title": "Hegel's Philosophy of Mind",
 		"authors": "Hegel, Georg Wilhelm Friedrich",
 		"image": "https://www.gutenberg.org/cache/epub/39064/pg39064.cover.medium.jpg",
@@ -1429,7 +1399,7 @@
 		"review-count": 368
 	},
 	{
-		"id": 85,
+		"id": 83,
 		"title": "Hegel's Lectures on the History of Philosophy: Volume 2 (of 3)",
 		"authors": "Hegel, Georg Wilhelm Friedrich",
 		"image": "https://www.gutenberg.org/cache/epub/51636/pg51636.cover.medium.jpg",
@@ -1444,22 +1414,7 @@
 		"review-count": null
 	},
 	{
-		"id": 86,
-		"title": "Hegel's Lectures on the History of Philosophy: Volume 3 (of 3)",
-		"authors": "Hegel, Georg Wilhelm Friedrich",
-		"image": "https://www.gutenberg.org/cache/epub/51635/pg51635.cover.medium.jpg",
-		"download_count": 253,
-		"full-text": "https://www.gutenberg.org/files/51635/51635-0.txt",
-		"subjects": [
-			"History"
-		],
-		"bookshelves": [],
-		"description": "the influential German philosopher, believed that human history was advancing spiritually and morally according to God's purpose. At the beginning of Lectures on the History of Philosophy, Hegel writes: What the history of Philosophy shows us is a succession of noble minds, a gallery of heroes of thought, who, by the power of Reason, have penetrated into the being of things, of nature and of spirit, into the Being of God, and have won for us by their labours the highest treasure, the treasure of reasoned knowledge. Volume 3 of Lectures on the History of Philosophy, titled Medieval and Modern Philosophy for this Bison Books edition, begins with a survey of the philosophy of the middle ages, leaving the pagan world for the Christian and extending to the sixteenth century A.D. Hegel shows how scholastic theology and philosophy developed through the efforts of Peter Lombard, Thomas Aquinas, and others. Hegel's treatment of the modern period of philosophy focuses on Bacon, Descartes, Spinoza, Locke, Hobbes, Leibnitz, Berkeley, Hume, Kant, and Fichte.",
-		"rating": 4.8,
-		"review-count": 7
-	},
-	{
-		"id": 87,
+		"id": 84,
 		"title": "Preliminary Discourse on the Study of Natural Philosophy",
 		"authors": "Herschel, John F. W. (John Frederick William)",
 		"image": "https://www.gutenberg.org/cache/epub/54897/pg54897.cover.medium.jpg",
@@ -1477,7 +1432,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 88,
+		"id": 85,
 		"title": "Siddhartha",
 		"authors": "Hesse, Hermann",
 		"image": "https://www.gutenberg.org/cache/epub/2500/pg2500.cover.medium.jpg",
@@ -1499,7 +1454,7 @@
 		"review-count": 671467
 	},
 	{
-		"id": 89,
+		"id": 86,
 		"title": "Philosophumena; or, The refutation of all heresies, Volume II",
 		"authors": "Hippolytus, Antipope",
 		"image": "https://www.gutenberg.org/cache/epub/67116/pg67116.cover.medium.jpg",
@@ -1516,7 +1471,7 @@
 		"review-count": null
 	},
 	{
-		"id": 90,
+		"id": 87,
 		"title": "The System of Nature, or, the Laws of the Moral and Physical World. Volume 1",
 		"authors": "Holbach, Paul Henri Thiry, baron d'",
 		"image": "https://www.gutenberg.org/cache/epub/8909/pg8909.cover.medium.jpg",
@@ -1535,7 +1490,7 @@
 		"review-count": null
 	},
 	{
-		"id": 91,
+		"id": 88,
 		"title": "The Essays of Montaigne",
 		"authors": "Montaigne, Michel de",
 		"image": "https://www.gutenberg.org/cache/epub/3600/pg3600.cover.medium.jpg",
@@ -1554,7 +1509,7 @@
 		"review-count": 436
 	},
 	{
-		"id": 92,
+		"id": 89,
 		"title": "A History of Mediaeval Jewish Philosophy",
 		"authors": "Husik, Isaac",
 		"image": "https://www.gutenberg.org/cache/epub/27821/pg27821.cover.medium.jpg",
@@ -1570,7 +1525,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 93,
+		"id": 90,
 		"title": "The Five Great Philosophies of Life",
 		"authors": "Hyde, William De Witt",
 		"image": "https://www.gutenberg.org/cache/epub/39065/pg39065.cover.medium.jpg",
@@ -1586,7 +1541,7 @@
 		"review-count": 103
 	},
 	{
-		"id": 94,
+		"id": 91,
 		"title": "The Awakening of the Soul",
 		"authors": "Ibn Tufayl, Muhammad ibn 'Abd al-Malik",
 		"image": "https://www.gutenberg.org/cache/epub/34572/pg34572.cover.medium.jpg",
@@ -1602,7 +1557,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 95,
+		"id": 92,
 		"title": "The Varieties of Religious Experience: A Study in Human Nature",
 		"authors": "James, William",
 		"image": "https://www.gutenberg.org/cache/epub/621/pg621.cover.medium.jpg",
@@ -1620,7 +1575,7 @@
 		"review-count": 543
 	},
 	{
-		"id": 96,
+		"id": 93,
 		"title": "The Will to Believe, and Other Essays in Popular Philosophy",
 		"authors": "James, William",
 		"image": "https://www.gutenberg.org/cache/epub/26659/pg26659.cover.medium.jpg",
@@ -1636,7 +1591,7 @@
 		"review-count": 37
 	},
 	{
-		"id": 97,
+		"id": 94,
 		"title": "The Critique of Pure Reason",
 		"authors": "Kant, Immanuel",
 		"image": "https://www.gutenberg.org/cache/epub/4280/pg4280.cover.medium.jpg",
@@ -1656,7 +1611,7 @@
 		"review-count": 772
 	},
 	{
-		"id": 98,
+		"id": 95,
 		"title": "The Critique of Practical Reason",
 		"authors": "Kant, Immanuel",
 		"image": "https://www.gutenberg.org/cache/epub/5683/pg5683.cover.medium.jpg",
@@ -1675,7 +1630,7 @@
 		"review-count": 28
 	},
 	{
-		"id": 99,
+		"id": 96,
 		"title": "The Metaphysical Elements of Ethics",
 		"authors": "Kant, Immanuel",
 		"image": "https://www.gutenberg.org/cache/epub/5684/pg5684.cover.medium.jpg",
@@ -1691,7 +1646,7 @@
 		"review-count": 144
 	},
 	{
-		"id": 100,
+		"id": 97,
 		"title": "Essays on the Materialistic Conception of History",
 		"authors": "Labriola, Antonio",
 		"image": "https://www.gutenberg.org/cache/epub/32644/pg32644.cover.medium.jpg",
@@ -1709,7 +1664,7 @@
 		"review-count": 17
 	},
 	{
-		"id": 101,
+		"id": 98,
 		"title": "The Big Engine",
 		"authors": "Leiber, Fritz",
 		"image": "https://www.gutenberg.org/cache/epub/51549/pg51549.cover.medium.jpg",
@@ -1728,7 +1683,7 @@
 		"review-count": 47
 	},
 	{
-		"id": 102,
+		"id": 99,
 		"title": "Life and Matter: A Criticism of Professor Haeckel's \"Riddle of the Universe\"",
 		"authors": "Lodge, Oliver, Sir",
 		"image": "https://www.gutenberg.org/cache/epub/26321/pg26321.cover.medium.jpg",
@@ -1746,7 +1701,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 103,
+		"id": 100,
 		"title": "The Prince",
 		"authors": "Machiavelli, Niccolò",
 		"image": "https://www.gutenberg.org/cache/epub/1232/pg1232.cover.medium.jpg",
@@ -1768,7 +1723,7 @@
 		"review-count": 4362
 	},
 	{
-		"id": 104,
+		"id": 101,
 		"title": "The Philosophy of the Conditioned",
 		"authors": "Mansel, Henry Longueville",
 		"image": "https://www.gutenberg.org/cache/epub/28484/pg28484.cover.medium.jpg",
@@ -1783,7 +1738,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 105,
+		"id": 102,
 		"title": "An Essay Towards a Philosophy of Education: A Liberal Education for All",
 		"authors": "Mason, Charlotte M. (Charlotte Maria)",
 		"image": "https://www.gutenberg.org/cache/epub/66369/pg66369.cover.medium.jpg",
@@ -1798,7 +1753,7 @@
 		"review-count": null
 	},
 	{
-		"id": 106,
+		"id": 103,
 		"title": "The World's Greatest Books — Volume 14 — Philosophy and Economics",
 		"authors": "Various",
 		"image": "https://www.gutenberg.org/cache/epub/25009/pg25009.cover.medium.jpg",
@@ -1813,7 +1768,7 @@
 		"review-count": null
 	},
 	{
-		"id": 107,
+		"id": 104,
 		"title": "The Philosophy of Friedrich Nietzsche",
 		"authors": "Mencken, H. L. (Henry Louis)",
 		"image": "https://www.gutenberg.org/cache/epub/49316/pg49316.cover.medium.jpg",
@@ -1829,7 +1784,7 @@
 		"review-count": 61
 	},
 	{
-		"id": 108,
+		"id": 105,
 		"title": "An Outline of the History of Christian Thought Since Kant",
 		"authors": "Moore, Edward Caldwell",
 		"image": "https://www.gutenberg.org/cache/epub/15780/pg15780.cover.medium.jpg",
@@ -1847,7 +1802,7 @@
 		"review-count": 8
 	},
 	{
-		"id": 109,
+		"id": 106,
 		"title": "Democritus Platonissans",
 		"authors": "More, Henry",
 		"image": "https://www.gutenberg.org/cache/epub/30327/pg30327.cover.medium.jpg",
@@ -1862,7 +1817,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 110,
+		"id": 107,
 		"title": "The Silesian Horseherd - Questions of the Hour",
 		"authors": "Müller, F. Max (Friedrich Max)",
 		"image": "https://www.gutenberg.org/cache/epub/24315/pg24315.cover.medium.jpg",
@@ -1881,7 +1836,7 @@
 		"review-count": null
 	},
 	{
-		"id": 111,
+		"id": 108,
 		"title": "A Dominie's Log",
 		"authors": "Neill, Alexander Sutherland",
 		"image": "https://www.gutenberg.org/cache/epub/57028/pg57028.cover.medium.jpg",
@@ -1898,7 +1853,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 112,
+		"id": 109,
 		"title": "A Dominie Dismissed",
 		"authors": "Neill, Alexander Sutherland",
 		"image": "https://www.gutenberg.org/cache/epub/57059/pg57059.cover.medium.jpg",
@@ -1914,7 +1869,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 113,
+		"id": 110,
 		"title": "The Mystics of Islam",
 		"authors": "Nicholson, Reynold Alleyne",
 		"image": "https://www.gutenberg.org/cache/epub/67388/pg67388.cover.medium.jpg",
@@ -1930,7 +1885,7 @@
 		"review-count": "15"
 	},
 	{
-		"id": 114,
+		"id": 111,
 		"title": "Thus Spake Zarathustra: A Book for All and None",
 		"authors": "Nietzsche, Friedrich Wilhelm",
 		"image": "https://www.gutenberg.org/cache/epub/1998/pg1998.cover.medium.jpg",
@@ -1948,7 +1903,7 @@
 		"review-count": 2291
 	},
 	{
-		"id": 115,
+		"id": 112,
 		"title": "The Will to Power: An Attempted Transvaluation of All Values. Book III and IV",
 		"authors": "Nietzsche, Friedrich Wilhelm",
 		"image": "https://www.gutenberg.org/cache/epub/52915/pg52915.cover.medium.jpg",
@@ -1965,7 +1920,7 @@
 		"review-count": 550
 	},
 	{
-		"id": 116,
+		"id": 113,
 		"title": "The Joyful Wisdom (La Gaya Scienza)",
 		"authors": "Nietzsche, Friedrich Wilhelm",
 		"image": "https://www.gutenberg.org/cache/epub/52881/pg52881.cover.medium.jpg",
@@ -1980,7 +1935,7 @@
 		"review-count": null
 	},
 	{
-		"id": 117,
+		"id": 114,
 		"title": "Thoughts out of Season, Part I",
 		"authors": "Nietzsche, Friedrich Wilhelm",
 		"image": "https://www.gutenberg.org/cache/epub/38226/pg38226.cover.medium.jpg",
@@ -1996,7 +1951,7 @@
 		"review-count": null
 	},
 	{
-		"id": 118,
+		"id": 115,
 		"title": "Bushido, the Soul of Japan",
 		"authors": "Nitobe, Inazo",
 		"image": "https://www.gutenberg.org/cache/epub/12096/pg12096.cover.medium.jpg",
@@ -2016,7 +1971,7 @@
 		"review-count": 554
 	},
 	{
-		"id": 119,
+		"id": 116,
 		"title": "Humanistic Nursing",
 		"authors": "Paterson, Josephine G.",
 		"image": "https://www.gutenberg.org/cache/epub/25020/pg25020.cover.medium.jpg",
@@ -2033,7 +1988,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 120,
+		"id": 117,
 		"title": "Crotchet Castle",
 		"authors": "Peacock, Thomas Love",
 		"image": "https://www.gutenberg.org/cache/epub/2075/pg2075.cover.medium.jpg",
@@ -2050,7 +2005,7 @@
 		"review-count": 98
 	},
 	{
-		"id": 121,
+		"id": 118,
 		"title": "Plato and the Other Companions of Sokrates, 3rd ed. Volume 2",
 		"authors": "Grote, George",
 		"image": "https://www.gutenberg.org/cache/epub/40436/pg40436.cover.medium.jpg",
@@ -2067,7 +2022,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 122,
+		"id": 119,
 		"title": "Meditations On The Essence Of Christianity, And On The Religious Questions Of The Day",
 		"authors": "Guizot, François",
 		"image": "https://www.gutenberg.org/cache/epub/60488/pg60488.cover.medium.jpg",
@@ -2083,7 +2038,7 @@
 		"review-count": null
 	},
 	{
-		"id": 123,
+		"id": 120,
 		"title": "Modern French Philosophy: a Study of the Development Since Comte",
 		"authors": "Gunn, John Alexander",
 		"image": "https://www.gutenberg.org/cache/epub/5246/pg5246.cover.medium.jpg",
@@ -2101,7 +2056,7 @@
 		"review-count": 5
 	},
 	{
-		"id": 124,
+		"id": 121,
 		"title": "Hegel's Lectures on the History of Philosophy: Volume 1 (of 3)",
 		"authors": "Hegel, Georg Wilhelm Friedrich",
 		"image": "https://www.gutenberg.org/cache/epub/51635/pg51635.cover.medium.jpg",
@@ -2116,7 +2071,7 @@
 		"review-count": 14
 	},
 	{
-		"id": 125,
+		"id": 122,
 		"title": "Outlines of Educational Doctrine",
 		"authors": "Herbart, Johann Friedrich",
 		"image": "https://www.gutenberg.org/cache/epub/44905/pg44905.cover.medium.jpg",
@@ -2131,7 +2086,7 @@
 		"review-count": null
 	},
 	{
-		"id": 126,
+		"id": 123,
 		"title": "Siddhartha: A Poem of India",
 		"authors": "Hesse, Hermann",
 		"image": "https://www.gutenberg.org/cache/epub/58344/pg58344.cover.medium.jpg",
@@ -2154,7 +2109,7 @@
 		"review-count": 34
 	},
 	{
-		"id": 127,
+		"id": 124,
 		"title": "Philosophumena; or, The refutation of all heresies, Volume I",
 		"authors": "Hippolytus, Antipope",
 		"image": "https://www.gutenberg.org/cache/epub/65478/pg65478.cover.medium.jpg",
@@ -2171,7 +2126,7 @@
 		"review-count": null
 	},
 	{
-		"id": 128,
+		"id": 125,
 		"title": "The origins of art; a psychological & sociological inquiry",
 		"authors": "Hirn, Y. (Yrjö)",
 		"image": "https://www.gutenberg.org/cache/epub/66869/pg66869.cover.medium.jpg",
@@ -2188,7 +2143,7 @@
 		"review-count": null
 	},
 	{
-		"id": 129,
+		"id": 126,
 		"title": "The System of Nature, or, the Laws of the Moral and Physical World Volume 2",
 		"authors": "Holbach, Paul Henri Thiry, baron d'",
 		"image": "https://www.gutenberg.org/cache/epub/8910/pg8910.cover.medium.jpg",
@@ -2207,7 +2162,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 130,
+		"id": 127,
 		"title": "Spirit and Music",
 		"authors": "Hunt, H. Ernest (Harry Ernest)",
 		"image": "https://www.gutenberg.org/cache/epub/21542/pg21542.cover.medium.jpg",
@@ -2222,7 +2177,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 131,
+		"id": 128,
 		"title": "Lay Sermons, Addresses and Reviews",
 		"authors": "Huxley, Thomas Henry",
 		"image": "https://www.gutenberg.org/cache/epub/16729/pg16729.cover.medium.jpg",
@@ -2239,7 +2194,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 132,
+		"id": 129,
 		"title": "Browning as a Philosophical and Religious Teacher",
 		"authors": "Jones, Henry, Sir",
 		"image": "https://www.gutenberg.org/cache/epub/13561/pg13561.cover.medium.jpg",
@@ -2258,7 +2213,7 @@
 		"review-count": null
 	},
 	{
-		"id": 133,
+		"id": 130,
 		"title": "Fundamental Principles of the Metaphysic of Morals",
 		"authors": "Kant, Immanuel",
 		"image": "https://www.gutenberg.org/cache/epub/5682/pg5682.cover.medium.jpg",
@@ -2274,7 +2229,7 @@
 		"review-count": 22
 	},
 	{
-		"id": 134,
+		"id": 131,
 		"title": "Selections from the Writings of Kierkegaard",
 		"authors": "Kierkegaard, Søren",
 		"image": "https://www.gutenberg.org/cache/epub/60333/pg60333.cover.medium.jpg",
@@ -2289,7 +2244,7 @@
 		"review-count": null
 	},
 	{
-		"id": 135,
+		"id": 132,
 		"title": "The Tao Teh King, or the Tao and its Characteristics",
 		"authors": "Laozi",
 		"image": "https://www.gutenberg.org/cache/epub/216/pg216.cover.medium.jpg",
@@ -2307,7 +2262,7 @@
 		"review-count": null
 	},
 	{
-		"id": 136,
+		"id": 133,
 		"title": "The Will to Doubt: An essay in philosophy for the general thinker",
 		"authors": "Lloyd, Alfred H. (Alfred Henry)",
 		"image": "https://www.gutenberg.org/cache/epub/34198/pg34198.cover.medium.jpg",
@@ -2323,7 +2278,7 @@
 		"review-count": null
 	},
 	{
-		"id": 137,
+		"id": 134,
 		"title": "On the Nature of Things",
 		"authors": "Lucretius Carus, Titus",
 		"image": "https://www.gutenberg.org/cache/epub/785/pg785.cover.medium.jpg",
@@ -2340,7 +2295,7 @@
 		"review-count": 113
 	},
 	{
-		"id": 138,
+		"id": 135,
 		"title": "A Short History of Greek Philosophy",
 		"authors": "Marshall, J. (John)",
 		"image": "https://www.gutenberg.org/cache/epub/20500/pg20500.cover.medium.jpg",
@@ -2357,7 +2312,7 @@
 		"review-count": 201
 	},
 	{
-		"id": 139,
+		"id": 136,
 		"title": "Apollonius of Tyana, the Philosopher-Reformer of the First Century A.D.",
 		"authors": "Mead, G. R. S. (George Robert Stow)",
 		"image": "https://www.gutenberg.org/cache/epub/35460/pg35460.cover.medium.jpg",
@@ -2375,7 +2330,7 @@
 		"review-count": 201
 	},
 	{
-		"id": 140,
+		"id": 137,
 		"title": "The World's Greatest Books — Volume 13 — Religion and Philosophy",
 		"authors": "Various",
 		"image": "https://www.gutenberg.org/cache/epub/13620/pg13620.cover.medium.jpg",
@@ -2392,7 +2347,7 @@
 		"review-count": 15
 	},
 	{
-		"id": 141,
+		"id": 138,
 		"title": "Nature Mysticism",
 		"authors": "Mercer, John Edward",
 		"image": "https://www.gutenberg.org/cache/epub/18539/pg18539.cover.medium.jpg",
@@ -2409,7 +2364,7 @@
 		"review-count": 23
 	},
 	{
-		"id": 142,
+		"id": 139,
 		"title": "The Religious Thought of the Greeks",
 		"authors": "Moore, Clifford Herschel",
 		"image": "https://www.gutenberg.org/cache/epub/54406/pg54406.cover.medium.jpg",
@@ -2426,7 +2381,7 @@
 		"review-count": null
 	},
 	{
-		"id": 143,
+		"id": 140,
 		"title": "Philosophical Studies",
 		"authors": "Various",
 		"image": "https://www.gutenberg.org/cache/epub/28758/pg28758.cover.medium.jpg",
@@ -2441,7 +2396,7 @@
 		"review-count": null
 	},
 	{
-		"id": 144,
+		"id": 141,
 		"title": "A Dominie in Doubt",
 		"authors": "Neill, Alexander Sutherland",
 		"image": "https://www.gutenberg.org/cache/epub/25306/pg25306.cover.medium.jpg",
@@ -2458,7 +2413,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 145,
+		"id": 142,
 		"title": "Philosophical Letters: or, modest Reflections upon some Opinions in Natural Philosophy",
 		"authors": "Newcastle, Margaret Cavendish, Duchess of",
 		"image": "https://www.gutenberg.org/cache/epub/53679/pg53679.cover.medium.jpg",
@@ -2474,7 +2429,7 @@
 		"review-count": null
 	},
 	{
-		"id": 146,
+		"id": 143,
 		"title": "The Will to Power: An Attempted Transvaluation of All Values. Book I and II",
 		"authors": "Nietzsche, Friedrich Wilhelm",
 		"image": "https://www.gutenberg.org/cache/epub/52914/pg52914.cover.medium.jpg",
@@ -2491,7 +2446,7 @@
 		"review-count": 11
 	},
 	{
-		"id": 147,
+		"id": 144,
 		"title": "The Birth of Tragedy; or, Hellenism and Pessimism",
 		"authors": "Nietzsche, Friedrich Wilhelm",
 		"image": "https://www.gutenberg.org/cache/epub/51356/pg51356.cover.medium.jpg",
@@ -2512,7 +2467,7 @@
 		"review-count": 7
 	},
 	{
-		"id": 148,
+		"id": 145,
 		"title": "On the Future of our Educational Institutions",
 		"authors": "Nietzsche, Friedrich Wilhelm",
 		"image": "https://www.gutenberg.org/cache/epub/28146/pg28146.cover.medium.jpg",
@@ -2529,7 +2484,7 @@
 		"review-count": 30
 	},
 	{
-		"id": 149,
+		"id": 146,
 		"title": "Arabic Thought and Its Place in History",
 		"authors": "O'Leary, De Lacy",
 		"image": "https://www.gutenberg.org/cache/epub/61593/pg61593.cover.medium.jpg",
@@ -2544,7 +2499,7 @@
 		"review-count": 17
 	},
 	{
-		"id": 150,
+		"id": 147,
 		"title": "The Writings of Thomas Paine — Volume 4",
 		"authors": "Paine, Thomas",
 		"image": "https://www.gutenberg.org/cache/epub/3743/pg3743.cover.medium.jpg",
@@ -2564,7 +2519,7 @@
 		"review-count": 1089
 	},
 	{
-		"id": 151,
+		"id": 148,
 		"title": "Pascal's Pensées",
 		"authors": "Pascal, Blaise",
 		"image": "https://www.gutenberg.org/cache/epub/18269/pg18269.cover.medium.jpg",
@@ -2582,7 +2537,7 @@
 		"review-count": 383
 	},
 	{
-		"id": 152,
+		"id": 149,
 		"title": "Plato and Platonism",
 		"authors": "Pater, Walter",
 		"image": "https://www.gutenberg.org/cache/epub/4095/pg4095.cover.medium.jpg",
@@ -2597,7 +2552,7 @@
 		"review-count": 28
 	},
 	{
-		"id": 153,
+		"id": 150,
 		"title": "Chance, Love, and Logic: Philosophical Essays",
 		"authors": "Peirce, Charles S. (Charles Sanders)",
 		"image": "https://www.gutenberg.org/cache/epub/65274/pg65274.cover.medium.jpg",
@@ -2616,7 +2571,7 @@
 		"review-count": 54
 	},
 	{
-		"id": 154,
+		"id": 151,
 		"title": "The Approach to Philosophy",
 		"authors": "Perry, Ralph Barton",
 		"image": "https://www.gutenberg.org/cache/epub/25110/pg25110.cover.medium.jpg",
@@ -2633,7 +2588,7 @@
 		"review-count": 7
 	},
 	{
-		"id": 155,
+		"id": 152,
 		"title": "Euthydemus",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1598/pg1598.cover.medium.jpg",
@@ -2652,7 +2607,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 156,
+		"id": 153,
 		"title": "Cratylus",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1616/pg1616.cover.medium.jpg",
@@ -2668,7 +2623,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 157,
+		"id": 154,
 		"title": "Sophist",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1735/pg1735.cover.medium.jpg",
@@ -2689,7 +2644,7 @@
 		"review-count": 2506
 	},
 	{
-		"id": 158,
+		"id": 155,
 		"title": "Menexenus",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1682/pg1682.cover.medium.jpg",
@@ -2706,7 +2661,7 @@
 		"review-count": 14
 	},
 	{
-		"id": 159,
+		"id": 156,
 		"title": "Crito",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1657/pg1657.cover.medium.jpg",
@@ -2727,7 +2682,7 @@
 		"review-count": 107
 	},
 	{
-		"id": 160,
+		"id": 157,
 		"title": "Euthyphro",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1642/pg1642.cover.medium.jpg",
@@ -2747,7 +2702,7 @@
 		"review-count": 7600
 	},
 	{
-		"id": 161,
+		"id": 158,
 		"title": "Lesser Hippias",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1673/pg1673.cover.medium.jpg",
@@ -2763,7 +2718,7 @@
 		"review-count": 546
 	},
 	{
-		"id": 162,
+		"id": 159,
 		"title": "Complete Works of Plutarch — Volume 3",
 		"authors": "Plutarch",
 		"image": "https://www.gutenberg.org/cache/epub/3052/pg3052.cover.medium.jpg",
@@ -2781,7 +2736,7 @@
 		"review-count": 16
 	},
 	{
-		"id": 163,
+		"id": 160,
 		"title": "The Foundations of Science: Science and Hypothesis, The Value of Science, Science and Method",
 		"authors": "Poincaré, Henri",
 		"image": "https://www.gutenberg.org/cache/epub/39713/pg39713.cover.medium.jpg",
@@ -2798,7 +2753,7 @@
 		"review-count": 40
 	},
 	{
-		"id": 164,
+		"id": 161,
 		"title": "The Complex Vision",
 		"authors": "Powys, John Cowper",
 		"image": "https://www.gutenberg.org/cache/epub/21668/pg21668.cover.medium.jpg",
@@ -2813,7 +2768,7 @@
 		"review-count": 13
 	},
 	{
-		"id": 165,
+		"id": 162,
 		"title": "An Enquiry Concerning the Principles of Taste, and of the Origin of our Ideas of Beauty, etc.",
 		"authors": "Reynolds, Frances",
 		"image": "https://www.gutenberg.org/cache/epub/13485/pg13485.cover.medium.jpg",
@@ -2829,7 +2784,7 @@
 		"review-count": 7
 	},
 	{
-		"id": 166,
+		"id": 163,
 		"title": "God and the World: A Survey of Thought",
 		"authors": "Robinson, Arthur William",
 		"image": "https://www.gutenberg.org/cache/epub/30709/pg30709.cover.medium.jpg",
@@ -2845,7 +2800,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 167,
+		"id": 164,
 		"title": "Parallel Paths: A Study in Biology, Ethics, and Art",
 		"authors": "Rolleston, T. W. (Thomas William)",
 		"image": "https://www.gutenberg.org/cache/epub/45971/pg45971.cover.medium.jpg",
@@ -2862,7 +2817,7 @@
 		"review-count": null
 	},
 	{
-		"id": 168,
+		"id": 165,
 		"title": "Mysticism and Logic and Other Essays",
 		"authors": "Russell, Bertrand",
 		"image": "https://www.gutenberg.org/cache/epub/25447/pg25447.cover.medium.jpg",
@@ -2880,7 +2835,7 @@
 		"review-count": 23
 	},
 	{
-		"id": 169,
+		"id": 166,
 		"title": "The Story of The Treasure Seekers",
 		"authors": "Nesbit, E. (Edith)",
 		"image": "https://www.gutenberg.org/cache/epub/770/pg770.cover.medium.jpg",
@@ -2902,7 +2857,7 @@
 		"review-count": 5904
 	},
 	{
-		"id": 170,
+		"id": 167,
 		"title": "The Life of Reason",
 		"authors": "Santayana, George",
 		"image": "https://www.gutenberg.org/cache/epub/15000/pg15000.cover.medium.jpg",
@@ -2917,7 +2872,7 @@
 		"review-count": 55
 	},
 	{
-		"id": 171,
+		"id": 168,
 		"title": "Egotism in German Philosophy",
 		"authors": "Santayana, George",
 		"image": "https://www.gutenberg.org/cache/epub/48431/pg48431.cover.medium.jpg",
@@ -2933,7 +2888,7 @@
 		"review-count": 11
 	},
 	{
-		"id": 172,
+		"id": 169,
 		"title": "Winds Of Doctrine: Studies in Contemporary Opinion",
 		"authors": "Santayana, George",
 		"image": "https://www.gutenberg.org/cache/epub/17771/pg17771.cover.medium.jpg",
@@ -2948,7 +2903,7 @@
 		"review-count": 5
 	},
 	{
-		"id": 173,
+		"id": 170,
 		"title": "The Philosophical Letters",
 		"authors": "Schiller, Friedrich",
 		"image": "https://www.gutenberg.org/cache/epub/6799/pg6799.cover.medium.jpg",
@@ -2965,7 +2920,7 @@
 		"review-count": 6
 	},
 	{
-		"id": 174,
+		"id": 171,
 		"title": "The philosophy of life, and philosophy of language, in a course of lectures",
 		"authors": "Schlegel, Friedrich von",
 		"image": "https://www.gutenberg.org/cache/epub/43544/pg43544.cover.medium.jpg",
@@ -2981,7 +2936,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 175,
+		"id": 172,
 		"title": "The Essays of Arthur Schopenhauer; Religion, a Dialogue, Etc.",
 		"authors": "Schopenhauer, Arthur",
 		"image": "https://www.gutenberg.org/cache/epub/10833/pg10833.cover.medium.jpg",
@@ -2996,7 +2951,7 @@
 		"review-count": 24
 	},
 	{
-		"id": 176,
+		"id": 173,
 		"title": "The World as Will and Idea (Vol. 1 of 3)",
 		"authors": "Schopenhauer, Arthur",
 		"image": "https://www.gutenberg.org/cache/epub/38427/pg38427.cover.medium.jpg",
@@ -3013,7 +2968,7 @@
 		"review-count": 123
 	},
 	{
-		"id": 177,
+		"id": 174,
 		"title": "The World as Will and Idea (Vol. 3 of 3)",
 		"authors": "Schopenhauer, Arthur",
 		"image": "https://www.gutenberg.org/cache/epub/40868/pg40868.cover.medium.jpg",
@@ -3030,7 +2985,7 @@
 		"review-count": 22
 	},
 	{
-		"id": 178,
+		"id": 175,
 		"title": "Why We Love Music",
 		"authors": "Seashore, Carl E. (Carl Emil)",
 		"image": "https://www.gutenberg.org/cache/epub/66855/pg66855.cover.medium.jpg",
@@ -3046,7 +3001,7 @@
 		"review-count": null
 	},
 	{
-		"id": 179,
+		"id": 176,
 		"title": "All Things are Possible",
 		"authors": "Shestov, Lev",
 		"image": "https://www.gutenberg.org/cache/epub/57369/pg57369.cover.medium.jpg",
@@ -3063,7 +3018,7 @@
 		"review-count": 20
 	},
 	{
-		"id": 180,
+		"id": 177,
 		"title": "Illustrations of Universal Progress: A Series of Discussions",
 		"authors": "Spencer, Herbert",
 		"image": "https://www.gutenberg.org/cache/epub/39977/pg39977.cover.medium.jpg",
@@ -3079,7 +3034,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 181,
+		"id": 178,
 		"title": "The Theory of Moral Sentiments",
 		"authors": "Smith, Adam",
 		"image": "https://www.gutenberg.org/cache/epub/67363/pg67363.cover.medium.jpg",
@@ -3095,23 +3050,7 @@
 		"review-count": 555
 	},
 	{
-		"id": 182,
-		"title": "Essays: Scientific, Political, and Speculative, Volume III",
-		"authors": "Spencer, Herbert",
-		"image": "https://www.gutenberg.org/cache/epub/53395/pg53395.cover.medium.jpg",
-		"download_count": 53,
-		"full-text": "https://www.gutenberg.org/files/53395/53395-0.txt",
-		"subjects": [
-			"Political science",
-			"Science"
-		],
-		"bookshelves": [],
-		"description": "Volume 3 of a three volume collection of Spencer’s essays which cover political philosophy, sociology, science, and current affairs.",
-		"rating": 5.0,
-		"review-count": 1
-	},
-	{
-		"id": 183,
+		"id": 179,
 		"title": "A Theological-Political Treatise [Part IV]",
 		"authors": "Spinoza, Benedictus de",
 		"image": "https://www.gutenberg.org/cache/epub/992/pg992.cover.medium.jpg",
@@ -3130,7 +3069,7 @@
 		"review-count": null
 	},
 	{
-		"id": 184,
+		"id": 180,
 		"title": "Theologico-Political Treatise — Part 1",
 		"authors": "Spinoza, Benedictus de",
 		"image": "https://www.gutenberg.org/cache/epub/989/pg989.cover.medium.jpg",
@@ -3149,7 +3088,7 @@
 		"review-count": 9
 	},
 	{
-		"id": 185,
+		"id": 181,
 		"title": "The New Optimism",
 		"authors": "Stacpoole, H. De Vere (Henry De Vere)",
 		"image": "https://www.gutenberg.org/cache/epub/54840/pg54840.cover.medium.jpg",
@@ -3167,7 +3106,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 186,
+		"id": 182,
 		"title": "Creative Unity",
 		"authors": "Tagore, Rabindranath",
 		"image": "https://www.gutenberg.org/cache/epub/23136/pg23136.cover.medium.jpg",
@@ -3182,7 +3121,7 @@
 		"review-count": 14
 	},
 	{
-		"id": 187,
+		"id": 183,
 		"title": "Introduction to the Philosophy and Writings of Plato",
 		"authors": "Taylor, Thomas",
 		"image": "https://www.gutenberg.org/cache/epub/10214/pg10214.cover.medium.jpg",
@@ -3199,7 +3138,7 @@
 		"review-count": 134
 	},
 	{
-		"id": 188,
+		"id": 184,
 		"title": "What Is Art?",
 		"authors": "Tolstoy, Leo, graf",
 		"image": "https://www.gutenberg.org/cache/epub/64908/pg64908.cover.medium.jpg",
@@ -3215,7 +3154,7 @@
 		"review-count": 141
 	},
 	{
-		"id": 189,
+		"id": 185,
 		"title": "Fathers and Sons",
 		"authors": "Turgenev, Ivan Sergeevich",
 		"image": "https://www.gutenberg.org/cache/epub/47935/pg47935.cover.medium.jpg",
@@ -3236,7 +3175,7 @@
 		"review-count": 78763
 	},
 	{
-		"id": 190,
+		"id": 186,
 		"title": "The Monist, Vol. 1",
 		"authors": "Various",
 		"image": "https://www.gutenberg.org/cache/epub/56634/pg56634.cover.medium.jpg",
@@ -3251,7 +3190,7 @@
 		"review-count": null
 	},
 	{
-		"id": 191,
+		"id": 187,
 		"title": "A Philosophical Dictionary, Volume 08",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/35628/pg35628.cover.medium.jpg",
@@ -3267,7 +3206,7 @@
 		"review-count": null
 	},
 	{
-		"id": 192,
+		"id": 188,
 		"title": "A Philosophical Dictionary, Volume 03",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/35623/pg35623.cover.medium.jpg",
@@ -3283,7 +3222,7 @@
 		"review-count": null
 	},
 	{
-		"id": 193,
+		"id": 189,
 		"title": "Letters on England",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/2445/pg2445.cover.medium.jpg",
@@ -3308,7 +3247,7 @@
 		"review-count": 2371
 	},
 	{
-		"id": 194,
+		"id": 190,
 		"title": "A Philosophical Dictionary, Volume 01",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/35621/pg35621.cover.medium.jpg",
@@ -3324,7 +3263,7 @@
 		"review-count": null
 	},
 	{
-		"id": 195,
+		"id": 191,
 		"title": "Voltaire's Philosophical Dictionary",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/18569/pg18569.cover.medium.jpg",
@@ -3341,7 +3280,7 @@
 		"review-count": 98
 	},
 	{
-		"id": 196,
+		"id": 192,
 		"title": "A Philosophical Dictionary, Volume 05",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/35625/pg35625.cover.medium.jpg",
@@ -3357,7 +3296,7 @@
 		"review-count": null
 	},
 	{
-		"id": 197,
+		"id": 193,
 		"title": "Sunshine Jane",
 		"authors": "Holmes, Mary Jane",
 		"image": "https://www.gutenberg.org/cache/epub/17260/pg17260.cover.medium.jpg",
@@ -3374,7 +3313,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 198,
+		"id": 194,
 		"title": "Protagoras",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1591/pg1591.cover.medium.jpg",
@@ -3393,7 +3332,7 @@
 		"review-count": 72
 	},
 	{
-		"id": 199,
+		"id": 195,
 		"title": "Symposium",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1600/pg1600.cover.medium.jpg",
@@ -3411,7 +3350,7 @@
 		"review-count": 451
 	},
 	{
-		"id": 200,
+		"id": 196,
 		"title": "Parmenides",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1687/pg1687.cover.medium.jpg",
@@ -3432,7 +3371,7 @@
 		"review-count": 74
 	},
 	{
-		"id": 201,
+		"id": 197,
 		"title": "Phaedo",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1658/pg1658.cover.medium.jpg",
@@ -3450,7 +3389,7 @@
 		"review-count": 113
 	},
 	{
-		"id": 202,
+		"id": 198,
 		"title": "Apology",
 		"authors": "Plato",
 		"image": "https://www.gutenberg.org/cache/epub/1656/pg1656.cover.medium.jpg",
@@ -3470,7 +3409,7 @@
 		"review-count": 44605
 	},
 	{
-		"id": 203,
+		"id": 199,
 		"title": "Eryxias",
 		"authors": "Plato (spurious and doubtful works)",
 		"image": "https://www.gutenberg.org/cache/epub/1681/pg1681.cover.medium.jpg",
@@ -3490,7 +3429,7 @@
 		"review-count": 62
 	},
 	{
-		"id": 204,
+		"id": 200,
 		"title": "An Introduction to the Philosophy of Law",
 		"authors": "Pound, Roscoe",
 		"image": "https://www.gutenberg.org/cache/epub/32168/pg32168.cover.medium.jpg",
@@ -3507,7 +3446,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 205,
+		"id": 201,
 		"title": "Montaigne and Shakespeare",
 		"authors": "Robertson, J. M. (John Mackinnon)",
 		"image": "https://www.gutenberg.org/cache/epub/25535/pg25535.cover.medium.jpg",
@@ -3523,7 +3462,7 @@
 		"review-count": null
 	},
 	{
-		"id": 206,
+		"id": 202,
 		"title": "The Sources of Religious Insight",
 		"authors": "Royce, Josiah",
 		"image": "https://www.gutenberg.org/cache/epub/33677/pg33677.cover.medium.jpg",
@@ -3538,7 +3477,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 207,
+		"id": 203,
 		"title": "The Problems of Philosophy",
 		"authors": "Russell, Bertrand",
 		"image": "https://www.gutenberg.org/cache/epub/5827/pg5827.cover.medium.jpg",
@@ -3557,7 +3496,7 @@
 		"review-count": 582
 	},
 	{
-		"id": 208,
+		"id": 204,
 		"title": "Outlines of a Philosophy of Religion based on Psychology and History",
 		"authors": "Sabatier, Auguste",
 		"image": "https://www.gutenberg.org/cache/epub/38446/pg38446.cover.medium.jpg",
@@ -3574,7 +3513,7 @@
 		"review-count": 19
 	},
 	{
-		"id": 209,
+		"id": 205,
 		"title": "Three Philosophical Poets: Lucretius, Dante, and Goethe",
 		"authors": "Santayana, George",
 		"image": "https://www.gutenberg.org/cache/epub/35612/pg35612.cover.medium.jpg",
@@ -3595,7 +3534,7 @@
 		"review-count": 19
 	},
 	{
-		"id": 210,
+		"id": 206,
 		"title": "Some Turns of Thought in Modern Philosophy",
 		"authors": "Santayana, George",
 		"image": "https://www.gutenberg.org/cache/epub/16712/pg16712.cover.medium.jpg",
@@ -3613,7 +3552,7 @@
 		"review-count": 20
 	},
 	{
-		"id": 211,
+		"id": 207,
 		"title": "The Philosophy of History, Vol. 1 of 2",
 		"authors": "Schlegel, Friedrich von",
 		"image": "https://www.gutenberg.org/cache/epub/38365/pg38365.cover.medium.jpg",
@@ -3628,22 +3567,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 212,
-		"title": "The Philosophy of History, Vol. 2 of 2",
-		"authors": "Schlegel, Friedrich von",
-		"image": "https://www.gutenberg.org/cache/epub/38365/pg38365.cover.medium.jpg",
-		"download_count": 67,
-		"full-text": "https://www.gutenberg.org/files/38365/38365-0.txt",
-		"subjects": [
-			"History"
-		],
-		"bookshelves": [],
-		"description": "The most important subject, and the first problem of philosophy, is the restoration in man of the lost image of God; so far as this relates to science. \n Should this restoration in the internal consciousness be fully understood and really brought about, the object of pure philosophy is attained. \n To point out historically in reference to the whole human race, and in the outward conduct and experience of life, the progress of this restoration in the various periods of the world, constitutes the object of the Philosophy of History. \n In this way, we shall clearly see how, in the first ages of the world, the original word of Divine revelation formed the firm central point of faith for the future re-union of the dispersed race of man; how later, amid the various power, intellectual as well as political, which in the middle period of the world, all-ruling nations exerted on their times according to the measure allotted to them, it was alone the power of eternal love in the Christian religion which truly emancipated and redeemed mankind: and how, lastly, the pure light of this Divine truth, universally diffused through the world, and through all science—the term of all Christian hope, and Divine promise.",
-		"rating": 5.0,
-		"review-count": 3
-	},
-	{
-		"id": 213,
+		"id": 208,
 		"title": "The Essays of Arthur Schopenhauer; The Art of Literature",
 		"authors": "Schopenhauer, Arthur",
 		"image": "https://www.gutenberg.org/cache/epub/10714/pg10714.cover.medium.jpg",
@@ -3658,7 +3582,7 @@
 		"review-count": 43
 	},
 	{
-		"id": 214,
+		"id": 209,
 		"title": "The World as Will and Idea (Vol. 2 of 3)",
 		"authors": "Schopenhauer, Arthur",
 		"image": "https://www.gutenberg.org/cache/epub/40097/pg40097.cover.medium.jpg",
@@ -3675,7 +3599,7 @@
 		"review-count": 4983
 	},
 	{
-		"id": 215,
+		"id": 210,
 		"title": "Essays of Schopenhauer",
 		"authors": "Schopenhauer, Arthur",
 		"image": "https://www.gutenberg.org/cache/epub/11945/pg11945.cover.medium.jpg",
@@ -3690,7 +3614,7 @@
 		"review-count": 65
 	},
 	{
-		"id": 216,
+		"id": 211,
 		"title": "A History of Philosophy in Epitome",
 		"authors": "Schwegler, Albert",
 		"image": "https://www.gutenberg.org/cache/epub/41412/pg41412.cover.medium.jpg",
@@ -3705,7 +3629,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 217,
+		"id": 212,
 		"title": "Anton Tchekhov, and Other Essays",
 		"authors": "Shestov, Lev",
 		"image": "https://www.gutenberg.org/cache/epub/56758/pg56758.cover.medium.jpg",
@@ -3724,7 +3648,7 @@
 		"review-count": 11
 	},
 	{
-		"id": 218,
+		"id": 213,
 		"title": "Percy Bysshe Shelley as a Philosopher and Reformer",
 		"authors": "Sotheran, Charles",
 		"image": "https://www.gutenberg.org/cache/epub/16872/pg16872.cover.medium.jpg",
@@ -3740,7 +3664,7 @@
 		"review-count": null
 	},
 	{
-		"id": 219,
+		"id": 214,
 		"title": "Essays: Scientific, Political, and Speculative; Vol. II",
 		"authors": "Spencer, Herbert",
 		"image": "https://www.gutenberg.org/cache/epub/53395/pg53395.cover.medium.jpg",
@@ -3756,7 +3680,7 @@
 		"review-count": null
 	},
 	{
-		"id": 220,
+		"id": 215,
 		"title": "The Philosophy of Spinoza",
 		"authors": "Spinoza, Benedictus de",
 		"image": "https://www.gutenberg.org/cache/epub/31205/pg31205.cover.medium.jpg",
@@ -3771,7 +3695,7 @@
 		"review-count": 156
 	},
 	{
-		"id": 221,
+		"id": 216,
 		"title": "On the Improvement of the Understanding",
 		"authors": "Spinoza, Benedictus de",
 		"image": "https://www.gutenberg.org/cache/epub/1016/pg1016.cover.medium.jpg",
@@ -3789,7 +3713,7 @@
 		"review-count": 574
 	},
 	{
-		"id": 222,
+		"id": 217,
 		"title": "Theologico-Political Treatise — Part 2",
 		"authors": "Spinoza, Benedictus de",
 		"image": "https://www.gutenberg.org/cache/epub/990/pg990.cover.medium.jpg",
@@ -3808,7 +3732,7 @@
 		"review-count": null
 	},
 	{
-		"id": 223,
+		"id": 218,
 		"title": "A Critical History of Greek Philosophy",
 		"authors": "Stace, W. T. (Walter Terence)",
 		"image": "https://www.gutenberg.org/cache/epub/33411/pg33411.cover.medium.jpg",
@@ -3823,7 +3747,7 @@
 		"review-count": 38
 	},
 	{
-		"id": 224,
+		"id": 219,
 		"title": "The English Utilitarians, Volume 1",
 		"authors": "Stephen, Leslie",
 		"image": "https://www.gutenberg.org/cache/epub/27597/pg27597.cover.medium.jpg",
@@ -3845,7 +3769,7 @@
 		"review-count": null
 	},
 	{
-		"id": 225,
+		"id": 220,
 		"title": "Sadhana, the Realisation of Life",
 		"authors": "Tagore, Rabindranath",
 		"image": [],
@@ -3861,7 +3785,7 @@
 		"review-count": 43
 	},
 	{
-		"id": 226,
+		"id": 221,
 		"title": "On the Significance of Science and Art",
 		"authors": "Tolstoy, Leo, graf",
 		"image": "https://www.gutenberg.org/cache/epub/3631/pg3631.cover.medium.jpg",
@@ -3879,7 +3803,7 @@
 		"review-count": 20
 	},
 	{
-		"id": 227,
+		"id": 222,
 		"title": "Fathers and Children",
 		"authors": "Turgenev, Ivan Sergeevich",
 		"image": "https://www.gutenberg.org/cache/epub/30723/pg30723.cover.medium.jpg",
@@ -3901,7 +3825,7 @@
 		"review-count": 35
 	},
 	{
-		"id": 228,
+		"id": 223,
 		"title": "Cyclopedia of Philosophy",
 		"authors": "Vaknin, Samuel",
 		"image": "https://www.gutenberg.org/cache/epub/11261/pg11261.cover.medium.jpg",
@@ -3916,7 +3840,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 229,
+		"id": 224,
 		"title": "The Journal of Speculative Philosophy, Vol. I, Nos. 1-4, 1867",
 		"authors": "Various",
 		"image": "https://www.gutenberg.org/cache/epub/65097/pg65097.cover.medium.jpg",
@@ -3931,7 +3855,7 @@
 		"review-count": null
 	},
 	{
-		"id": 230,
+		"id": 225,
 		"title": "A Philosophical Dictionary, Volume 02",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/35622/pg35622.cover.medium.jpg",
@@ -3947,7 +3871,7 @@
 		"review-count": null
 	},
 	{
-		"id": 231,
+		"id": 226,
 		"title": "A Philosophical Dictionary, Volume 04",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/35624/pg35624.cover.medium.jpg",
@@ -3963,7 +3887,7 @@
 		"review-count": null
 	},
 	{
-		"id": 232,
+		"id": 227,
 		"title": "A Philosophical Dictionary, Volume 07",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/35627/pg35627.cover.medium.jpg",
@@ -3979,7 +3903,7 @@
 		"review-count": null
 	},
 	{
-		"id": 233,
+		"id": 228,
 		"title": "A Philosophical Dictionary, Volume 09",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/35629/pg35629.cover.medium.jpg",
@@ -3995,7 +3919,7 @@
 		"review-count": null
 	},
 	{
-		"id": 234,
+		"id": 229,
 		"title": "A Philosophical Dictionary, Volume 10",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/35630/pg35630.cover.medium.jpg",
@@ -4011,7 +3935,7 @@
 		"review-count": null
 	},
 	{
-		"id": 235,
+		"id": 230,
 		"title": "A Philosophical Dictionary, Volume 06",
 		"authors": "Voltaire",
 		"image": "https://www.gutenberg.org/cache/epub/35626/pg35626.cover.medium.jpg",
@@ -4027,7 +3951,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 236,
+		"id": 231,
 		"title": "Lao-tzu, A Study in Chinese Philosophy",
 		"authors": "Watters, Thomas",
 		"image": "https://www.gutenberg.org/cache/epub/63958/pg63958.cover.medium.jpg",
@@ -4044,7 +3968,7 @@
 		"review-count": null
 	},
 	{
-		"id": 237,
+		"id": 232,
 		"title": "Studies in the Theory of Descent, Volume II",
 		"authors": "Weismann, August",
 		"image": "https://www.gutenberg.org/cache/epub/47848/pg47848.cover.medium.jpg",
@@ -4065,7 +3989,7 @@
 		"review-count": null
 	},
 	{
-		"id": 238,
+		"id": 233,
 		"title": "On the Philosophy of Discovery, Chapters Historical and Critical",
 		"authors": "Whewell, William",
 		"image": "https://www.gutenberg.org/cache/epub/51555/pg51555.cover.medium.jpg",
@@ -4081,7 +4005,7 @@
 		"review-count": null
 	},
 	{
-		"id": 239,
+		"id": 234,
 		"title": "The Picture of Dorian Gray",
 		"authors": "Wilde, Oscar",
 		"image": "https://www.gutenberg.org/cache/epub/174/pg174.cover.medium.jpg",
@@ -4107,7 +4031,7 @@
 		"review-count": 1207233
 	},
 	{
-		"id": 240,
+		"id": 235,
 		"title": "Ancient and Modern Physics",
 		"authors": "Willson, Thomas Edgar",
 		"image": "https://www.gutenberg.org/cache/epub/10773/pg10773.cover.medium.jpg",
@@ -4124,7 +4048,7 @@
 		"review-count": 1206714
 	},
 	{
-		"id": 241,
+		"id": 236,
 		"title": "What Nietzsche Taught",
 		"authors": "Wright, Willard Huntington",
 		"image": "https://www.gutenberg.org/cache/epub/53622/pg53622.cover.medium.jpg",
@@ -4140,7 +4064,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 242,
+		"id": 237,
 		"title": "The Symposium",
 		"authors": "Xenophon",
 		"image": "https://www.gutenberg.org/cache/epub/1181/pg1181.cover.medium.jpg",
@@ -4157,7 +4081,7 @@
 		"review-count": 163
 	},
 	{
-		"id": 243,
+		"id": 238,
 		"title": "Studies in the Theory of Descent, Volume I",
 		"authors": "Weismann, August",
 		"image": "https://www.gutenberg.org/cache/epub/47847/pg47847.cover.medium.jpg",
@@ -4178,7 +4102,7 @@
 		"review-count": null
 	},
 	{
-		"id": 244,
+		"id": 239,
 		"title": "The Discovery of the Future",
 		"authors": "Wells, H. G. (Herbert George)",
 		"image": "https://www.gutenberg.org/cache/epub/44867/pg44867.cover.medium.jpg",
@@ -4196,7 +4120,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 245,
+		"id": 240,
 		"title": "The Purpose of History",
 		"authors": "Woodbridge, Frederick James Eugene",
 		"image": "https://www.gutenberg.org/cache/epub/58179/pg58179.cover.medium.jpg",
@@ -4211,7 +4135,7 @@
 		"review-count": null
 	},
 	{
-		"id": 246,
+		"id": 241,
 		"title": "Chuang Tzu: Mystic, Moralist, and Social Reformer",
 		"authors": "Zhuangzi",
 		"image": "https://www.gutenberg.org/cache/epub/59709/pg59709.cover.medium.jpg",
@@ -4227,7 +4151,7 @@
 		"review-count": 2399
 	},
 	{
-		"id": 247,
+		"id": 242,
 		"title": "Opus 21 Descriptive Music for the Lower Kinsey Epoch of the Atomic Age, a Concerto for a One-man Band, Six Arias for Soap Operas, Fugues, Anthems & Barrelhouse",
 		"authors": "Wylie, Philip",
 		"image": "https://www.gutenberg.org/cache/epub/62900/pg62900.cover.medium.jpg",
@@ -4244,7 +4168,7 @@
 		"review-count": 40
 	},
 	{
-		"id": 248,
+		"id": 243,
 		"title": "Reflections on the painting and sculpture of the Greeks: with instructions for the connoisseur, and an essay on grace in works of art",
 		"authors": "Winkelmann, Johann Joachim",
 		"image": "https://www.gutenberg.org/cache/epub/61317/pg61317.cover.medium.jpg",
@@ -4261,7 +4185,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 249,
+		"id": 244,
 		"title": "The Concept of Nature: The Tarner Lectures Delivered in Trinity College, November 1919",
 		"authors": "Whitehead, Alfred North",
 		"image": "https://www.gutenberg.org/cache/epub/18835/pg18835.cover.medium.jpg",
@@ -4278,7 +4202,7 @@
 		"review-count": 136
 	},
 	{
-		"id": 250,
+		"id": 245,
 		"title": "The Mediaeval Mind, Volume 2",
 		"authors": "Taylor, Henry Osborn",
 		"image": "https://www.gutenberg.org/cache/epub/43881/pg43881.cover.medium.jpg",
@@ -4295,7 +4219,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 251,
+		"id": 246,
 		"title": "Character and Opinion in the United States",
 		"authors": "Santayana, George",
 		"image": "https://www.gutenberg.org/cache/epub/34654/pg34654.cover.medium.jpg",
@@ -4315,7 +4239,7 @@
 		"review-count": 14
 	},
 	{
-		"id": 252,
+		"id": 247,
 		"title": "Reason and Faith; Their Claims and Conflicts From The Edinburgh Review, October 1849, Volume 90, No. CLXXXII.",
 		"authors": "Rogers, Henry",
 		"image": "https://www.gutenberg.org/cache/epub/15563/pg15563.cover.medium.jpg",
@@ -4331,7 +4255,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 253,
+		"id": 248,
 		"title": "Philosophy and Religion Six Lectures Delivered at Cambridge",
 		"authors": "Rashdall, Hastings",
 		"image": "https://www.gutenberg.org/cache/epub/21995/pg21995.cover.medium.jpg",
@@ -4349,7 +4273,7 @@
 		"review-count": 28
 	},
 	{
-		"id": 254,
+		"id": 249,
 		"title": "An Inquiry into the Permanent Causes of the Decline and Fall of Powerful and Wealthy Nations",
 		"authors": "Playfair, William",
 		"image": "https://www.gutenberg.org/cache/epub/16575/pg16575.cover.medium.jpg",
@@ -4366,7 +4290,7 @@
 		"review-count": 12
 	},
 	{
-		"id": 255,
+		"id": 250,
 		"title": "On the Future of our Educational Institutions, Volume Three",
 		"authors": "Nietzsche, Friedrich Wilhelm",
 		"image": "https://www.gutenberg.org/cache/epub/51580/pg51580.cover.medium.jpg",
@@ -4385,7 +4309,7 @@
 		"review-count": 30
 	},
 	{
-		"id": 256,
+		"id": 251,
 		"title": "Spencer's Philosophy of Science",
 		"authors": "Morgan, C. Lloyd (Conwy Lloyd)",
 		"image": "https://www.gutenberg.org/cache/epub/37513/pg37513.cover.medium.jpg",
@@ -4401,7 +4325,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 257,
+		"id": 252,
 		"title": "The Sarva-Darsana-Samgraha: Or, Review of the Different Systems of Hindu Philosophy",
 		"authors": "Madhava",
 		"image": "https://www.gutenberg.org/cache/epub/34125/pg34125.cover.medium.jpg",
@@ -4417,7 +4341,7 @@
 		"review-count": 6
 	},
 	{
-		"id": 258,
+		"id": 253,
 		"title": "A Pluralistic Universe: Hibbert Lectures at Manchester College on the Present Situation in Philosophy",
 		"authors": "James, William",
 		"image": "https://www.gutenberg.org/cache/epub/11984/pg11984.cover.medium.jpg",
@@ -4434,7 +4358,7 @@
 		"review-count": 2
 	},
 	{
-		"id": 259,
+		"id": 254,
 		"title": "The Philosophy of Natural Theology: An Essay in confutation of the scepticism of the present day",
 		"authors": "Jackson, William",
 		"image": "https://www.gutenberg.org/cache/epub/47314/pg47314.cover.medium.jpg",
@@ -4451,7 +4375,7 @@
 		"review-count": null
 	},
 	{
-		"id": 260,
+		"id": 255,
 		"title": "The Improvement of Human Reason: Exhibited in the Life of Hai Ebn Yokdhan",
 		"authors": "Ibn Tufail",
 		"image": "https://www.gutenberg.org/cache/epub/16831/pg16831.cover.medium.jpg",
@@ -4468,7 +4392,7 @@
 		"review-count": 4863
 	},
 	{
-		"id": 261,
+		"id": 256,
 		"title": "Iamblichus' Life of Pythagoras, or Pythagoric Life",
 		"authors": "Iamblichus",
 		"image": "https://www.gutenberg.org/cache/epub/63300/pg63300.cover.medium.jpg",
@@ -4487,7 +4411,7 @@
 		"review-count": 27
 	},
 	{
-		"id": 262,
+		"id": 257,
 		"title": "Philosophical Works, v. 2 (of 4)",
 		"authors": "Hume, David",
 		"image": "https://www.gutenberg.org/cache/epub/53792/pg53792.cover.medium.jpg",
@@ -4503,7 +4427,7 @@
 		"review-count": null
 	},
 	{
-		"id": 263,
+		"id": 258,
 		"title": "Philosophical Works, v. 1 (of 4)",
 		"authors": "Hume, David",
 		"image": "https://www.gutenberg.org/cache/epub/53791/pg53791.cover.medium.jpg",
@@ -4519,7 +4443,7 @@
 		"review-count": null
 	},
 	{
-		"id": 264,
+		"id": 259,
 		"title": "The Introduction to Hegel's Philosophy of Fine Arts",
 		"authors": "Hegel, Georg Wilhelm Friedrich",
 		"image": "https://www.gutenberg.org/cache/epub/46330/pg46330.cover.medium.jpg",
@@ -4535,7 +4459,7 @@
 		"review-count": 1
 	},
 	{
-		"id": 265,
+		"id": 260,
 		"title": "Myth and Science: An Essay",
 		"authors": "Vignoli, Tito",
 		"image": "https://www.gutenberg.org/cache/epub/17802/pg17802.cover.medium.jpg",
@@ -4552,7 +4476,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 266,
+		"id": 261,
 		"title": "The Mediaeval Mind (Volume 1 of 2)",
 		"authors": "Taylor, Henry Osborn",
 		"image": "https://www.gutenberg.org/cache/epub/43880/pg43880.cover.medium.jpg",
@@ -4570,7 +4494,7 @@
 		"review-count": 4
 	},
 	{
-		"id": 267,
+		"id": 262,
 		"title": "The English Utilitarians, Volume 2 (of 3)",
 		"authors": "Stephen, Leslie",
 		"image": "https://www.gutenberg.org/cache/epub/25788/pg25788.cover.medium.jpg",
@@ -4589,7 +4513,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 268,
+		"id": 263,
 		"title": "Reflections on the Rise and Fall of the Ancient Republicks",
 		"authors": "Montagu, Edward Wortley",
 		"image": "https://www.gutenberg.org/cache/epub/45592/pg45592.cover.medium.jpg",
@@ -4606,7 +4530,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 269,
+		"id": 264,
 		"title": "A Treatise of Human Nature",
 		"authors": "Hume, David",
 		"image": "https://www.gutenberg.org/cache/epub/4705/pg4705.cover.medium.jpg",
@@ -4623,7 +4547,7 @@
 		"review-count": 224
 	},
 	{
-		"id": 270,
+		"id": 265,
 		"title": "Ludicrous Aspects Of Christianity",
 		"authors": "Holyoake, Austin",
 		"download_count": 20,
@@ -4639,7 +4563,7 @@
 		"review-count": 24
 	},
 	{
-		"id": 271,
+		"id": 266,
 		"title": "The Twilight of the Idols",
 		"authors": "Nietzsche, Friedrich Wilhelm",
 		"image": "https://www.gutenberg.org/cache/epub/52263/pg52263.cover.medium.jpg",
@@ -4654,7 +4578,7 @@
 		"review-count": 8352
 	},
 	{
-		"id": 272,
+		"id": 267,
 		"title": "Thoughts on Life and Religion",
 		"authors": "Müller, F. Max (Friedrich Max)",
 		"image": "https://www.gutenberg.org/cache/epub/45122/pg45122.cover.medium.jpg",
@@ -4671,7 +4595,7 @@
 		"review-count": null
 	},
 	{
-		"id": 273,
+		"id": 268,
 		"title": "The Psychology of Nations",
 		"authors": "Partridge, G. E. (George Everett)",
 		"image": "https://www.gutenberg.org/cache/epub/20814/pg20814.cover.medium.jpg",
@@ -4690,7 +4614,7 @@
 		"review-count": 3
 	},
 	{
-		"id": 274,
+		"id": 269,
 		"title": "The Development of Metaphysics in Persia",
 		"authors": "Iqbal, Muhammad, Sir",
 		"image": "https://www.gutenberg.org/cache/epub/41707/pg41707.cover.medium.jpg",
