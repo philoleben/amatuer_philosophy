@@ -41,12 +41,12 @@
                 </div>
                 <div class="fs-5 mb-1">
                     <button class="btn btn-outline-dark flex-shrink-0 ml-5" style="width:194px;" type="button">
-                        Read to E-book
+                        <a href="{{ url_for('book.ebook', book_id=book['id'])}}">Read to E-book</a>
                     </button>
                 </div>
                 <div class="fs-5 mb-4">
                     <button class="btn btn-outline-dark flex-shrink-0 ml-5 mt-1" type="button">
-                        <a href="{{ url_for('book.ebook', book_id=book['id'])}}">Add to my bookshelves</a>
+                        <a href="/addToBookshelves?bookId={{book['id']}}&page=details">Add to my bookshelves</a>
                     </button>
                 </div>
             </div>

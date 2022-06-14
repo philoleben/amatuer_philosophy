@@ -10,9 +10,9 @@ from .. import db
 
 bp = Blueprint('book', __name__, url_prefix='/')
 
-@bp.route('/details/<int:book_id>')
-def details(book_id):
-    
+@bp.route('/details/')
+def details():
+    book_id = int(request.args.get('bookId'))
     f = open('C:\\키없는거.json', 'r', encoding='UTF-8')
     json_data = json.load(f, strict=False)
     book = json_data[book_id]
@@ -39,12 +39,12 @@ def bookshelves():
     books = Bookshelf.query.filter_by(userid=user_id).all() #현재 로그인한 user가 저장한 책 리스트    
     return render_template('book/bookshelves.html', books=books)
 
-@bp.route("/addToBookshelves/<int:book_id>")
+@bp.route("/addToBookshelves")
 @login_required
-def addToBookshelves(book_id):
+def addToBookshelves():
 
-    print(book_id)
     user_id = session.get('user_id')
+    book_id = request.args.get('bookId', type = int)
     book = Bookshelf.query.filter_by(userid=user_id,bookid=book_id).first() # 이미 저장된 데이터인지 확인
     if not book:
         bookshelf = Bookshelf(userid=user_id,bookid=book_id)
@@ -53,9 +53,13 @@ def addToBookshelves(book_id):
         flash('Added Successfully.')   
     else:
         flash('Already Added.')    
-        
-    return redirect(url_for('main.index'))
 
+    if(request.args.get('page')=='details'):
+        url='/details?bookId='+str(book_id-2)
+        return redirect(url)        
+    else:
+        return redirect(url_for('main.index'))
+    
 @bp.route("/delete/int:<bookshelf_id>")
 def delete(bookshelf_id):
     
@@ -80,3 +84,4 @@ def ebook(book_id):
     json_data = json.load(f, strict=False)
     book_url = json_data[book_id]['full-text']
     print(book_url)
+    return redirect(book_url)

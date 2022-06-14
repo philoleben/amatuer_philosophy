@@ -6,6 +6,8 @@ from pybo.models import Question, Book
 from gensim.models.doc2vec import Doc2Vec
 from nltk.tokenize import word_tokenize
 import random
+from pybo import db
+
 bp = Blueprint('main', __name__, url_prefix='/')
 
 @bp.route('/')
@@ -30,10 +32,10 @@ def index():
     
     # f2 = open('C:\\키 있는거.json', 'r', encoding="UTF-8")
     # json_data2 = json.load(f2, strict=False)
-    for book in json_data:   
-        data = Book(bookid=book['id']+1)
-        db.session.add(data)
-        db.session.commit()
+    # for book in json_data:   
+    #     data = Book(bookid=book['id']+1)
+    #     db.session.add(data)
+    #     db.session.commit()
 
     # db.session.query(Book).delete()
     # db.session.commit()
