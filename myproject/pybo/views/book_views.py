@@ -5,6 +5,8 @@ from pybo.form import UserCreateForm, UserLoginForm
 from pybo.models import User
 from pybo.models import Bookshelf, Book
 from pybo.views.auth_views import login_required
+from gensim.models.doc2vec import Doc2Vec
+from nltk.tokenize import word_tokenize
 
 from .. import db
 
@@ -21,14 +23,29 @@ def details():
 
 @bp.route('/search/')
 def search():
+    model = Doc2Vec.load("gu.model")
+    f = open('키있는거.json', 'r', encoding='UTF-8')
+    json_data = json.load(f, strict=False)
+    
+    def recommend_title(text):
+        new_vector = model.infer_vector(word_tokenize(text))
+        sims = model.dv.most_similar([new_vector])
+        return sims
+
     books = []
+    temp = []
     if 'book' in request.args:
         search_word = request.args.get('book')
-        response = requests.get("http://gutendex.com/books/?search="+search_word)
-        data = json.loads(response.content)
-        books = data['results']
-    return render_template('book/results.html', books=books)
+        
+        lists = recommend_title(search_word)
+        
+        for idx in lists:
+            temp.append(idx[0])
 
+        for idx in range(len(temp)):
+            books.append(json_data[temp[idx]])
+        
+    return render_template('book/results.html', books=books)
 @bp.route('/bookshelves/', methods=('GET', 'POST'))
 def bookshelves():
     user_id = session.get('user_id')
