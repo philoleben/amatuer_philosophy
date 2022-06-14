@@ -4,12 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/about1.css')}}">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/css/bootstrap-select.min.css">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
 {% endblock%}
 {% block content %}
 <section class="mb-5">
@@ -17,7 +17,7 @@
       <div class="row gx-4 gx-lg-5 justify-content-center">
           <!--introduction of Boogle-->
           <h3 class="text-center fw-bold mb-4">What is Boogle?</h3>
-          <div class="card card-container mb-5 border border-dark rounded-0" style="box-shadow: 5px 5px grey;">
+          <div class="card card-container mb-5 border border-dark border-2 rounded-0" style="box-shadow: 5px 5px grey;">
             <h3 class="text-center fw-bold">We serve websites that introduce and recommend books.</h3>
           </div>
 
@@ -26,7 +26,7 @@
           <div class="container profile-header">
             <div class="row d-flex justify-content-center align-items-center">
                 <!--first card-->
-                <div class="card card-container mb-5 border border-dark rounded-0" style="box-shadow: 5px 5px grey;">
+                <div class="card card-container mb-5 border border-dark border-2 rounded-0" style="box-shadow: 5px 5px grey;">
                     <div class="row m-4">
                       <div class="col-lg-4 col-md-4 col-12">
                         <div class="profile-image float-md-right"> <img src="static/images/profile_image.png" alt=""> </div>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <!--second card-->
-                <div class="card card-container mb-5 border border-dark rounded-0" style="box-shadow: 5px 5px grey;">
+                <div class="card card-container mb-5 border border-dark border-2 rounded-0" style="box-shadow: 5px 5px grey;">
                   <div class="row m-4">
                     <div class="col-lg-4 col-md-4 col-12">
                       <div class="profile-image float-md-right"> <img src="static/images/profile_image.png" alt=""> </div>
@@ -52,7 +52,7 @@
                   </div>
                 </div>
                 <!--third card-->
-                <div class="card card-container mb-5 border border-dark rounded-0" style="box-shadow: 5px 5px grey;">
+                <div class="card card-container mb-5 border border-dark border-2 rounded-0" style="box-shadow: 5px 5px grey;">
                   <div class="row m-4">
                     <div class="col-lg-4 col-md-4 col-12">
                       <div class="profile-image float-md-right"> <img src="static/images/profile_image.png" alt=""> </div>
