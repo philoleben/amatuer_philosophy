@@ -26,7 +26,7 @@
                                 <div class="card border-0">
                                     <div class="card-body border-0 text-center">
                                         <a class="bookcover" href="/details?bookId={{book['id']}}">
-                                            <img src="{{book['image']}}"></img>
+                                            <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
                                         </a>
                                     </div>
                                     <div class="card-body border-0 text-center">
@@ -87,7 +87,7 @@
                                         <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
                                     </a>
                                     <div class="card-body border border-dark border-2">
-                                        <h4 class="card-title text-center"><a href="{{ url_for('book.details', book_id=book['id'] )}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h4>
+                                        <h5 class="card-title text-center fs-6"><a href="{{ url_for('book.details', book_id=book['id'] )}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h5>
                                         <div class="icon-block">
                                             <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="{{ url_for('book.addToBookshelves', book_id=book['id'] )}}"><i class="bi bi-heart-fill"></i></a>
                                             <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="{{ url_for('book.addToBookshelves', book_id=book['id'] )}}"><i class="bi bi-plus-lg"></i></a>
@@ -109,7 +109,7 @@
                                         <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
                                     </a>
                                     <div class="card-body border border-dark">
-                                        <h4 class="card-title text-center"><a href="{{ url_for('book.details', book_id=book['id'] )}}">{{book['title']}} <br> {{book['authors']}}</h4>
+                                        <h4 class="card-title text-center fs-6"><a href="{{ url_for('book.details', book_id=book['id'] )}}">{{book['title']}} <br> {{book['authors']}}</h4>
                                         <div class="icon-block">
                                             <a class="btn btn-outline-dark rounded-circle" style="float:right;" href="{{ url_for('book.addToBookshelves', book_id=book['id'] )}}"><i class="bi bi-heart-fill"></i></a>
                                             <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="{{ url_for('book.addToBookshelves', book_id=book['id'] )}}"><i class="bi bi-plus-lg"></i></a>
