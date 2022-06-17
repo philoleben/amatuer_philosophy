@@ -20,7 +20,7 @@ def login_required(view):
 def signup():
     form = UserCreateForm()
 
-    genre_data=[{'genre': 'Literature'}, {'genre': 'History'}, {'genre': 'Philosophy'}]
+    genre_data=[{'genre': 'Ethics'}, {'genre': 'History'}, {'genre': 'Philosophy'}]
     author_data=[{'author': 'Spinoza'}, {'author': 'Karl Marx'}, {'author': 'Nietzsche'}]  
     if request.method == 'POST' and form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
@@ -28,15 +28,14 @@ def signup():
             user = User(username=form.username.data,
                         password=generate_password_hash(form.password1.data),
                         email=form.email.data,
-                        genre = request.form.get('genre'),
-                        author = request.form.get('author'),
-                        audio = request.form.get('way')
+                        subjects = request.form.get('subjects'),
+                        authors = request.form.get('authors')
                         )
             db.session.add(user)
             db.session.commit()
             return redirect(url_for('main.index'))
         else:
-            flash('이미 존재하는 사용자입니다.')
+            flash('This User already exists.')
     return render_template('auth/signup.html', form=form, genre_data=genre_data, author_data=author_data)
 
 @bp.route('/login/', methods=('GET', 'POST'))
@@ -46,9 +45,9 @@ def login():
         error = None
         user = User.query.filter_by(username=form.username.data).first()
         if not user:
-            error = "존재하지 않는 사용자입니다."
+            error = "User does not exist."
         elif not check_password_hash(user.password, form.password.data):
-            error = "비밀번호가 올바르지 않습니다."
+            error = "Password is not valid."
         if error is None:
             session.clear()
             session['user_id'] = user.id
