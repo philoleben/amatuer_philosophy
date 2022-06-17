@@ -2,7 +2,7 @@ from flask import *
 import requests
 import json
 from werkzeug.utils import redirect
-from pybo.models import Question, Book
+from pybo.models import Question, Book, book_voter
 from gensim.models.doc2vec import Doc2Vec
 from nltk.tokenize import word_tokenize
 import random
@@ -20,7 +20,7 @@ def index():
         return len(seq) == len(unique_list)
     
     temp = []
-    books = []
+    books_for_authors = []
     
     model = Doc2Vec.load("C:\\gu.model")
     
@@ -32,11 +32,14 @@ def index():
     
     # f2 = open('C:\\키 있는거.json', 'r', encoding="UTF-8")
     # json_data2 = json.load(f2, strict=False)
-    for book in json_data:   
-        data = Book(bookid=book['id']+1)
-        db.session.add(data)
-        db.session.commit()
-
+    
+    # book_id 값을 db에 저장
+    # for book in json_data:   
+    #     data = Book(bookid=book['id']+1)
+    #     db.session.add(data)
+    #     db.session.commit()
+    
+    # book_id 값을 db에 삭제
     # db.session.query(Book).delete()
     # db.session.commit()
     
@@ -49,10 +52,14 @@ def index():
         sims = model.dv.most_similar(model.dv[text])
         return sims
     
+    vote_data = []
     for book in json_data:
         if book['authors'] == 'Plato':
-            books.append(book)
-    
+            data = Book.query.filter_by(bookid=book['id']).first()
+            book["voter"] = len(data.voter)
+            books_for_authors.append(book)
+    print(books_for_authors)
+        
     books2 = []
     a = sorted(json_data, key = lambda x: x['download_count'], reverse=True)
     
@@ -76,7 +83,7 @@ def index():
         books3.append(json_data2[book])
     
     """
-    print(json.dumps(books, indent="\t") )
+    # print(json.dumps(books_for_authors, indent="\t") )
     
     quote_list = []
     idx = []
@@ -96,7 +103,7 @@ def index():
     for i in range(5):
         quote_list.append([quote_json[idx[i][0]]['name'], quote_json[idx[i][0]]['photo'], quote_json[idx[i][0]]['ideas'][idx[i][1]]])
     
-    return render_template('/main/index.html', books=books, books2=books2, books3=books3, quote_list=quote_list)
+    return render_template('/main/index.html', books=books_for_authors, books2=books2, books3=books3, quote_list=quote_list)
 
 @bp.route('/about')
 def about():

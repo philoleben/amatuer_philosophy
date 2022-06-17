@@ -36,7 +36,7 @@
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
                                 <p class="lead fw-bolder mb-4 text-center">{{quote_list[idx][2]}}</p>
-                                <p class="lead fw-bolder mt-2 mb-4 text-center">{{quote_list[idx][0]}}</p>
+                                <p class="lead fw-bolder mt-2 mb-4 text-center">- {{quote_list[idx][0]}}</p>
                             </div>
                         </div>
                         <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{{quote_list[idx][1]}}" style="height:350px; width:300px;" alt="..." /></div>
@@ -81,7 +81,7 @@
             <div class="col-12">
                 <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" data-interval="false">
                     <div class="carousel-inner">
-                        <!--first slide-->
+                        <!--first slide-->qw
                         <div class="carousel-item active">
                             <div class="row" style="margin-right:0.1px;"> 
                             {%for book in books[0:3]%}
@@ -94,7 +94,7 @@
                                         <h4 class="card-title text-center"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h4>
                                         <div class="icon-block">
                                             <a class="recommend btn btn-outline-dark rounded-circle" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill"></i>
-                                                <span class="badge rounded-pill bg-success">{{ book.voter|length }}</span></a>                                            
+                                                <span class="badge rounded-pill bg-success">{{ book.voter }}</span></a>                                            
                                             <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="/addToBookshelves?bookId={{book['id']}}&page=main"><i class="bi bi-plus-lg"></i></a>
                                         </div>
                                     </div>
@@ -117,7 +117,7 @@
                                         <h4 class="card-title text-center"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h4>
                                         <div class="icon-block">
                                             <a class="recommend btn btn-outline-dark rounded-circle" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill"></i>
-                                                <span class="badge rounded-pill bg-success">{{ book.voter|length }}</span></a>
+                                                <span class="badge rounded-pill bg-success">{{ book.voter }}</span></a>
                                             <a class="btn btn-outline-dark rounded-circle" style="float:right; margin-right:4px;" href="/addToBookshelves?bookId={{book['id']}}&page=main"><i class="bi bi-plus-lg"></i></a>
                                         </div>
                                     </div>
