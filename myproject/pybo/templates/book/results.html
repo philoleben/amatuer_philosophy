@@ -4,12 +4,10 @@
     <h5 class="text-white">RESULTS:</h5>
     {%for book in books%}
     <div>
-        <div>{{book['title']}}</div>
         <div>
-            <img src="{{book[  'formats'][  'image/jpeg']}}" />
-            <br>
-            <a href="{{book[  'formats'][  'text/plain; charset=utf-8']}}"> GET Text</a>
+            <img src="{{book['image']}}" />
         </div>
+        <div>Title : {{book['title']}}</div>
         <div>Authors : {{book['authors']}}</div>
         <hr>
     </div>
