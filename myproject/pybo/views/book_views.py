@@ -10,11 +10,12 @@ from .. import db
 
 bp = Blueprint('book', __name__, url_prefix='/')
 
+f = open('C:\\키없는거.json', 'r', encoding='UTF-8')
+json_data = json.load(f, strict=False)
+
 @bp.route('/details/')
 def details():
     book_id = int(request.args.get('bookId'))
-    f = open('C:\\키없는거.json', 'r', encoding='UTF-8')
-    json_data = json.load(f, strict=False)
     book = json_data[book_id]
         
     return render_template('book/details.html',  book=book)
@@ -36,7 +37,10 @@ def bookshelves():
         return redirect(url_for('auth.login'))
     
     books = []
-    books = Bookshelf.query.filter_by(userid=user_id).all() #현재 로그인한 user가 저장한 책 리스트    
+    books = Bookshelf.query.filter_by(userid=user_id).all() #현재 로그인한 user가 저장한 책 리스트 
+
+    for book in books:
+        print(book.bookid)
     return render_template('book/bookshelves.html', books=books)
 
 @bp.route("/addToBookshelves")
@@ -59,6 +63,7 @@ def addToBookshelves():
         return redirect(url)        
     else:
         return redirect(url_for('main.index'))
+    
     
 @bp.route("/delete/int:<bookshelf_id>")
 def delete(bookshelf_id):

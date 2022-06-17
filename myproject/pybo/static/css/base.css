@@ -28,7 +28,7 @@ body{
     min-height: 100%;
 }
 .page-header {
-    z-index: 1;
+    z-index: 2;
     background: #F2ECE7;
     color: black;
     position: sticky;

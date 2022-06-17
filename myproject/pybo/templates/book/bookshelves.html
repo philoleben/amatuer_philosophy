@@ -25,8 +25,8 @@
                             <div class="col">
                                 <div class="card border-0">
                                     <div class="card-body border-0 text-center">
-                                        <a class="bookcover" href="{{ url_for('book.details', book_id=book['bookid']) }}">
-                                            <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                        <a class="bookcover" href="/details?bookId={{book['id']}}">
+                                            {{book['bookid']}}
                                         </a>
                                     </div>
                                     <div class="card-body border-0 text-center">

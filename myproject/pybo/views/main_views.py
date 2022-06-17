@@ -32,10 +32,10 @@ def index():
     
     # f2 = open('C:\\키 있는거.json', 'r', encoding="UTF-8")
     # json_data2 = json.load(f2, strict=False)
-    # for book in json_data:   
-    #     data = Book(bookid=book['id']+1)
-    #     db.session.add(data)
-    #     db.session.commit()
+    for book in json_data:   
+        data = Book(bookid=book['id']+1)
+        db.session.add(data)
+        db.session.commit()
 
     # db.session.query(Book).delete()
     # db.session.commit()
