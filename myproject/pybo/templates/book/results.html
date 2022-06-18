@@ -25,9 +25,12 @@
                     <div class="card-body m-4">
                       <h4 class="card-title fs-5">{{book['title']}}</h4>
                       <h5 class="card-title fs-6">{{book['authors']}}</h5>
-                      <button class="btn btn-secondary mt-3" style="width:330px;" type="button">
-                        <a href="#">Read to E-book</a>
-                      </button>
+                      <a class="btn btn-secondary mt-2" href="{{ url_for('book.ebook', book_id=book['id'])}}" style="width:330px;">
+                        Read to E-book
+                      </a>
+                      <a class="btn btn-secondary mt-2" href="/addToBookshelves?bookId={{book['id']}}&page=details" style="width:330px;">
+                        Add to bookshelves
+                      </a>
                     </div>
                   </div>
               </div>

@@ -12,7 +12,7 @@ from .. import db
 
 bp = Blueprint('book', __name__, url_prefix='/')
 
-f = open('C:\\키없는거.json', 'r', encoding='UTF-8')
+f = open('키없는거.json', 'r', encoding='UTF-8')
 json_data = json.load(f, strict=False)
 
 @bp.route('/details/')
@@ -20,6 +20,8 @@ def details():
     book_id = int(request.args.get('bookId'))
     book = json_data[book_id]
     print(book_id)
+    
+    desc_list = book['description']
 
     author = book['authors']
     print(author)
@@ -30,7 +32,7 @@ def details():
             
     # same subjects or Doc2vec ?        
         
-    return render_template('book/details.html', book=book, this_authors_otherbooks=this_authors_otherbooks)
+    return render_template('book/details.html', book=book, this_authors_otherbooks=this_authors_otherbooks, desc_list=desc_list)
 
 @bp.route('/search/')
 def search():
@@ -116,7 +118,7 @@ def vote(book_id):
 @bp.route('/ebook/<int:book_id>')
 def ebook(book_id):
     
-    f = open('C:\\키없는거.json', 'r', encoding='UTF-8')
+    f = open('키없는거.json', 'r', encoding='UTF-8')
     json_data = json.load(f, strict=False)
     book_url = json_data[book_id]['full-text']
     print(book_url)
