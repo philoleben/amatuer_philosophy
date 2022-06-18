@@ -19,18 +19,18 @@ json_data = json.load(f, strict=False)
 def details():
     book_id = int(request.args.get('bookId'))
     book = json_data[book_id]
-    
-    
+    print(book_id)
+
     author = book['authors']
     print(author)
     this_authors_otherbooks = []
-    for book in json_data:
-        if book['authors'] == author:
-            this_authors_otherbooks.append(book)
+    for _book in json_data:
+        if _book['authors'] == author:
+            this_authors_otherbooks.append(_book)
             
     # same subjects or Doc2vec ?        
         
-    return render_template('book/details.html',  book=book, this_authors_otherbooks=this_authors_otherbooks)
+    return render_template('book/details.html', book=book, this_authors_otherbooks=this_authors_otherbooks)
 
 @bp.route('/search/')
 def search():
@@ -90,7 +90,7 @@ def addToBookshelves():
         flash('Already Added.')    
 
     if(request.args.get('page')=='details'):
-        url='/details?bookId='+str(book_id-2)
+        url='/details?bookId='+str(book_id)
         return redirect(url)        
     else:
         return redirect(url_for('main.index'))

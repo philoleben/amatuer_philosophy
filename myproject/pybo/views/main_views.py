@@ -35,6 +35,7 @@ def index():
     
     # book_id 값을 db에 저장
     # for book in json_data:   
+
     #     data = Book(bookid=book['id']+1)
     #     db.session.add(data)
     #     db.session.commit()
@@ -58,7 +59,7 @@ def index():
             data = Book.query.filter_by(bookid=book['id']).first()
             book["voter"] = len(data.voter)
             books_for_authors.append(book)
-    print(books_for_authors)
+    # print(books_for_authors)
         
     books2 = []
     a = sorted(json_data, key = lambda x: x['download_count'], reverse=True)
