@@ -1,0 +1,30 @@
+.card-img {
+    height: 60px;
+    object-fit: cover;
+}
+a:link {
+  color : black;
+  text-decoration: none;
+}
+a:visited {
+  color : black;
+  text-decoration: none;
+}
+  a:hover {
+  color : black;
+  text-decoration: none;
+}
+a:active {
+  color : black;
+  text-decoration: none;
+}
+.recommend {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.added {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
