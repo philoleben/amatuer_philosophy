@@ -19,8 +19,18 @@ json_data = json.load(f, strict=False)
 def details():
     book_id = int(request.args.get('bookId'))
     book = json_data[book_id]
+    
+    
+    author = book['authors']
+    print(author)
+    this_authors_otherbooks = []
+    for book in json_data:
+        if book['authors'] == author:
+            this_authors_otherbooks.append(book)
+            
+    # same subjects or Doc2vec ?        
         
-    return render_template('book/details.html',  book=book)
+    return render_template('book/details.html',  book=book, this_authors_otherbooks=this_authors_otherbooks)
 
 @bp.route('/search/')
 def search():
@@ -98,7 +108,7 @@ def delete(bookshelf_id):
 @bp.route('/vote/<int:book_id>/')
 @login_required
 def vote(book_id):
-    _book = Book.query.get_or_404(book_id)
+    _book = Book.query.get_or_404(book_id)  
     _book.voter.append(g.user)
     db.session.commit()
     return redirect(url_for('main.index'))
