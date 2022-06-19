@@ -32,12 +32,16 @@ def details():
     this_authors_otherbooks = []
     for _book in json_data:
         if _book['authors'] == author and book['title'] != _book['title']:
+            data = Book.query.filter_by(bookid=_book['id']).first()
+            _book["voter"] = len(data.voter)
             this_authors_otherbooks.append(_book)
     
     same_subject = []
     for books in json_data:
         for book_sub in book['subjects'] :
             if book_sub in books['subjects'] and book['title'] != books['title']:
+                data = Book.query.filter_by(bookid=books['id']).first()
+                books["voter"] = len(data.voter)
                 same_subject.append(books)
                 break
     # same subjects or Doc2vec ?        
