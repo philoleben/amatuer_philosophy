@@ -64,7 +64,7 @@ def search():
             temp.append(idx[0])
 
         for idx in range(len(temp)):
-            books.append(json_data[temp[idx]])
+            books.append(json_data_key[temp[idx]])
             
             
         books2 = []
