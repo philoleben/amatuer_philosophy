@@ -96,6 +96,7 @@ def index():
             data = Book.query.filter_by(bookid=book['id']).first()
             book["voter"] = len(data.voter)
             books_for_authors.append(book)
+    
     # print(books_for_authors)
         
 #-----------------------------------download count 내림차순 정렬-----------------------------------------------    

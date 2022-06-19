@@ -20,23 +20,19 @@ def login_required(view):
 def signup():
     form = UserCreateForm()
 
-    genre_data=[{'genre': 'Ethics'}, {'genre': 'History'}, {'genre': 'Philosophy'}]
-    author_data=[{'author': 'Spinoza'}, {'author': 'Karl Marx'}, {'author': 'Nietzsche'}]  
     if request.method == 'POST' and form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
         if not user:
             user = User(username=form.username.data,
                         password=generate_password_hash(form.password1.data),
                         email=form.email.data,
-                        subjects = request.form.get('subjects'),
-                        authors = request.form.get('authors')
                         )
             db.session.add(user)
             db.session.commit()
             return redirect(url_for('main.index'))
         else:
             flash('This User already exists.')
-    return render_template('auth/signup.html', form=form, genre_data=genre_data, author_data=author_data)
+    return render_template('auth/signup.html', form=form)
 
 @bp.route('/login/', methods=('GET', 'POST'))
 def login():

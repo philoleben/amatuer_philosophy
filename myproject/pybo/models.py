@@ -6,8 +6,6 @@ class User(db.Model):
     username = db.Column(db.String(8), nullable = False)
     email = db.Column(db.String(32), nullable = False)     
     password = db.Column(db.String(64), nullable = False) 
-    subjects = db.Column(db.String(64))
-    authors = db.Column(db.String(8))
     
 class Categories(db.Model): 
     __tablename__ = 'categories'   #테이블 이름 : bookshelf

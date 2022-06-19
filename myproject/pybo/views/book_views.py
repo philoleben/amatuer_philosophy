@@ -57,6 +57,9 @@ def search():
     temp = []
     if 'book' in request.args:
         search_word = request.args.get('book')
+
+        search_option = request.args.get('option')
+        print(search_option)
         
         lists = recommend_title(search_word)
         
