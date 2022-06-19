@@ -31,18 +31,18 @@ def details():
     
     this_authors_otherbooks = []
     for _book in json_data:
-        if _book['authors'] == author:
+        if _book['authors'] == author and book['title'] != _book['title']:
             this_authors_otherbooks.append(_book)
     
     same_subject = []
     for books in json_data:
-        for book_sub in book['subjects']:
-            if book_sub in books['subjects']:
+        for book_sub in book['subjects'] :
+            if book_sub in books['subjects'] and book['title'] != books['title']:
                 same_subject.append(books)
                 break
     # same subjects or Doc2vec ?        
         
-    return render_template('book/details.html', book=book, this_authors_otherbooks=this_authors_otherbooks, desc_list=desc_list)
+    return render_template('book/details.html', book=book, this_authors_otherbooks=this_authors_otherbooks, desc_list=desc_list, same_subject = same_subject)
 
 @bp.route('/search/')
 def search():
@@ -72,10 +72,14 @@ def search():
         for word in json_data:
             if search_word in word['title'].casefold():
                 books2.append([word, "Based on Title"])
+                continue
             elif search_word in word['authors'].casefold():
-                books2.append([word, "Based on Author"])     
-            elif search_word in word['subjects'].casefold():
-                books2.append([word, "Baesd on Subject"])
+                books2.append([word, "Based on Author"])
+                continue
+            
+            for sub in word['subjects']:
+                if search_word == sub.casefold():
+                    books2.append([word, "Baesd on Subject"])
         
     return render_template('book/results.html', books=books)
 
