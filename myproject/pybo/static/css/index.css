@@ -33,3 +33,15 @@ a:active {
   height:auto;
 }
 
+.row-eq {
+  height: 500px;
+}
+
+.quote {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
