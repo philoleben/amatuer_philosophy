@@ -162,7 +162,7 @@ def index():
 
 #--------------------------------------------------전달---------------------------------------------------------- 
     
-    return render_template('/main/index.html', books=books_for_authors, books2=books2,  books3 = books3, books4 = books4, quote_list=quote_list)
+    return render_template('/main/index.html', books=books_for_authors, author=books_for_authors[0]['authors'], books2=books2,  books3 = books3, books4 = books4, quote_list=quote_list)
 
 #---------------------------------------------------------------------------------------------------------------------
 @bp.route('/about')

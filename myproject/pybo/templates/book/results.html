@@ -24,11 +24,11 @@
                   </a>
                   <div class="col-md-8">
                     <div class="card-body mt-2 mb-2 mx-5">
-                      <h4 class="card-title fs-5"><a href="/details?bookId={{book['id']}}">{{book['title']}}</h4>
+                      <h4 class="card-title fs-5"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』,</h4>
                       <h5 class="card-title fs-6">{{book['authors']}}</h5>
                       <br>
                       {%for sub in book['subjects']%}
-                        <h5 class="card-title fs-6">{{sub}}</h5>
+                        <h5 class="card-title fs-6">#{{sub}}</h5>
                       {%endfor%}
                     </div>
                   </div>
