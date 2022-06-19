@@ -59,30 +59,36 @@ def search():
         search_word = request.args.get('book')
 
         search_option = request.args.get('option')
-        print(search_option)
         
-        lists = recommend_title(search_word)
         
-        for idx in lists:
-            temp.append(idx[0])
+        if search_option == 'contents':
+            temp = []
+            lists = recommend_title(search_word)
+        
+            for idx in lists:
+                temp.append(idx[0])
 
-        for idx in range(len(temp)):
-            books.append(json_data_key[temp[idx]])
-            
-            
-        books2 = []
-        search_word = search_word.casefold()
-        for word in json_data:
-            if search_word in word['title'].casefold():
-                books2.append([word, "Based on Title"])
-                continue
-            elif search_word in word['authors'].casefold():
-                books2.append([word, "Based on Author"])
-                continue
-            
-            for sub in word['subjects']:
-                if search_word == sub.casefold():
-                    books2.append([word, "Baesd on Subject"])
+            for idx in range(len(temp)):
+                books.append(json_data_key[temp[idx]])
+
+        else:
+            search_word = search_word.casefold()
+            if search_option == 'title':
+                for word in json_data:
+                    if search_word in word['title'].casefold():
+                        books.append(word)
+
+            elif search_option == "author":
+                for word in json_data:
+                    if search_word in word['authors'].casefold():
+                        books.append(word)                 
+    
+            else:
+                for word in json_data:
+                    for sub in word['subjects']:
+                        if search_word in sub.casefold():
+                            books.append(word)
+        
         
     return render_template('book/results.html', books=books)
 

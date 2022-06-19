@@ -25,6 +25,10 @@
                     <div class="card-body m-4">
                       <h4 class="card-title fs-5"><a href="/details?bookId={{book['id']}}">{{book['title']}}</h4>
                       <h5 class="card-title fs-6">{{book['authors']}}</h5>
+                      <br>
+                      {%for sub in book['subjects']%}
+                        <h5 class="card-title fs-6">{{sub}}</h5>
+                      {%endfor%}
                       <a class="btn btn-secondary mt-2" href="{{ url_for('book.ebook', book_id=book['id'])}}" style="width:330px;">
                         Read to E-book
                       </a>
