@@ -127,8 +127,10 @@ def bookshelves():
     related_book_title = sorted(related_book_title, key = lambda book:book[1], reverse=True)
     
     
-    for idx in range(len(books)):
-        related_book_title.pop(0)
+    for book in books:
+        for title in related_book_title[:]:
+            if book['title'] == title[0]:
+                related_book_title.remove(title)
     
     # 개수는 나중에 지정 --> 반복 횟수만큼 캐러셀에 책 추가
     for book in related_book_title:
