@@ -131,10 +131,13 @@ def bookshelves():
         related_book_title.pop(0)
     
     # 개수는 나중에 지정 --> 반복 횟수만큼 캐러셀에 책 추가
-    for idx in related_book_title:
-        related_book.append(json_data_key[idx[0]])
+    for book in related_book_title:
+        id = json_data_key[book[0]]['id']            
+        data = Book.query.filter_by(bookid=id).first()
+        json_data[id]['voter'] = len(data.voter)
+        related_book.append(json_data[id])
             
-    return render_template('book/bookshelves.html', books=books)
+    return render_template('book/bookshelves.html', books=books, related_book = related_book)
 
 @bp.route("/addToBookshelves")
 @login_required
