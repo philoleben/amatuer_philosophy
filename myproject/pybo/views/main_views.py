@@ -104,8 +104,10 @@ def index():
     books2 = []
     download_desc = sorted(json_data, key = lambda x: x['download_count'], reverse=True)
     
-    for i in range(10):
-        books2.append(download_desc[i])
+    for idx in range(10):
+        data = Book.query.filter_by(bookid=download_desc[idx]['id']).first()
+        json_data[download_desc[idx]['id']]['voter'] = len(data.voter)
+        books2.append(json_data[download_desc[idx]['id']])
 
 #-----------------------------------------랜덤 subject --------------------------------------
 
@@ -117,11 +119,15 @@ def index():
     books3 = [subject1]
     for book in json_data:
         if subject1 in book['subjects']:
+            data = Book.query.filter_by(bookid=book['id']).first()
+            book["voter"] = len(data.voter)
             books3.append(book)
     
     books4 = [subject2]
     for book in json_data:
         if subject2 in book['subjects']:
+            data = Book.query.filter_by(bookid=book['id']).first()
+            book["voter"] = len(data.voter)
             books4.append(book)
             
 #--------------------------------------------------------------------------------------------------
