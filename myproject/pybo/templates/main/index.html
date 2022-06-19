@@ -14,16 +14,16 @@
 
 {% block content %}
 <!-- Header Quotation Carousel-->
-<header class="mt-2 mb-5">
+<header class="mt-2 mb-4">
     <div class="container">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <!--First page-->
                 <div class="carousel-item active">
-                    <div class="row gx-5 align-items-center mx-5 justify-content-center">
+                    <div class="row row-eq gx-5 align-items-center mx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
-                                <p class="lead fw-bolder fs-6 mb-4 text-center"> {{quote_list[0][2]}} </p>
+                                <p class="lead quote fw-bolder fs-6 mb-4 text-center"> {{quote_list[0][2]}} </p>
                                 <p class="lead fw-bolder fs-6 mt-2 mb-4 text-center"> {{quote_list[0][0]}} </p>
                             </div>
                         </div>
@@ -32,10 +32,10 @@
                 </div>
                 {%for idx in range(1, quote_list|length)%}
                 <div class="carousel-item">
-                    <div class="row gx-5 align-items-center mx-5 justify-content-center">
+                    <div class="row row-eq gx-5 align-items-center mx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
-                                <p class="lead fw-bolder fs-6 mb-4 text-center">{{quote_list[idx][2]}}</p>
+                                <p class="lead quote fw-bolder fs-6 mb-4 text-center">{{quote_list[idx][2]}}</p>
                                 <p class="lead fw-bolder fs-6 mt-2 mb-4 text-center">- {{quote_list[idx][0]}}</p>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
 
 <body oncontextmenu='return false' class='snippet-body'>
 <!--carousel 1-->
-<section class="pt-5 pb-5">
+<section class="pt-3 pb-5">
     <div class="container">
         <div class="row">
             <!--carousel title-->
