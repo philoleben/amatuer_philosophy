@@ -49,21 +49,21 @@
             </ul>
             <form class="d-flex" method="get" action="{{ url_for('book.search') }}">
               <label for = "book" class = "form-label"></label>
-              <input class="form-control me-2 border-dark rounded-0" type="search" name="book" placeholder="Search" aria-label="Search" id="book" rows="3">
-              
+
               <input type="radio" class="btn-check" name="option" value="title" id="option1" autocomplete="off" checked>
-              <label class="btn btn-secondary" for="option1">Title</label>
+              <label class="btn btn-secondary rounded-0" for="option1">Title</label>
 
               <input type="radio" class="btn-check" name="option" value="author" id="option2" autocomplete="off">
-              <label class="btn btn-secondary" for="option2">Author</label>
+              <label class="btn btn-secondary rounded-0" for="option2">Author</label>
 
               <input type="radio" class="btn-check" name="option" value="contents" id="option3" autocomplete="off">
-              <label class="btn btn-secondary" for="option3">Contents</label>
+              <label class="btn btn-secondary rounded-0" for="option3">Contents</label>
 
               <input type="radio" class="btn-check" name="option" value="subject" id="option4" autocomplete="off">
-              <label class="btn btn-secondary" for="option4">Subject</label>
+              <label class="btn btn-secondary rounded-0" for="option4">Subject</label>
 
-              <button class="btn btn-light border-dark rounded-0" type="submit"><strong>Search!</strong></button>
+              <input class="form-control me-2 border-dark rounded-0" type="search" name="book" placeholder="Search" aria-label="Search" id="book" rows="3">
+              <button class="btn btn-secondary border-secondary rounded-0" type="submit">Search!</button>
             </form>
           </div>
         </div>

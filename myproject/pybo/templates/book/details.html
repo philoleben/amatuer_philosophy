@@ -75,15 +75,15 @@
                         
                     </script>
                     <div class="mx-3 mt-3" style="font-size=5px;">
-                        {% set list1 = desc_list.split('\n') %}
-                        {% for books in list1[0:1] %}
+                        {% set list1 = desc_list.split('.') %}
+                        {% for books in list1[0:4] %}
                         {{ books }}
                         {% endfor %}
                     </div>
                     <b id="bMore" onclick="fnMore1()" style="color: skyblue; cursor: pointer; font-size: 15pt; font-weight: bold; text-align:center;"> read more...</b>
                     <!--contents-->
                     <div id="divMore" class="mx-3 mb-3" style="font-size=5px; display:none;">
-                        {% for books in list1[1:]%}
+                        {% for books in list1[4:]%}
                         {{ books }}
                         {% endfor %}
                         <!--fold button-->
