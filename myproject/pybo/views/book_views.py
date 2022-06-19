@@ -154,10 +154,12 @@ def addToBookshelves():
         return redirect(url_for('main.index'))
     
     
-@bp.route("/delete/<int:bookshelf_id>")
-def delete(bookshelf_id):
+@bp.route("/delete/<int:book_id>")
+def delete(book_id):
     
-    book = Bookshelf.query.get(bookshelf_id)
+    user_id = session.get('user_id')
+
+    book = Bookshelf.query.filter_by(bookid=book_id, userid=user_id).first()
     print(book)
     db.session.delete(book)
     db.session.commit()
