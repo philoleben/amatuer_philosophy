@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/details2.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/details.css')}}">
 <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
 <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
 <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
@@ -23,15 +23,15 @@
             </header>
             <!--Book cover-->
             <div class="col-md-6">
-                <img class="card-img-top mb-5 mb-md-0 ml-3" src={{book['image']}} alt="" />
+                <img class="card-img-top mb-5 mb-md-0 ml-3 h-100" src={{book['image']}} alt="" />
+                <a class="recommend btn-transparent border-0 mt-2" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill" style="color:red;"></i>
+                    <span class="badge rounded-pill bg-success">{{ book.voter }}</span> I like this book! 
+                </a>
             </div>
             <!--Book info-->
-            <div class="col-md-6">
+            <div class="col-md-6 mt-5">
                 <div class="fs-5 mt-5 mb-4 ml-5">
                     <span>Author: {{book['authors']}}</span>
-                </div>
-                <div class="fs-5 mb-4 ml-5">
-                    <span>Id: {{book['id']}}</span>
                 </div>
                 <div class="fs-5 mb-4 ml-5">
                     <span>Rating: {{book['rating']}}</span>
@@ -74,9 +74,18 @@
                         }
                         
                     </script>
+                    <div class="mx-3 mt-3" style="font-size=5px;">
+                        {% set list1 = desc_list.split('\n') %}
+                        {% for books in list1[0:1] %}
+                        {{ books }}
+                        {% endfor %}
+                    </div>
                     <b id="bMore" onclick="fnMore1()" style="color: skyblue; cursor: pointer; font-size: 15pt; font-weight: bold; text-align:center;"> read more...</b>
                     <!--contents-->
-                    <div id="divMore" class="fs-5 m-4" style="font-size=5px; display:none;">{{book['description']}}
+                    <div id="divMore" class="mx-3 mb-3" style="font-size=5px; display:none;">
+                        {% for books in list1[1:]%}
+                        {{ books }}
+                        {% endfor %}
                         <!--fold button-->
                         <b onclick="fnMore2()" style="color: skyblue; cursor: pointer; font-size: 15pt; font-weight: bold; text-align:center;">fold...</b>
                     </div>
@@ -125,56 +134,54 @@ Chapter4. We Scholars
             </div>
             <!--carousel content cards-->
             <div class="col-12">
-                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" data-interval="false"> 
                     <div class="carousel-inner">
                         <!--first slide-->
                         <div class="carousel-item active">
                             <div class="row" style="margin-right:0.1px;"> 
                                 {%for book in this_authors_otherbooks[0:3]%}
                                 <div class="col-md-4 mb-3">
-                                    <div class="card rounded-0" style="box-shadow: 5px 5px grey;">
+                                    <div class="card rounded-0 h-100" style="box-shadow: 5px 5px grey;">
                                         <a class="card-body bg-secondary text-center" href="/details?bookId={{book['id']}}">
-                                            <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                            <img class="img-fluid" src="{{book['image']}}" style="height:150px;" alt="book_cover">
                                         </a>
-                                        <div class="card-body border border-dark border-2">
-                                            <h5 class="card-title text-center fs-6"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h5>
+                                        <div class="card-body border border-dark border-2 h-100">
+                                            <h5 class="card-title text-center fs-6 mb-5"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h5>
                                             <div class="icon-block">
-                                                <a class="recommend btn btn-outline-dark border-0" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill" style="color:red;"></i>
+                                                <a class="recommend my btn btn-outline-dark border-0" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill" style="color:red;"></i>
                                                     <span class="badge rounded-pill bg-success">{{ book.voter }}</span></a>                                            
-                                                <a class="btn btn-outline-dark border-0" style="float:left; margin-right:4px;" href="/addToBookshelves?bookId={{book['id']}}&page=main"><i class="bi bi-plus-lg"></i></a>
+                                                <a class="added btn btn-outline-dark border-0" style="float:left; margin-right:4px;" href="/addToBookshelves?bookId={{book['id']}}&page=main"><i class="bi bi-plus-lg"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 {%endfor%}
-                                </div>
                             </div>
-                            <!--seconde slide-->
-                            {%for idx in range(3, this_authors_otherbooks|length, 3)%}
-                            <div class="carousel-item">
+                        </div>
+                        <!--seconde slide-->
+                        {%for idx in range(3, this_authors_otherbooks|length, 3)%}
+                        <div class="carousel-item">
                             <div class="row" style="margin-right:0.1px;">
                                 {%for book in this_authors_otherbooks[idx:idx+3]%} 
                                 <div class="col-md-4 mb-3">
-                                    <div class="card shadow bg-body">
+                                    <div class="card rounded-0 h-100" style="box-shadow: 5px 5px grey;">
                                         <a class="card-body bg-secondary text-center" href="/details?bookId={{book['id']}}">
-                                            <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                            <img class="img-fluid" src="{{book['image']}}" style="height:150px;" alt="book_cover">
                                         </a>
-                                        <div class="card-body border border-dark border-2">
-                                            <h5 class="card-title text-center fs-6"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h5>
+                                        <div class="card-body border border-dark border-2 h-100">
+                                            <h5 class="card-title text-center fs-6 mb-5"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h5>
                                             <div class="icon-block">
-                                                <a class="recommend btn btn-outline-dark border-0" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill" style="color:red;"></i>
+                                                <a class="recommend my btn btn-outline-dark border-0" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill" style="color:red;"></i>
                                                     <span class="badge rounded-pill bg-success">{{ book.voter }}</span></a>                                            
-                                                <a class="btn btn-outline-dark border-0" style="float:left; margin-right:4px;" href="/addToBookshelves?bookId={{book['id']}}&page=main"><i class="bi bi-plus-lg"></i></a>
+                                                <a class="added btn btn-outline-dark border-0" style="float:left; margin-right:4px;" href="/addToBookshelves?bookId={{book['id']}}&page=main"><i class="bi bi-plus-lg"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 {%endfor%}
                             </div>
-                            </div>
-                            {%endfor%}
-                          </div>
                         </div>
+                        {%endfor%}
                     </div>
                 </div>
             </div>
@@ -188,7 +195,7 @@ Chapter4. We Scholars
 <section class="pt-5 pb-5">
     <div class="container">
         <div class="row">
-            <h1 class="fw-bolder mb-2 text-center">This Author's Other Books</h1>
+            <h1 class="fw-bolder mb-2 text-center">This author's other books</h1>
             <!--carousel button-->
             <div class="col-12 text-right">
                 <div class="col-6 carousel-controller" style="float:right;">
@@ -209,50 +216,47 @@ Chapter4. We Scholars
                             <div class="row" style="margin-right:0.1px;"> 
                                 {%for book in this_authors_otherbooks[0:3]%}
                                 <div class="col-md-4 mb-3">
-                                    <div class="card rounded-0" style="box-shadow: 5px 5px grey;">
+                                    <div class="card rounded-0 h-100" style="box-shadow: 5px 5px grey;">
                                         <a class="card-body bg-secondary text-center" href="/details?bookId={{book['id']}}">
-                                            <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                            <img class="img-fluid" src="{{book['image']}}" style="height:150px;" alt="book_cover">
                                         </a>
-                                        <div class="card-body border border-dark border-2">
-                                            <h5 class="card-title text-center fs-6"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h5>
+                                        <div class="card-body border border-dark border-2 h-100">
+                                            <h5 class="card-title text-center fs-6 mb-5"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h5>
                                             <div class="icon-block">
-                                                <a class="recommend btn btn-outline-dark border-0" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill" style="color:red;"></i>
+                                                <a class="recommend my btn btn-outline-dark border-0" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill" style="color:red;"></i>
                                                     <span class="badge rounded-pill bg-success">{{ book.voter }}</span></a>                                            
-                                                <a class="btn btn-outline-dark border-0" style="float:left; margin-right:4px;" href="/addToBookshelves?bookId={{book['id']}}&page=main"><i class="bi bi-plus-lg"></i></a>
+                                                <a class="added btn btn-outline-dark border-0" style="float:left; margin-right:4px;" href="/addToBookshelves?bookId={{book['id']}}&page=main"><i class="bi bi-plus-lg"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 {%endfor%}
-                                </div>
                             </div>
-                            <!--seconde slide-->
-                            {%for idx in range(3, this_authors_otherbooks|length, 3)%}
-                            <div class="carousel-item">
+                        </div>
+                        <!--seconde slide-->
+                        {%for idx in range(3, this_authors_otherbooks|length, 3)%}
+                        <div class="carousel-item">
                             <div class="row" style="margin-right:0.1px;">
                                 {%for book in this_authors_otherbooks[idx:idx+3]%} 
                                 <div class="col-md-4 mb-3">
-                                    <div class="card shadow bg-body">
+                                    <div class="card rounded-0 h-100" style="box-shadow: 5px 5px grey;">
                                         <a class="card-body bg-secondary text-center" href="/details?bookId={{book['id']}}">
-                                            <img class="img-fluid" src="{{book['image']}}" style="height:200px;" alt="book_cover">
+                                            <img class="img-fluid" src="{{book['image']}}" style="height:150px;" alt="book_cover">
                                         </a>
-                                        <div class="card-body border border-dark border-2">
-                                            <h5 class="card-title text-center fs-6"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h5>
+                                        <div class="card-body border border-dark border-2 h-100">
+                                            <h5 class="card-title text-center fs-6 mb-5"><a href="/details?bookId={{book['id']}}">『{{book['title']}}』, <br> {{book['authors']}}</a></h5>
                                             <div class="icon-block">
-                                                <a class="recommend btn btn-outline-dark border-0" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill" style="color:red;"></i>
+                                                <a class="recommend my btn btn-outline-dark border-0" style="float:right;" href="javascript:void(0)" data-uri="{{ url_for('book.vote', book_id=book['id']) }}"><i class="bi bi-heart-fill" style="color:red;"></i>
                                                     <span class="badge rounded-pill bg-success">{{ book.voter }}</span></a>                                            
-                                                <a class="btn btn-outline-dark border-0" style="float:left; margin-right:4px;" href="/addToBookshelves?bookId={{book['id']}}&page=main"><i class="bi bi-plus-lg"></i></a>
+                                                <a class="added btn btn-outline-dark border-0" style="float:left; margin-right:4px;" href="/addToBookshelves?bookId={{book['id']}}&page=main"><i class="bi bi-plus-lg"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 {%endfor%}
                             </div>
-                            </div>
-                            {%endfor%}
-                            </div>
-                            </div>
                         </div>
+                        {%endfor%}
                     </div>
                 </div>
             </div>

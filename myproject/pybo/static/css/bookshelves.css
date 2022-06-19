@@ -1,0 +1,19 @@
+.cards-box {
+    display: flex;
+    /*justify-content: space-between;*/
+    margin: 0 70px;
+    margin-top: 65px;
+    flex-wrap: wrap;
+    float: left;
+}
+.recommend {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.added {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
