@@ -111,7 +111,7 @@ def bookshelves():
         for y in range(len(temp[x])):
             related_book_title.append(temp[x][y]) 
     
-    related_book_title = sorted(related_book_title, key = lambda book:book[1])
+    related_book_title = sorted(related_book_title, key = lambda book:book[1], reverse=True)
     
     
     for idx in range(len(books)):
