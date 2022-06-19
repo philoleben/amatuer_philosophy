@@ -131,7 +131,6 @@ def index():
             books4.append(book)
             
 #--------------------------------------------------------------------------------------------------
-                                   
     lists = recommend_full_text('Aristotle on the art of poetry')
     lists.pop(0)
 
