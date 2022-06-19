@@ -15,30 +15,37 @@ bp = Blueprint('book', __name__, url_prefix='/')
 f = open('키없는거.json', 'r', encoding='UTF-8')
 json_data = json.load(f, strict=False)
 
+f1 = open('키있는거.json', 'r', encoding='UTF-8')
+json_data_key = json.load(f1, strict=False)
+
 @bp.route('/details/')
 def details():
     book_id = int(request.args.get('bookId'))
     book = json_data[book_id]
     print(book_id)
-    
-    desc_list = book['description']
 
     author = book['authors']
     print(author)
     this_authors_otherbooks = []
+    
+    same_subject = []
+    for books in json_data:
+        for book_sub in book['subject']:
+            if book_sub in books['subjects']:
+                same_subject.append(books)
+                break
+
     for _book in json_data:
         if _book['authors'] == author:
             this_authors_otherbooks.append(_book)
             
     # same subjects or Doc2vec ?        
         
-    return render_template('book/details.html', book=book, this_authors_otherbooks=this_authors_otherbooks, desc_list=desc_list)
+    return render_template('book/details.html', book=book, this_authors_otherbooks=this_authors_otherbooks)
 
 @bp.route('/search/')
 def search():
     model = Doc2Vec.load("gu.model")
-    f = open('키있는거.json', 'r', encoding='UTF-8')
-    json_data = json.load(f, strict=False)
     
     def recommend_title(text):
         new_vector = model.infer_vector(word_tokenize(text))
@@ -58,10 +65,24 @@ def search():
         for idx in range(len(temp)):
             books.append(json_data[temp[idx]])
         
+        
+        books2 = []
+        search_word = search_word.casefold()
+        for word in json_data:
+            if search_word in word['title'].casefold():
+                books2.append([word, "Based on Title"])
+            elif search_word in word['authors'].casefold():
+                books2.append([word, "Based on Author"])     
+            elif search_word in word['subjects'].casefold():
+                books2.append([word, "Baesd on Subject"])
+            
+        
     return render_template('book/results.html', books=books)
 
 @bp.route('/bookshelves/', methods=('GET', 'POST'))
 def bookshelves():
+    
+    model = Doc2Vec.load("gu.model")
     user_id = session.get('user_id')
     if user_id is None:
         return redirect(url_for('auth.login'))
@@ -74,7 +95,33 @@ def bookshelves():
         else:
             books.append(json_data[book.bookid])
             
-    return render_template('book/bookshelves.html', books=books)
+    def recommend_full_text(text):
+        sims = model.dv.most_similar(model.dv[text])
+        return sims
+    
+    temp = []
+    
+    for li in books:
+        temp.append(recommend_full_text(li['title']))
+    
+    related_book_title = []
+    related_book = []
+    
+    for x in range(len(temp)):
+        for y in range(len(temp[x])):
+            related_book_title.append(temp[x][y]) 
+    
+    related_book_title = sorted(related_book_title, key = lambda book:book[1])
+    
+    
+    for idx in range(len(books)):
+        related_book_title.pop(0)
+    
+    # 개수는 나중에 지정 --> 반복 횟수만큼 캐러셀에 책 추가
+    for idx in related_book_title:
+        related_book.append(json_data_key[idx[0]])
+        
+    return render_template('book/bookshelves.html', books=books, related_book = related_book)
 
 @bp.route("/addToBookshelves")
 @login_required
