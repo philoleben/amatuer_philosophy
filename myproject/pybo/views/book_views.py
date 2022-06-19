@@ -69,7 +69,6 @@ def search():
         for idx in range(len(temp)):
             books.append(json_data_key[temp[idx]])
             
-            
         books2 = []
         search_word = search_word.casefold()
         for word in json_data:
@@ -147,7 +146,10 @@ def addToBookshelves():
 
     if(request.args.get('page')=='details'):
         url='/details?bookId='+str(book_id)
-        return redirect(url)        
+        return redirect(url)    
+    elif(request.args.get('page')=='search'):
+        url='/details?bookId='+str(book_id)
+        return redirect(url)   
     else:
         return redirect(url_for('main.index'))
     
