@@ -54,12 +54,9 @@ def search():
         return sims
 
     books = []
-    temp = []
     if 'book' in request.args:
         search_word = request.args.get('book')
-
         search_option = request.args.get('option')
-        
         
         if search_option == 'contents':
             temp = []
@@ -88,7 +85,6 @@ def search():
                     for sub in word['subjects']:
                         if search_word in sub.casefold():
                             books.append(word)
-        
         
     return render_template('book/results.html', books=books)
 
@@ -153,7 +149,10 @@ def addToBookshelves():
 
     if(request.args.get('page')=='details'):
         url='/details?bookId='+str(book_id)
-        return redirect(url)        
+        return redirect(url)    
+    elif(request.args.get('page')=='search'):
+        url='/details?bookId='+str(book_id)
+        return redirect(url)   
     else:
         return redirect(url_for('main.index'))
     
